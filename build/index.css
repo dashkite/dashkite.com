@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html {
+  font-size: 2vw;
+}
+body {
+  background-color: #369;
+  border-top: 0.5rem solid #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+body main .logo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+body main .logo p {
+  margin: 0;
+  padding: 0;
+  font-size: 10rem;
+  line-height: 12rem;
+  font-family: 'Kaushan Script', cursive;
+  letter-spacing: -0.5rem;
+  color: #fff;
+}
+body main .logo svg {
+  margin-left: -1rem;
+  height: 18rem;
+  fill: #fff;
+}
+body main .tagline p {
+  padding: 0;
+  margin: 0;
+  margin-top: -2rem;
+  margin-left: 2rem;
+  font-family: 'Montserrat';
+  font-size: 2.7rem;
+  line-height: 3rem;
+  letter-spacing: 0;
+  color: #fff;
+}
+body main .tagline p span {
+  display: none;
+  animation-duration: 1.5s;
+  animation-name: fadeOut;
+}
+body main .tagline p span.selected {
+  display: inline-block;
+  animation-duration: 1.5s;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeOut {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeOut {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
