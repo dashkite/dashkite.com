@@ -1,0 +1,78 @@
+reset()
+  margin 0
+  padding 0
+
+rhythm(size, ratio)
+  font-size size * ratio
+  line-height size
+
+unlist()
+  reset()
+  & > li
+    list-style-type none
+    reset()
+
+row(-wrap)
+  display flex
+  flex-flow row -wrap
+
+column(-wrap)
+  display flex
+  flex-flow column -wrap
+
+gutter(n)
+  & > *
+    margin-right n !important
+
+    &:last-child
+      margin-right 0 !important
+
+google-font(name)
+  "https://fonts.googleapis.com/css?family="+replace(" ", "+", name)
+
+$font-copy = "Oxygen"
+$font-body = $font-copy
+$font-mono = $font-copy
+$font-label = $font-copy
+$font-heading = $font-copy
+
+@import url(google-font($font-copy + ":400,700,400i,700i"))
+
+html
+  font-size 8px
+
+body
+  margin 0 auto
+  padding 4rem 2rem
+
+  font-family $font-copy
+  rhythm 3rem .6
+
+  min-height 100vh
+
+  width 100vw
+  min-width 30ch
+  max-width 70ch
+
+  header
+    img.logo
+      max-width 25rem
+
+  main
+
+    h1, h2, h3, h4, h5, p, li
+      margin-bottom 1rem
+
+    h1
+      rhythm 5rem .9
+      margin-top 8rem
+
+    h5
+      rhythm 3rem .7
+
+  footer
+    margin-top 2rem
+    border-top 1px solid silver
+    padding-top 2rem
+    rhythm 2rem, .9
+    text-align center

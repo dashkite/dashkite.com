@@ -1,85 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script')
-@import url('https://fonts.googleapis.com/css?family=Montserrat')
-
-$fg = white
-$bg = #369
-
 html
-  font-size 2vw
+  font-size 8px
 
-@keyframes fadeIn
+  body
+    height 100vh
 
-  from
-    display none
-    opacity 0
+    display flex
+    flex-flow row
 
-  to
-    display block
-    opacity 1
+    justify-content center
+    align-items center
 
-@keyframes fadeOut
+    background white
 
-  from
-    display block
-    opacity 1
 
-  to
-    display none
-    opacity 0
-
-body
-  background-color $bg
-  border-top 0.5rem solid $fg
-
-  display flex
-  flex-flow column nowrap
-  justify-content center
-  align-items center
-
-  main
-
-    margin-top 2rem
-    margin-left 2rem
-
-    .logo
-
-      display flex
-      flex-flow row nowrap
-      align-items center
-
-      p
-        margin 0
-        padding 0
-        font-size 10rem
-        line-height 12rem
-        font-family 'Kaushan Script', cursive
-        letter-spacing -0.5rem
-        color $fg
-
-      svg
-        margin-left -1rem
-        height 18rem
-        fill $fg
-
-    .tagline
-
-      p
-        padding 0
-        margin 0
-        margin-top -2rem
-        margin-left 2rem
-        font-family 'Montserrat'
-        font-size 2.7rem
-        line-height 3rem
-        letter-spacing: 0
-        color $fg
-
-        span
-          display none
-          animation-duration 1.5s
-          animation-name fadeOut
-
-        span.selected
-          display inline-block
-          animation-duration 1.5s
-          animation-name fadeIn
+    img.logo
+      margin-top -10vh
+      width 80rem
