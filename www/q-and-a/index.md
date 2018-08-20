@@ -1,7 +1,7 @@
 
 # What Is DashKite?
 
-*by Dan Yoder, Founder*
+by Dan Yoder
 
 ##### So what is DashKite?
 
@@ -49,7 +49,7 @@ Communities layer naturally on top of existing social networks, but the risk for
 
 A DashKite community may be created by anyone. Creators are moderators and may delegate additional moderators. That means if they see abuse, they don't need to report it and put their faith in some opaque process or algorithm, they can take matters into their own hands and ban the abusers. People banned from a community are “ghosted” for its members—it's as if they didn't exist.
 
-##### You're just crowd-sourcing the moderation. That just makes it someone else's problem. Why pay for a service where you have do all the work?
+##### You're just crowdsourcing the moderation. That just makes it someone else's problem. Why pay for a service where you have do all the work?
 
 The subscription is to pay for the service itself, in place of ads, not to pay for moderation. The difference is you're the customer now, you're empowered.
 
@@ -69,11 +69,11 @@ It's like the way grocery stores put the milk on the opposite side of the store 
 
 But a subscription-based service doesn't care about that. As long as you're getting value from the platform, and you think it's worth what you're paying, we're good. Community-driven moderation may reduce engagement but increases that value, so we're free to fully explore ways to make that as easy as possible to do.
 
-##### Suppose you're right about all this, and crowd-sourced moderation works, and people will pay a subscription fee, and so on. Don't you still have to deal with switching costs? You not only need to get me, but I have to get all my friends to join, too. Isn't that why the dominant platforms are so hard to displace? How can a startup overcome all that?
+##### You still have to deal with switching costs. I have to get all my friends to join, too. Isn't that why the dominant platforms are so hard to displace?
 
 The reality is we see new platforms emerge better than every other year. In 2005, people thought MySpace was invincible. In 2007, they said that about Facebook. In 2009, it was Twitter. In 2011, it was Instagram. In 2013, it was SnapChat and WhatsApp.  There's also LinkedIn, Pinterest, YouTube, and Reddit, each of which have tens of millions of monthly active users.
 
-##### Still, people have made major investments in building audiences on these platforms. Is improved moderation enough to make it worth rebuilding that audience all over again?
+##### Is improved moderation enough to make it worth rebuilding my audience all over again?
 
 Yes. At least for a critical mass of people.
 
@@ -107,4 +107,4 @@ In the end, it takes a rare combination of skills to deliver on the promise of t
 
 ##### You mentioned a roadmap. Is there a launch date? Can people apply to join a beta?
 
-We expect to be to have a beta version ready in October. However, the launch plan is still under development, so that's all I can tell you right now.
+We expect to be to have a beta version ready in October. However, the launch plan is still under development. Stay tuned!
