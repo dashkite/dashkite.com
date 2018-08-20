@@ -27,9 +27,6 @@ gutter(n)
     &:last-child
       margin-right 0 !important
 
-google-font(name)
-  "https://fonts.googleapis.com/css?family="+replace(" ", "+", name)
-
 $font-copy = -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-body = $font-copy
 $font-mono = $font-copy
@@ -53,7 +50,6 @@ body
   min-height 100vh
 
   width 100vw
-  min-width 30ch
   max-width 60ch
 
   header
@@ -94,7 +90,7 @@ body
     margin-top 4rem
     border-top 1px solid silver
     padding-top 4rem
-    rhythm 3rem, .7
+    rhythm 3rem, (2/3)
     text-align center
 
     & > p
