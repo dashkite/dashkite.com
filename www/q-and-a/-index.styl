@@ -37,7 +37,7 @@ $font-heading = $font-copy
 // @import url(google-font($font-heading + ":400,700,400i,700i"))
 
 html
-  font-size (10 * (2/3))px
+  font-size (6 + (2/3))px
 
 body
   margin 0 auto
@@ -60,7 +60,7 @@ body
 
     h1, h2, h3, h4, h5, p, li
       reset()
-      margin-bottom 1rem
+      margin-bottom 1em
 
     h1
       font-family $font-heading
@@ -85,6 +85,9 @@ body
 
       &:hover, &:visited
         color #59aff4
+
+    p, li, blockquote
+      margin-bottom 1em
 
   footer
     margin-top 4rem
