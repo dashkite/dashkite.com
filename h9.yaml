@@ -18,3 +18,7 @@ environments:
       expires: 1800 # 30 minutes
       ssl: true
       priceClass: 100
+
+  staging:
+    hostnames:
+      - staging-www
