@@ -1,26 +1,20 @@
-source: "www"
-target: "build"
-server:
-  port: 8081
+source: "build"
+domain: dashkite.com
+region: us-east-1
 
-aws:
+site:
+  index: index
+  error: 404
 
-  domain: dashkite.com
-  region: us-west-1
+cors: wildstyle
 
-  site:
-    index: index
-    error: 404
+environments:
 
-  cors: wildstyle
-
-  environments:
-
-    production:
-      apex: secondary
-      hostnames:
-        - www
-      cache:
-        expires: 1800 # 30 minutes
-        ssl: true
-        priceClass: 100
+  production:
+    apex: secondary
+    hostnames:
+      - www
+    cache:
+      expires: 1800 # 30 minutes
+      ssl: true
+      priceClass: 100
