@@ -10,21 +10,23 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "coffee-loader": "^0.9.0",
     "coffeescript": "^2.4.1",
     "del": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-coffee": "^3.0.3",
-    "gulp-pug": "^4.0.1",
-    "gulp-stylus": "^2.7.0",
-    "gulp-webserver": "^0.9.1",
-    "haiku9": "^3.0.6",
-    "handlebars": "^4.1.2",
+    "haiku9": "^4.0.1",
+    "handlebars": "^4.2.0",
     "js-yaml": "^3.13.1",
+    "json-loader": "^0.5.7",
+    "jstransformer": "^1.0.0",
+    "jstransformer-pug": "^0.3.0",
     "jstransformer-stylus": "^1.5.0",
     "markdown-it": "^8.4.1",
-    "markdown-it-anchor": "^5.2.3",
+    "markdown-it-anchor": "^5.2.4",
+    "markdown-it-emoji": "^1.4.0",
     "markdown-it-implicit-figures": "^0.7.1",
-    "simple-icons": "^1.9.27",
-    "through2": "^2.0.5"
+    "panda-9000": "^5.0.2",
+    "source-map-loader": "^0.2.4",
+    "webpack": "^4.40.2",
+    "yaml-loader": "^0.5.0"
   }
 }

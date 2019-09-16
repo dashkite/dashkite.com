@@ -1,20 +1,16 @@
-source: "build"
+name: dashkite
+source: build
 domain: dashkite.com
 region: us-east-1
-
 site:
-  index: index
-  error: 404
-
-cors: wildstyle
+  index: index.html
+  error: 404.html
 
 environments:
-
   production:
     apex: secondary
     hostnames:
       - www
     cache:
-      expires: 1800 # 30 minutes
-      ssl: true
+      expires: 86400
       priceClass: 100
