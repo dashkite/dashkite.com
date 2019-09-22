@@ -30,6 +30,7 @@
     "yaml-loader": "^0.5.0"
   },
   "dependencies": {
+    "hash-sum": "^2.0.0",
     "panda-garden": "^4.0.3",
     "panda-router": "^1.4.3",
     "url-template": "^2.0.8"
