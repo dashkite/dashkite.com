@@ -27,5 +27,9 @@
     "source-map-loader": "^0.2.4",
     "webpack": "^4.40.2",
     "yaml-loader": "^0.5.0"
+  },
+  "dependencies": {
+    "panda-router": "^1.4.3",
+    "url-template": "^2.0.8"
   }
 }
