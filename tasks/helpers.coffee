@@ -48,6 +48,9 @@ bundle = (entry, target) ->
           "webpack://#{namespace}/#{resourcePath}"
       module:
         rules: [
+          test: /\.pug$/
+          use: [ 'pug-loader' ]
+        ,
           test: /\.coffee$/
           use: [ 'coffee-loader' ]
         ,

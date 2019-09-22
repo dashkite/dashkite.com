@@ -15,9 +15,8 @@ dispatch = (url) ->
   if /^[^\/]/.test url
     {pathname, search} = new URL url
     url = pathname + search
-  console.log url
   {data, bindings} = match url
-  handlers[data.name] bindings
+  handlers[data.name] {data, bindings}
 
 link = ({name, parameters}) ->
   for route in router.routes
