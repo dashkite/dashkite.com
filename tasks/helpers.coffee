@@ -48,6 +48,7 @@ bundle = (entry, target) ->
           "webpack://#{namespace}/#{resourcePath}"
       module:
         rules: [
+          
           test: /\.pug$/
           use: [ 'pug-loader' ]
         ,
@@ -62,7 +63,7 @@ bundle = (entry, target) ->
           use: [ "json-loader", "yaml-loader" ]
         ,
           test: /\.md$/
-          use: [ "raw-loader" ]
+          use: [ "html-loader", "markdown-loader" ]
         ]
       resolve:
         modules: [ Path.resolve "node_modules" ]

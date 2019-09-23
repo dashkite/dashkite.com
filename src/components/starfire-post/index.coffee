@@ -3,6 +3,9 @@ import {Gadget, mixin, tag, bebop, shadow,
 
 import {load} from "../../content"
 
+import {describe, resource} from "../mixins"
+import {smart} from "../combinators"
+
 import template from "./index.pug"
 
 class extends Gadget
@@ -11,11 +14,10 @@ class extends Gadget
 
     tag "starfire-post"
 
-    bebop, shadow #, navigate, queryable
+    bebop, shadow, describe #, navigate, queryable
 
-    render ({value}) -> template value
+    resource -> @value = load @dom.dataset.key
 
-    events
-      activate: local (event) ->
-        @value = load @dom.dataset.name
+    render smart template
+
   ]
