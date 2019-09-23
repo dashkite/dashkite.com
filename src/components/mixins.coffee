@@ -1,5 +1,8 @@
 import {ready, property, events, local} from "panda-play"
 import {pipe as _pipe, spread} from "panda-garden"
+import {navigate as _navigate} from "../navigate"
+
+navigate = ready -> _navigate @root
 
 pipe = spread _pipe
 
@@ -35,4 +38,4 @@ resource = (get) ->
 
   ]
 
-export {describe, resource}
+export {navigate, describe, resource}

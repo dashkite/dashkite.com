@@ -3,7 +3,7 @@ import {Gadget, mixin, tag, bebop, shadow,
 
 import {load} from "../../content"
 
-import {describe, resource} from "../mixins"
+import {navigate, describe, resource} from "../mixins"
 import {smart} from "../combinators"
 
 import template from "./index.pug"
@@ -14,7 +14,8 @@ class extends Gadget
 
     tag "starfire-post"
 
-    bebop, shadow, describe #, navigate, queryable
+    # TODO add back queryable? refactor?
+    bebop, shadow, describe, navigate #, queryable
 
     resource -> @value = load @dom.dataset.key
 
