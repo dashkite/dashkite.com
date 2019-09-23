@@ -60,6 +60,9 @@ bundle = (entry, target) ->
         ,
           test: /\.yaml$/
           use: [ "json-loader", "yaml-loader" ]
+        ,
+          test: /\.md$/
+          use: [ "raw-loader" ]
         ]
       resolve:
         modules: [ Path.resolve "node_modules" ]
