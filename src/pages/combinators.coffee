@@ -1,5 +1,6 @@
 import {curry} from "panda-garden"
 import hash from "hash-sum"
+import {$} from "panda-play"
 
 page = (context) ->
   context.bindings.hash ?= hash context.bindings
@@ -19,9 +20,10 @@ activate = curry (selectors, context) ->
   # TODO if unitialized, add event handlers?
   event = new Event "activate"
   for selector in selectors
-    el = context.view.querySelector selector
-    if el?
-      el.dispatchEvent event
+    do ->
+      el = await $ selector, context.view
+      if el?
+          el.dispatch "activate"
   context
 
 export {page, view, activate}

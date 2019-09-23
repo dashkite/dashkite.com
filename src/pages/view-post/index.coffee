@@ -8,6 +8,5 @@ route "/posts/{name}",
   flow [
     page
     view render
-    activate [ "kite-view-post" ]
-    (context) -> console.log {context}
+    activate [ "starfire-post" ]
   ]
