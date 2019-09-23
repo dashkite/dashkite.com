@@ -3,8 +3,16 @@ import {Gadget, mixin, tag, bebop, shadow,
 
 import template from "./index.pug"
 
-_load = require.context "html-loader!markdown-loader!../../content", true, /\.md$/
-load = (path) -> (_load "./#{path}.md")
+import marked from "marked"
+
+_loadMarkdown = require.context "raw-loader!../../content", true, /\.md$/
+_loadYAML = require.context "!json-loader!yaml-loader!../../content", true, /\.yaml$/
+
+load = (path) ->
+  data = _loadYAML "./#{path}.yaml"
+  console.log {data}
+  data.html = marked (_loadMarkdown "./#{path}.md").default
+  data
 
 class extends Gadget
 
@@ -18,5 +26,5 @@ class extends Gadget
 
     events
       activate: local (event) ->
-        @value = html: load @dom.dataset.name
+        @value = load @dom.dataset.name
   ]

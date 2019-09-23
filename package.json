@@ -31,8 +31,7 @@
   },
   "dependencies": {
     "hash-sum": "^2.0.0",
-    "html-loader": "^0.5.5",
-    "markdown-loader": "^5.1.0",
+    "marked": "^0.7.0",
     "panda-garden": "^4.0.3",
     "panda-play": "^1.8.6",
     "panda-router": "^1.4.3",
