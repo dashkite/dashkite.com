@@ -14,13 +14,19 @@ body
   row wrap
 
   justify-content center
+  align-content flex-start
+  align-items flex-start
 
   background white
 
   padding 4rem
 
   & > .logo
-    align-self flex-start
     object-fit contain
     width 20rem
     margin-right 3rem
+
+  & > div
+    flex 1
+    max-width 96rem
+    min-width 36rem
