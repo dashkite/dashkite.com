@@ -12,10 +12,9 @@ class extends Gadget
 
   mixin @, [
 
-    tag "starfire-post"
+    tag "raven-post"
 
-    # TODO add back queryable? refactor?
-    bebop, shadow, describe, navigate #, queryable
+    bebop, shadow, describe, navigate
 
     resource -> @value = load @dom.dataset.key
 

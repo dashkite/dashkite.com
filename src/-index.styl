@@ -1,18 +1,26 @@
+@import "styles"
+
+html, body
+  reset block
+
 html
-  font-size 8px
+  font-size (6 + 2/3)px
 
-  body
-    height 100vh
+body
+  type body
 
-    display flex
-    flex-flow row
+  height 100vh
 
-    justify-content center
-    align-items center
+  row wrap
 
-    background white
+  justify-content center
 
+  background white
 
-    img.logo
-      margin-top -10vh
-      width 80rem
+  padding 4rem
+
+  & > .logo
+    align-self flex-start
+    object-fit contain
+    width 20rem
+    margin-right 3rem

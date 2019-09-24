@@ -22,8 +22,7 @@ activate = curry (selectors, context) ->
   for selector in selectors
     do ->
       el = await $ selector, context.view
-      if el?
-          el.dispatch "activate"
+      el.dispatch "activate" if el?
   context
 
 export {page, view, activate}

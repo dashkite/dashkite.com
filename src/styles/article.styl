@@ -1,0 +1,39 @@
+article()
+  for preset in arguments
+    article-{preset}()
+
+article-block()
+  reset block
+  margin-bottom 2rem
+
+article-h1()
+  h1
+    article-block()
+
+article-h2()
+  h2
+    article-block()
+
+article-h3()
+  h3
+    article-block()
+
+article-h4()
+  h4
+    article-block()
+
+article-h5()
+  h5
+    article-block()
+
+article-p()
+  p
+    article-block()
+
+article-ul()
+  ul
+    article-block()
+
+article-blockquote()
+  blockquote
+    article-block()
