@@ -1,4 +1,4 @@
-@import "../../styles"
+@require "../../styles"
 
 :host
   display block
@@ -30,3 +30,17 @@ article
     &:focus
       outline none
       colors inherit light-kite-blue
+
+  figure
+    float right
+    border round
+    width 36rem
+    padding 1rem
+    & > img
+      width 100%
+      object-fit contain
+    & > figcaption
+      margin-top 1rem
+      border top
+      padding-top 1rem
+      type body small

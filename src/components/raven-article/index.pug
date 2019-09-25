@@ -3,4 +3,8 @@ style
 
 article
   h1= title
+  if image
+    figure
+      img(src=image.url alt=image.caption)
+      figcaption= image.caption
   != html

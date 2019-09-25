@@ -1,4 +1,4 @@
-@import "styles"
+@require "styles"
 
 html, body
   reset block
@@ -7,11 +7,31 @@ html
   font-size (6 + 2/3)px
 
 body
-  type body
-
+  display grid
+  grid-template-rows auto 1fr auto
   height 100vh
+  type body
+  colors darkest-kite-gray white
+
+header
+  row nowrap
+  alley row 2rem
+  align-items center
+  margin-top 1rem
+  padding 1rem
+  margin-bottom 2rem
+  border bottom
+
+  & > .logo
+    object-fit contain
+    width 20rem
+    margin-right 3rem
+    margin-bottom 3rem
+
+main
 
   row wrap
+  overflow-y scroll
 
   justify-content center
   align-content flex-start
@@ -21,11 +41,6 @@ body
 
   padding 4rem
 
-  & > .logo
-    object-fit contain
-    width 20rem
-    margin-right 3rem
-    margin-bottom 3rem
 
   & > .page
     flex 1
@@ -34,3 +49,40 @@ body
 
     &:not(.active)
       display none
+
+footer
+  border top
+
+  nav
+    // we know the width here is the minimum device width
+    // because we never want the top menu to wrap
+    flex 1 0 48rem
+    // for now ... possible place where a media query might
+    // work, we can move this after .status for wider screens
+    order 1
+    row nowrap
+    justify-content center
+    colors white darkest-kite-blue
+
+    & > a
+      // width needs to be evenly divisible into 48rem
+      // otherwise we'll have little wasted margins
+      // so either 8 or 12 rem ... 12 for now until
+      // we add two more buttons
+      width 12rem
+      height 10rem
+      padding 1rem
+      colors white darkest-kite-blue
+      type label small
+      text-align center
+      column nowrap
+      justify-content space-evenly
+      text-decoration none
+
+      &:not(:last-child)
+        border right
+
+      & > svg
+        fill @color
+        overflow visible
+        height 2rem

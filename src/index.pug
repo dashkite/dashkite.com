@@ -1,4 +1,5 @@
-include -layout
+extends -layout
+include -icon
 
 block append head
 
@@ -6,12 +7,27 @@ block append head
     include:stylus -index.styl
     
   script(src = "/index.js")
+
+block append header
   
-block append body
-  
-  img.logo(src = "/logo.png")
-  
-  // TODO add header and footer w/bottom nav
+  img.logo(src = "/images/logo.png")
+    
+block append main
   
   .page(name = "view article")
   .page(name = "view post")
+
+block append footer
+  
+  nav
+    a(href="/") 
+      +icon("home", "solid")  
+      span Home
+
+    a(href="/blog") 
+      +icon("blog", "solid")  
+      span Blog
+
+    a(href="/donate") 
+      +icon("heart", "solid")  
+      span Donate
