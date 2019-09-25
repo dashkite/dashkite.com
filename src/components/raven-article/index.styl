@@ -3,11 +3,30 @@
 :host
   display block
 
+:host(.no-title) h1
+  display none
+
 article
   type copy
 
-  article h1 h2 h3 h4 h5 p ul blockquote
+  article h1 h2 h3 h4 h5 p ul li blockquote
 
 
   h1
     type heading very-large
+  h2
+    type heading large
+
+  a
+    display inline-block
+    text-align center
+    width available
+    padding 0.5rem 1rem
+    text-decoration none
+    border-bottom 2px solid darker-kite-blue
+    colors inherit lightest-kite-blue
+    &:visited
+      colors inherit lightest-kite-blue
+    &:focus
+      outline none
+      colors inherit light-kite-blue
