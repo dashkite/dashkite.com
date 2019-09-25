@@ -7,7 +7,8 @@ page = (context) ->
   context
 
 view = curry (template, context) ->
-  context.dom = document.querySelector "[name='#{context.data.name}']"
+  # TODO hide/show page
+  context.dom = document.querySelector ".page[name='#{context.data.name}']"
   context.view =  context.dom.querySelector "[data-hash='#{context.bindings.hash}']"
   if !context.view?
     context.html = template context.bindings
@@ -25,4 +26,10 @@ activate = curry (selectors, context) ->
       el.dispatch "activate" if el?
   context
 
-export {page, view, activate}
+show = (context) ->
+  active = document.querySelector ".page.active"
+  active?.classList.remove "selected"
+  context.dom.classList.add "active"
+  context
+
+export {page, view, activate, show}

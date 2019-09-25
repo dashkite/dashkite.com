@@ -3,11 +3,15 @@ import {route} from "../../router"
 import {page, view, activate, show} from "../combinators"
 import render from "./index.pug"
 
-route "/posts/{key}",
-  name: "view post"
+path = curry (key, context) ->
+  context.bindings[key] = context.bindings[key].join "/"
+
+route "{/path*}",
+  name: "view article"
   flow [
     page
+    tee path "path"
     view render
-    activate [ "raven-post" ]
+    activate [ "raven-article" ]
     show
   ]

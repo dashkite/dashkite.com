@@ -1,3 +1,6 @@
+@import "equity"
+@import "concourse"
+
 rhythm(-lh, -ratio)
   line-height -lh
   font-size -lh * -ratio
@@ -27,7 +30,7 @@ type-body-very-small()
   rhythm 2rem (3/4)
 
 type-heading()
-  type-body()
+  font-family concourse-text
 
 type-heading-very-large()
   type-heading()
@@ -55,7 +58,7 @@ type-heading-smaller()
   font-weight bold
 
 type-copy()
-  font-family Garamond, "Hoefler Text", "Times New Roman", Times, serif
+  font-family equity-text
 
 //- TODO make this larger after update templates that use it
 //-      where they were meant to be using medium
