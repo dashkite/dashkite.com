@@ -6,6 +6,15 @@ import render from "./index.pug"
 path = curry (key, context) ->
   context.bindings[key] = context.bindings[key].join "/"
 
+route "/",
+  name: "home"
+  flow [
+    page
+    view render
+    activate [ "raven-article" ]
+    show
+  ]
+
 route "{/path*}",
   name: "view article"
   flow [

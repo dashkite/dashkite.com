@@ -4,6 +4,7 @@ import {$} from "panda-play"
 
 page = (context) ->
   context.bindings.hash ?= hash context.bindings
+  context.bindings.meta = context.data
   context
 
 view = curry (template, context) ->

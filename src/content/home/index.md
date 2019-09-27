@@ -1,7 +1,3 @@
-DashKite is a humane&mdash;safe, private, and secure&mdash;platform for Web-based communities, also known as social media.
-
-## Introduction
-
 <raven-article class="no-title" data-path="introduction"/>
 
 ## Learn More
@@ -13,4 +9,3 @@ DashKite is a humane&mdash;safe, private, and secure&mdash;platform for Web-base
 - [FAQ](/faq)
 - [Resources](/resources)
 - [Humane Open Source](/humane-open-source)
-

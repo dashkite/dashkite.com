@@ -1,0 +1,11 @@
+style
+  include:stylus index.styl    
+
+if banner
+  .banner
+    img(src = banner.image.url)
+    h2!= banner.heading
+
+article
+  h1!= title
+  != html
