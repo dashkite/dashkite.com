@@ -1,0 +1,24 @@
+@require "../../styles"
+
+:host
+  reset block
+  column nowrap
+  position relative
+
+  & > img
+    reset block
+    max-width 100%
+    min-height 48vh
+    max-height 72vh
+    object-fit cover
+    // filter blur(2px)
+
+  & > h2
+    reset block
+    position absolute
+    bottom 0
+    z-index 1
+    padding 3rem
+    type banner
+    color white
+    background: rgba(0,0,0,0.33)

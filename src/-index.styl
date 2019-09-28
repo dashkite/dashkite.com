@@ -29,19 +29,26 @@ header
 
 main
 
-  row wrap
   overflow-y scroll
-
-  justify-content center
-  align-content flex-start
-  align-items flex-start
-
   background white
 
   & > .page
     flex 1
+
     &:not(.active)
       display none
+
+    & > .view
+      row wrap
+      justify-content center
+      & > raven-banner
+        width 100%
+        margin-bottom 2rem
+
+      & > raven-article
+        padding 3rem
+
+
 
 footer
   border top
