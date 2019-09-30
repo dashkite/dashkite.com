@@ -5,13 +5,17 @@
   column nowrap
   position relative
 
+  & > video
   & > img
+    display none
+
+  & > .active
     reset block
     max-width 100%
     min-height 48vh
-    max-height 72vh
+    max-height 60vh
     object-fit cover
-    // filter blur(2px)
+    filter blur(2px)
 
   & > h2
     reset block

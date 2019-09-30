@@ -13,6 +13,8 @@ import {go, map, wait, tee, reject} from "panda-river"
 
 import {markdown, bundle, serve} from "./helpers"
 
+import {processVideo} from "./media"
+
 source = "./src"
 target = "./build"
 
@@ -47,7 +49,7 @@ define "js", -> bundle "./src/index.coffee", "./build"
 
 define "images", ->
   go [
-    glob "**/*.{jpg,png,svg,ico}", source
+    glob "**/*.{jpg,png,webp,svg,ico,mp4,webm}", source
     map copy target
   ]
 
@@ -57,3 +59,7 @@ define "serve",
     logger: "tiny"
     rewrite: verbose: true
     port: 8000
+
+define "video", ->
+  {input, name, time} = process.env
+  processVideo input, name, time

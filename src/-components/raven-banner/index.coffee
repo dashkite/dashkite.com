@@ -1,5 +1,5 @@
 import {Gadget, mixin, tag, bebop, shadow,
-  render, properties, events, local} from "panda-play"
+  render, properties, ready, events, local} from "panda-play"
 
 import {load} from "../../content"
 
@@ -19,5 +19,20 @@ class extends Gadget
     resource -> @value = load @dom.dataset.path
 
     render smart template
+
+    events
+      # video:
+      #   canplaythrough: -> console.log "video ready!"
+    
+      render: local do (_initialized = false) ->
+        ->
+          if !_initialized
+            if (video = @root.querySelector "video")?
+              _initialized = true
+              video.addEventListener "canplaythrough",
+                =>
+                  image = @root.querySelector "img"
+                  image.classList.remove "active"
+                  video.classList.add "active"
 
   ]

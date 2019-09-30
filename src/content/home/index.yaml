@@ -1,6 +1,10 @@
 title: Welcome!
 banner:
   image:
-    url: /images/group-selfie.jpg
+    png: /media/group-selfie.png
+  video:
+    mp4: /media/group-selfie.mp4
+    webm: /media/group-selfie.webm
+
   heading: |-
     Safe, secure, and private <del>social media</del> Web communities.
