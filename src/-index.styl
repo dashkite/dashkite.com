@@ -1,88 +1,25 @@
-@require "styles"
-
 html, body
-  reset block
+  box-sizing border-box
+  display block
+
+  margin 0
+  padding 0
+  border 0
+
+  font-family inherit
+  font-size inherit
+  line-height inherit
+
+  &:before, &:after
+    box-sizing inherit
+
+  background-color #fffaf0
 
 html
   font-size (6 + 2/3)px
 
-body
-  display grid
-  grid-template-rows auto 1fr auto
+body > main
+  display flex
   height 100vh
-  type body
-  colors darkest-kite-gray white
-
-header
-  row nowrap
-  alley row 2rem
+  justify-content center
   align-items center
-  margin-top 1rem
-  padding 1rem
-  border bottom
-
-  & > .logo
-    object-fit contain
-    width 20rem
-    margin-right 3rem
-    margin-bottom 3rem
-
-main
-
-  overflow-y scroll
-  background white
-
-  & > .page
-    flex 1
-
-    &:not(.active)
-      display none
-
-    & > .view
-      row wrap
-      justify-content center
-      & > raven-banner
-        width 100%
-        margin-bottom 2rem
-
-      & > raven-article
-        padding 3rem
-
-
-
-footer
-  border top
-
-  nav
-    // we know the width here is the minimum device width
-    // because we never want the top menu to wrap
-    flex 1 0 48rem
-    // for now ... possible place where a media query might
-    // work, we can move this after .status for wider screens
-    order 1
-    row nowrap
-    justify-content center
-    colors white darkest-kite-blue
-
-    & > a
-      // width needs to be evenly divisible into 48rem
-      // otherwise we'll have little wasted margins
-      // so either 8 or 12 rem ... 12 for now until
-      // we add two more buttons
-      width 12rem
-      height 10rem
-      padding 1rem
-      colors white darkest-kite-blue
-      type label small
-      text-align center
-      column nowrap
-      justify-content space-evenly
-      text-decoration none
-
-      &:not(:last-child)
-        border right
-
-      & > svg
-        fill @color
-        overflow visible
-        height 2rem
