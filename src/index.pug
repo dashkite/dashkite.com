@@ -3,33 +3,37 @@
 - var url = "https://dashkite.com"
 - var image = "/media/logo.png"
 
-head
-  title= title
+doctype html
 
-  // Meta
-  meta(charset="utf-8")
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+html(lang='en')
+  head
+    title= title
 
-  meta(name="description", content=description)
-  link(rel="shortcut icon", href="/favicon.ico")
-  link(rel="canonical", href=url)
-  
-  meta(property="og:title", content=title)
-  meta(property="og:description", content=description)
-  meta(property="og:url", content=url)
-  meta(property="og:site_name" content="DashKite")
-  meta(property = "og:image" content=image)
+    // Meta
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    meta(name="description", content=description)
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel="canonical", href=url)
     
-  meta(name="twitter:title" content=title)
-  meta(name="twitter:description" content=description) 
-  meta(name = "twitter:card" content="summary_large_image")
-  meta(name = "twitter:image" content=image)
+    meta(property="og:title", content=title)
+    meta(property="og:description", content=description)
+    meta(property="og:url", content=url)
+    meta(property="og:site_name" content="DashKite")
+    meta(property = "og:image" content=image)
+      
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description) 
+    meta(name = "twitter:card" content="summary_large_image")
+    meta(name = "twitter:image" content=image)
 
-  style
-    include:stylus -index.styl
-    
-  script(src = "/index.js")
+    style
+      include:stylus -index.styl
+      
+    script(src = "/index.js")
+    script(data-ad-client="ca-pub-8706901733590159" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
 
-body
-  main
-    img.logo(src = "/media/logo.png")
+  body
+    main
+      img.logo(src = "/media/logo.png")

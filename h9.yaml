@@ -4,11 +4,11 @@ domain: dashkite.com
 region: us-east-1
 site:
   index: index.html
-  error: 404.html
+  error: index.html
 
 environments:
   production:
-    apex: secondary
+    apex: primary
     hostnames:
       - www
     cache:
