@@ -1,25 +1,134 @@
+@require "styles"
+
 html, body
-  box-sizing border-box
-  display block
-
-  margin 0
-  padding 0
-  border 0
-
-  font-family inherit
-  font-size inherit
-  line-height inherit
-
-  &:before, &:after
-    box-sizing inherit
-
-  background-color #fffaf0
+  reset block
+  background white
 
 html
   font-size (6 + 2/3)px
 
-body > main
-  display flex
+body
+  display grid
+  grid-template-rows auto 1fr auto
   height 100vh
-  justify-content center
+  type body
+
+header
+  background white
+  row nowrap
+  alley row 2rem
   align-items center
+  justify-content flex-end
+  margin-top 0
+  padding 2rem 1rem 1rem 1rem
+  border bottom top
+
+
+  & > .logo
+    object-fit contain
+    width 20rem
+    margin-right 3rem
+    margin-bottom 3rem
+
+main
+
+  overflow-y scroll
+  background white
+
+  & > .page
+    flex 1
+
+    & > .view
+      column nowrap
+      align-items flex-start
+      padding 0 4rem 0 4rem
+
+      h1
+        display block
+        width calc(100% - 10rem)
+        type heading very-large
+
+      article.intro
+        type body large
+
+
+      article
+        type copy
+        article h2 h3 h4 h5 p ul li blockquote
+        max-width 96rem
+        margin-bottom 8rem
+
+        h1
+          type heading very-large
+        h2
+          type heading large
+
+        a
+          display inline-block
+          text-align center
+          width available
+          padding 0.5rem 1rem
+          text-decoration none
+          border-bottom 2px solid darker-kite-blue
+          colors inherit lightest-kite-blue
+          &:visited
+            colors inherit lightest-kite-blue
+          &:focus
+            outline none
+            colors inherit light-kite-blue
+
+        section
+          margin-bottom 6rem
+
+        figure
+          float right
+          border round
+          width 36rem
+          padding 1rem
+          & > img
+            width 100%
+            object-fit contain
+          & > figcaption
+            margin-top 1rem
+            border top
+            padding-top 1rem
+            type body small
+
+
+
+footer
+  border top bottom
+
+  nav
+    // we know the width here is the minimum device width
+    // because we never want the top menu to wrap
+    flex 1 0 48rem
+    // for now ... possible place where a media query might
+    // work, we can move this after .status for wider screens
+    order 1
+    row nowrap
+    justify-content center
+    colors white darkest-kite-blue
+
+    & > a
+      // width needs to be evenly divisible into 48rem
+      // otherwise we'll have little wasted margins
+      // so either 8 or 12 rem ... 12 for now until
+      // we add two more buttons
+      width 12rem
+      height 10rem
+      padding 1rem
+      colors white darkest-kite-blue
+      type label small
+      text-align center
+      column nowrap
+      justify-content space-evenly
+      text-decoration none
+
+      &:not(:last-child)
+        border right
+
+      & > svg
+        fill @color
+        overflow visible
+        height 2rem

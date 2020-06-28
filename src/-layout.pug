@@ -1,27 +1,70 @@
+- var title = "DashKite"
+- var description = "DashKite combines an expertise in distributed design with the most advanced Web technologies to build great products."
+- var url = "https://dashkite.com"
+- var image = "/media/logo.png"
+
+include -icon
+
 doctype html
 
 html(lang='en')
   
   head
-    
-    block head
+    block metaTags
+      meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-      title DashKite
-
-      // Meta
-      meta(charset='utf-8')
-      meta(name='viewport', content='width=device-width, initial-scale=1.0')
-
-      // Shortcut Icon
-      link(rel='shortcut icon', href='/favicon.ico')
+      title= title
+      meta(name="description", content=description)
+      link(rel="shortcut icon", href="/favicon.ico")
+      link(rel="canonical", href=url)
+      
+      meta(property="og:title", content=title)
+      meta(property="og:description", content=description)
+      meta(property="og:url", content=url)
+      meta(property="og:site_name" content="DashKite")
+      meta(property = "og:image" content=image)
+        
+      meta(name="twitter:title" content=title)
+      meta(name="twitter:description" content=description) 
+      meta(name = "twitter:card" content="summary_large_image")
+      meta(name = "twitter:image" content=image)
+        
+        
+    block style
+      style 
+        include:stylus -index.styl
+          
+    block script
+      script(src = "/index.js")
+        
+    block adsense
+      script(data-ad-client="ca-pub-8706901733590159" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
 
   body
     
     header
       block header
+        img.logo(src = "/media/logo.png")
 
     main
       block main
 
     footer
       block footer
+        nav
+          a(href="/") 
+            +icon("home", "solid")  
+            span Home
+
+          a(href="/products") 
+            +icon("newspaper", "regular")  
+            span Products
+
+          a(href="/open-source") 
+            +icon("code", "solid")  
+            span Libraries
+            
+          a(href="/contact") 
+            +icon("paper-plane", "solid")  
+            span Contact

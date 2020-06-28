@@ -4,7 +4,7 @@ domain: dashkite.com
 region: us-east-1
 site:
   index: index.html
-  error: index.html
+  error: 404.html
 
 environments:
   production:
@@ -18,3 +18,6 @@ environments:
   staging:
     hostnames:
       - staging-www
+    cache:
+      expires: 86400
+      priceClass: 100
