@@ -1,31 +1,14 @@
 extends -layout.pug
 
-
 block main
-  .page
-    .view
-      h1 Products
-      article
-        p DashKite is building a variety of apps that let people build their Web community.  Look out for annoucements and updates to see what we're cooking up.
-        
-      article  
-        h2 Beta
-        section
-          h3 Project Storm
-          p 
-            a(href="https://storm.dashkite.com") Storm
-            | is ephemeral group chat made easy. Share a link and start chatting without any hassles.
-        
-      article  
-        h2 Alpha
-        section
-          h3 Project Bora
-          p 
-            a(href="https://bora-api.dashkite.com") Bora
-            | is an easy, custom homepage. Quickly setup a personal or professional page with the info and links you want to share with the world. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
-        
-        h3 Project Mistral  
-        p 
-          a(href="https://mistral-sumit-api.dashkite.com") Mistral
-          | is blogging without the cruft. Quickly setup a clean, focused blogging site to get your ideas out there. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
-        
+
+  h1 Products
+
+  article
+    p DashKite is building a variety of apps that let people build their Web community.  Look out for annoucements and updates to see what we're cooking up.
+
+  article
+    include:markdown beta.md
+
+  article
+    include:markdown alpha.md

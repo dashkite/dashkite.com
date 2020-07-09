@@ -5,79 +5,15 @@ block main
   .page
     .view
       h1 Open Source
+
       article
-        p 
-          | DashKite is comitted to being a good Web citizen.  That means
-          a(href="https://www.pandastrike.com/posts/20151019-create-more-web/") creating more web,
-          | &nbsp;
-          a(href="https://ethicalsource.dev/") behaving ethically,
-          | &nbsp;
-          | and contributing to the Web ecosystem with open source projects.
-          
-        p In particular, DashKite open source projects aim to make it easier to use serverless infrastructure and various Open Web APIs.
-        
+        include:markdown open-source.md
+
       article
-        h2 Cryptography
-        
-        section
-          h3 Confidential
-          p 
-            |Cryptography is tricky, and dealing with low-level details can compromise whole applications. Fortunately the
-            a(href="https://tweetnacl.js.org/#/") TweetNaCL.js library
-            | &nbsp; wraps the Web Crypto and Node Crypto APIs and handles cryptographic primatives. 
-            a(href="https://confidential.pandastrike.com/") Confidential
-            | &nbsp; adds a usability layer to make cryptographic tasks high-level and easier to reason about.
-        
-        section
-          h3 Cobalt
-          p 
-            | Using the safety of the Confidential interface, we built
-            a(href="https://github.com/dashkite/cobalt") Cobalt,
-            | &nbsp; an implementation of Web capabilities, bearer credentials that describe an HTTP request that the claimant is allowed to make. It's an incredibly powerful distributed authorization scheme with favorable properties for Web apps.
-        
+        include:markdown cryptography.md
+
       article
-        h2 Infrastructure
-        
-        section
-          h3 Haiku9
-          p 
-            a(href="https://github.com/pandastrike/haiku9") Haiku9
-            | &nbsp; lets you publish static sites and single page apps from the commandline. Assets are stored in S3, and CloudFront is used to handle your serving needs. Edge lambdas can be used to optimize caching efficiency and perform server(less)-side rendering. 
-          p In fact, this site is served to you from such a deployment.
-        
-        section
-          h3 Panda Sky
-          p 
-            a(href="https://github.com/pandastrike/panda-sky") Panda Sky
-            | &nbsp; lets you publish serverless infrastructure from the commandline, just like you can publish static assets with Haiku9.  Provides a lambda with custom HTTP dispatching and fine-grained permissions to Cloud resources, all fronted by a optimized CloudFront edge cache and WAF firewall.
-          
+        include:markdown infrastructure.md
+
       article
-        h2 Elementals: Open Web APIs
-        
-        section
-          h3 Carbon  
-          p 
-            a(href="https://github.com/dashkite/carbon") Carbon
-            | &nbsp; wraps the WebComponents API in a functional-programming-styled inteface that simplifies managing a component's lifecycle. Uses the efficient
-            a(href="https://github.com/tbranyen/diffhtml") diffHTML algorithm
-            | &nbsp; to update the DOM and
-            a(href="https://wicg.github.io/construct-stylesheets/") constructable stylesheets
-            | &nbsp; to encapsulate style concerns.
-        
-        section
-          h3 Quark  
-          p 
-            a(href="https://github.com/dashkite/quark") Quark
-            | provides a functional interface to build up Cascading Style Sheets from JavaScript. Quark avoids mangling concerns by using just JS to generate just CSS — keeping everything portable and easy to reason about. As this library matures, it will lay the foundation for presets and theming that are more sophisticated than DSL implementations, like Stylus, and use less bandwidth than heavy style libraries, like Bootstrap. 
-          
-        section
-          h3 Oxygen  
-          p 
-            a(href="https://github.com/dashkite/oxygen") Oxygen 
-            | &nbsp; provides an interface for routing page requests based on URL templates. Provides a dispatch hook that merely takes a function, so routes can do anything, so it is flexible and widely compatible.
-          
-        section
-          h3 Neon  
-          p 
-            a(href="https://github.com/dashkite/neon") Neon
-            | &nbsp; provides a functional interface for updating views within a single page app. Since the sync/async composition returns a function, Neon is easily used with Oxygen or any other routing solution that accepts a function.
+        include:markdown elemental.md
