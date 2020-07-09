@@ -11,7 +11,7 @@ import {define, run, glob, read, write,
 import {rmr} from "panda-quill"
 import {go, map, wait, tee, reject} from "panda-river"
 
-import {markdown, bundle, serve} from "./helpers"
+import {markdown, bundle, serve, sprites} from "./helpers"
 
 import {processVideo} from "./media"
 
@@ -22,7 +22,10 @@ define "default", [ "build", "watch&", "serve&" ]
 
 define "watch", watch (Path.resolve source), -> run "build"
 
-define "build", [ "clean", "html&", "css&", "js&", "images&" ]
+# define "build", [ "clean", "html&", "css&", "js&", "images&" ]
+define "build", [ "clean", "html&", "css&", "images&" ]
+
+define "sprites", -> sprites source, target
 
 define "clean", -> rmr "build"
 

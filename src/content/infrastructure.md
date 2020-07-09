@@ -10,5 +10,5 @@ In fact, this site is served to you from such a deployment.
 
 [Panda Sky][] lets you publish serverless infrastructure from the command-line, just like you can publish static assets with Haiku9. Provides a lambda with custom HTTP dispatching and fine-grained permissions to Cloud resources, all fronted by a optimized CloudFront edge cache and WAF firewall.
 
-[Haiku9]://github.com/pandastrike/haiku9
-[Panda Sky]://github.com/pandastrike/panda-sky
+  [Haiku9]: //github.com/pandastrike/haiku9
+  [Panda Sky]: //github.com/pandastrike/panda-sky

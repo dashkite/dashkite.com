@@ -2,13 +2,14 @@ extends -layout.pug
 
 block main
 
-  h1 Products
+  header
+    h1 Products
 
   article
     p DashKite is building a variety of apps that let people build their Web community.  Look out for annoucements and updates to see what we're cooking up.
 
   article
-    include:markdown beta.md
+    include:markdown content/beta.md
 
   article
-    include:markdown alpha.md
+    include:markdown content/alpha.md

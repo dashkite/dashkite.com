@@ -1,6 +1,12 @@
 import Path from "path"
+import FS from "fs/promises"
 import {promise} from "panda-parchment"
 import {read} from "panda-quill"
+
+import * as b from "@dashkite/brick"
+import svgstore from "svgstore"
+import SVGO from "svgo"
+
 import MarkdownIt from "markdown-it"
 import anchor from "markdown-it-anchor"
 import figures from "markdown-it-implicit-figures"
@@ -100,4 +106,23 @@ serve = (path, options) ->
     .listen port, ->
       console.log green "p9k: server listening on port #{port}"
 
-export {markdown, bundle, serve}
+sprites = (source, build) ->
+  store = svgstore()
+  svgo = new SVGO multipass: true
+  await do b.start [
+    b.glob [ "media/-sprites/**/*.svg" ], source
+    b.read
+    b.tr ({path, name}, svg) ->
+      # $ = cheerio.load svg
+      # id = ((($ "[id]").attr "id").toLowerCase().replace /[\W_]+/g, " ")
+      {data} = await svgo.optimize svg, {path}
+      store.add name, data
+  ]
+  svg = store.toString()
+  path = Path.join source, "media", "sprites.svg"
+  # svg = await svgo.optimize svg, {path}
+  # {data} = svg
+  # FS.writeFile path, data
+  FS.writeFile path, svg
+
+export {markdown, bundle, serve, sprites}

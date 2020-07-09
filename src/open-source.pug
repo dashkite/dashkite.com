@@ -2,18 +2,17 @@ extends -layout.pug
 
 
 block main
-  .page
-    .view
-      h1 Open Source
+  header
+    h1 Open Source
 
-      article
-        include:markdown open-source.md
+  article
+    include:markdown content/open-source.md
 
-      article
-        include:markdown cryptography.md
+  article
+    include:markdown content/cryptography.md
 
-      article
-        include:markdown infrastructure.md
+  article
+    include:markdown content/infrastructure.md
 
-      article
-        include:markdown elemental.md
+  article
+    include:markdown content/elemental.md

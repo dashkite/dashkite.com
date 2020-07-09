@@ -3,12 +3,10 @@
 - var url = "https://dashkite.com"
 - var image = "/media/logo.png"
 
-include -icon
-
 doctype html
 
 html(lang='en')
-  
+
   head
     block metaTags
       meta(charset="utf-8")
@@ -18,25 +16,25 @@ html(lang='en')
       meta(name="description", content=description)
       link(rel="shortcut icon", href="/favicon.ico")
       link(rel="canonical", href=url)
-      
+
       meta(property="og:title", content=title)
       meta(property="og:description", content=description)
       meta(property="og:url", content=url)
       meta(property="og:site_name" content="DashKite")
       meta(property = "og:image" content=image)
-        
+
       meta(name="twitter:title" content=title)
-      meta(name="twitter:description" content=description) 
+      meta(name="twitter:description" content=description)
       meta(name = "twitter:card" content="summary_large_image")
       meta(name = "twitter:image" content=image)
-        
-        
+
+
     block style
-      style 
+      style
         include:stylus -index.styl
 
   body
-    
+
     header
       block header
         img.logo(src = "/media/logo.png")
@@ -47,18 +45,18 @@ html(lang='en')
     footer
       block footer
         nav
-          a(href="/") 
-            +icon("home", "solid")  
+          a(href="/")
+            svg: use(href = "/media/sprites.svg#home")
             span Home
 
-          a(href="/products") 
-            +icon("newspaper", "regular")  
+          a(href="/products")
+            svg: use(href = "/media/sprites.svg#products")
             span Products
 
-          a(href="/open-source") 
-            +icon("code", "solid")  
+          a(href="/open-source")
+            svg: use(href = "/media/sprites.svg#open-source")
             span Libraries
-            
-          a(href="/contact") 
-            +icon("paper-plane", "solid")  
+
+          a(href="/contact")
+            svg: use(href = "/media/sprites.svg#contact-us")
             span Contact
