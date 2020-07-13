@@ -14,7 +14,7 @@
     "coffee-loader": "^1.0.0",
     "coffeescript": "^2.5.1",
     "del": "^5.1.0",
-    "haiku9": "^4.0.2",
+    "haiku9": "^4.0.3",
     "js-yaml": "^3.14.0",
     "json-loader": "^0.5.7",
     "jstransformer": "^1.0.0",
