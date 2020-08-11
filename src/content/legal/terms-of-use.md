@@ -52,7 +52,7 @@ Although we have no obligation to screen, edit, or monitor your content, we may,
 
 ## 5. Third-Party Content, Advertisements and Promotions
 
-The Services may contain links to third-party websites, products, or services, which may be posted by advertisers, our affiliates, our partners, or other users (“**Third-Party Content**”). Third-Party Content is not under our control, and we are not responsible for any of their websites, products, or services. Your use of Third-Party Content is at your own risk and you should make any investigation you feel necessary before proceeding with any transaction in connection with such Third-Party Content.
+The Services may contain links to third-party websites, products, or services, which may be posted by advertisers, our affiliates, our partners, or other customers (“**Third-Party Content**”). Third-Party Content is not under our control, and we are not responsible for any of their websites, products, or services. Your use of Third-Party Content is at your own risk and you should make any investigation you feel necessary before proceeding with any transaction in connection with such Third-Party Content.
 
 The Services may also contain sponsored Third-Party Content or advertisements. The type, degree, and targeting of advertisements are subject to change, and you acknowledge and agree that we may place advertisements in connection with the display of any Content or information on the Services, including your content.
 
@@ -68,21 +68,21 @@ When accessing or using our Services, you will not:
 
 - Use the Services to violate applicable law or infringe any person or entity's intellectual property or any other proprietary rights;
 
-- Attempt to gain unauthorized access to another user’s Account or to the Services (or to other computer systems or networks connected to or used together with the Services);
+- Attempt to gain unauthorized access to another customer’s Account or to the Services (or to other computer systems or networks connected to or used together with the Services);
 
 - Upload, transmit, or distribute to or through the Services any computer viruses, worms, or other software intended to interfere with the intended operation of a computer system or data;
 
-- Use the Services to harvest, collect, gather or assemble information or data regarding the Services or users of the Services except as permitted in these Terms or in a separate agreement with DashKite;
+- Use the Services to harvest, collect, gather or assemble information or data regarding the Services or customers of the Services except as permitted in these Terms or in a separate agreement with DashKite;
 
-- Use the Services in any manner that could interfere with, disrupt, negatively affect, or inhibit other users from fully enjoying the Services or that could damage, disable, overburden, or impair the functioning of the Services in any manner;
+- Use the Services in any manner that could interfere with, disrupt, negatively affect, or inhibit other customers from fully enjoying the Services or that could damage, disable, overburden, or impair the functioning of the Services in any manner;
 
-- Intentionally negate any user's actions to delete or edit their Content on the Services; or
+- Intentionally negate any customer's actions to delete or edit their Content on the Services; or
 
 - Access, query, or search the Services with any automated system, other than through our published interfaces and pursuant to their applicable terms. However, we conditionally grant permission to crawl the Services for the sole purpose of and solely to the extent necessary for creating publicly available searchable indices of the materials subject to the parameters set forth in our robots.txt file.
 
 ## 7. Moderation
 
-Moderating content  is an unofficial, voluntary role that may be available to you. We are not responsible for actions taken by the moderators. We recognize that moderation can take some work, so we may change the features or abilities associated with moderating from time to time without prior notice. We reserve the right to revoke or limit a user’s ability to moderate at any time and for any reason or no reason, including for a breach of these Terms.
+Moderating content  is an unofficial, voluntary role that may be available to you. We are not responsible for actions taken by the moderators. We recognize that moderation can take some work, so we may change the features or abilities associated with moderating from time to time without prior notice. We reserve the right to revoke or limit a customer’s ability to moderate at any time and for any reason or no reason, including for a breach of these Terms.
 
 If you choose to moderate a subreddit:
 
@@ -102,7 +102,7 @@ DashKite reserves the right, but has no obligation, to overturn any action or de
 
 ## 8. Copyright, the DMCA & Takedowns
 
-DashKite respects the intellectual property of others and requires that users of our Services do the same. We have a policy that includes the removal of any infringing materials from the Services and for the termination, in appropriate circumstances, of users of our Services who are repeat infringers. If you believe that anything on our Services infringes a copyright that you own or control, you may notify DashKite’s Designated Agent by contacting support@dashkite.com
+DashKite respects the intellectual property of others and requires that customers of our Services do the same. We have a policy that includes the removal of any infringing materials from the Services and for the termination, in appropriate circumstances, of customers of our Services who are repeat infringers. If you believe that anything on our Services infringes a copyright that you own or control, you may notify DashKite’s Designated Agent by contacting support@dashkite.com
 
 If you knowingly misrepresent that any activity or material on our Service is infringing, you may be liable to DashKite for certain costs and damages.
 

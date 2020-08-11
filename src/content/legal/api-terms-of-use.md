@@ -34,7 +34,7 @@ You agree to comply with the DashKite [Terms Of Use][] and [Privacy Policy][], w
 
 ###  Customer Content
 
-DashKite customer-generated photos, text and videos (“Customer Content") are owned by the users and not by DashKite. Subject to the terms and conditions of these Terms, DashKite grants You a non-exclusive, non-transferable, non-sublicensable, and revocable license to copy and display the Customer Content using the DashKite API through your application, website, or service to end users. You may not modify the Customer Content except to format it for such display. You will comply with any requirements or restrictions imposed on usage of Customer Content by their respective owners, which may include "all rights reserved" notices, Creative Commons licenses, or other terms and conditions that may be agreed upon between you and the owners.
+DashKite customer-generated photos, text and videos (“Customer Content") are owned by the customers and not by DashKite. Subject to the terms and conditions of these Terms, DashKite grants You a non-exclusive, non-transferable, non-sublicensable, and revocable license to copy and display the Customer Content using the DashKite API through your application, website, or service to end customers. You may not modify the Customer Content except to format it for such display. You will comply with any requirements or restrictions imposed on usage of Customer Content by their respective owners, which may include "all rights reserved" notices, Creative Commons licenses, or other terms and conditions that may be agreed upon between you and the owners.
 
 ###  Removals
 
@@ -83,14 +83,14 @@ v. use the DashKite APIs with the intent of introducing any viruses, worms, defe
 
 vi. sell, lease or sublicense the DashKite APIs or access thereto or derive revenues from the use or provision of the DashKite APIs, whether for direct commercial or monetary gain unless there is express written approval from DashKite.
 
-vii. use the DashKite APIs to spam, incentivize, or harass users.
+vii. use the DashKite APIs to spam, incentivize, or harass customers.
 
 
 ## Trademarks, Attribution, and Publicity
 
 ###  Use of DashKite Trademarks
 
-You are not permitted to use the DashKite Trademarks in, or as part of the name of your application, or any logos used to promote or identify your application, unless expressly authorized in writing by DashKite or in these Terms. Further, You agree not to: (1) create any derivative works of the DashKite Trademarks that may create or reasonably imply DashKite’s endorsement, association or sponsorship with your application; (2) use the DashKite Trademarks in such a way that would mislead, deceive or confuse users, including, but not limited to, using or registering any mark that is confusingly similar to any DashKite Trademarks; and (3) challenge DashKite’s ownership of the DashKite Trademarks. You will not take any action inconsistent with this ownership and you will cooperate, at DashKite’s request and expense, in any action (including the conduct of legal proceedings) which DashKite deems necessary or desirable to establish or preserve DashKite’s exclusive rights in, and to, the DashKite Trademarks. All use of the DashKite Trademarks and all goodwill arising out of such use, will inure to DashKite’s benefit.
+You are not permitted to use the DashKite Trademarks in, or as part of the name of your application, or any logos used to promote or identify your application, unless expressly authorized in writing by DashKite or in these Terms. Further, You agree not to: (1) create any derivative works of the DashKite Trademarks that may create or reasonably imply DashKite’s endorsement, association or sponsorship with your application; (2) use the DashKite Trademarks in such a way that would mislead, deceive or confuse customers, including, but not limited to, using or registering any mark that is confusingly similar to any DashKite Trademarks; and (3) challenge DashKite’s ownership of the DashKite Trademarks. You will not take any action inconsistent with this ownership and you will cooperate, at DashKite’s request and expense, in any action (including the conduct of legal proceedings) which DashKite deems necessary or desirable to establish or preserve DashKite’s exclusive rights in, and to, the DashKite Trademarks. All use of the DashKite Trademarks and all goodwill arising out of such use, will inure to DashKite’s benefit.
 
 ###  Attribution
 
