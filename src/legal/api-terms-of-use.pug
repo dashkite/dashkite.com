@@ -1,0 +1,11 @@
+extends ../-layout.pug
+
+block title
+  +title("API Terms Of Use")
+
+block main
+  header
+    h1 API Terms Of Use
+
+  article
+    include:markdown ../content/legal/api-terms-of-use.md

@@ -1,5 +1,3 @@
-# DashKite Privacy Policy
-
 Last Revised August 8, 2020
 
 We want you to understand how and why DashKite, Inc. (“DashKite,” “we” or “us”) collects, uses, and shares information about you when you use our websites, mobile apps, widgets, and other online products and services (collectively, the "Services") or when you otherwise interact with us or receive a communication from us. This Privacy Policy applies to all of our Services.

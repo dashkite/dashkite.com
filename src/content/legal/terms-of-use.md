@@ -1,5 +1,3 @@
-# DashKite Terms Of Use
-
 Last Revised August 8, 2020
 
 This DashKite Terms of Use ("**Terms**") applies to your access to and use of the websites, mobile apps, widgets, and other online products and services (collectively, the "**Services**") provided by DashKite, Inc. ("DashKite," "**we**," or "**us**").

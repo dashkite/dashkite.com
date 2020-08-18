@@ -41,14 +41,12 @@ main
 
   & > header
     margin-bottom 4rem
-    text-align center
-
 
   h1, h2, h3, p, ul, li, blockquote
     margin 0
     padding 0
 
-  h1, h2, h3
+  h1, h2, h3, h4
     margin-bottom 4rem
 
   h1
@@ -61,9 +59,13 @@ main
     line-height 4rem
     font-size 3.6rem
 
+  h4
+    line-height 4rem
+    font-size (4 * 3/4)rem
+
   p, ul, li, blockquote
     line-height 4rem
-    font-size (8/3)rem
+    font-size (4 * 2/3)rem
     margin-bottom 3rem
 
   a, a:visited, a:hover
@@ -80,7 +82,8 @@ main
       outline none
       background-color lighten(kite-blue, 80%)
 
-
+  ul > li
+      margin-left 1em
 
 footer
   line-height 3rem
@@ -98,12 +101,11 @@ footer
       // so either 8 or 12 rem ... 12 for now until
       // we add two more buttons
       width 12rem
-      height 12rem
-      padding 1rem
+      padding 3rem 1rem 1rem 1rem
       display flex
       flex-flow column
       align-items center
-      justify-content center
+      justify-content flex-start
       text-decoration none
 
       & > svg
@@ -113,3 +115,6 @@ footer
         // overflow visible
         height 4rem
         width 4rem
+
+      & > span
+        text-align center

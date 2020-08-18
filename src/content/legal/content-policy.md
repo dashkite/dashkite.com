@@ -1,5 +1,3 @@
-# DashKite Content Policy
-
 Last Revised August 8, 2020
 
 DashKite is a collection of Services that collectively empower you to safely and securely share content over the Web. Through these services, you can post, comment, share, learn, debate, support, and connect with people who share your interests.
@@ -20,7 +18,7 @@ Spam is not permitted. Do not attempt to manipulate content discovery.
 
 ### Rule 3
 
-Respect the privacy of others. Instigating harassment, for example by revealing someone’s personal or confidential information is not allowed. Never post or threaten to post media without the express consent of those represented within it. 
+Respect the privacy of others. Instigating harassment, for example by revealing someone’s personal or confidential information is not allowed. Never post or threaten to post media without the express consent of those represented within it.
 
 ### Rule 4
 
@@ -46,8 +44,6 @@ Don’t break, or attempt to break, our Services, or do anything that interferes
 
 We have a variety of ways of enforcing our rules, including, but not limited to
 
-- Asking you nicely to knock it off
-- Asking you less nicely
-- Temporary or permanent suspension of accounts
-- Removal of privileges from, or adding restrictions to, accounts
-- Removal of content
+- Requesting that you be mindful of, and follow, them
+- Temporarily or permanently suspending your access or privileges
+- Removing your content

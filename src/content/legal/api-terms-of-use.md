@@ -1,5 +1,3 @@
-# DashKite API Terms Of Use
-
 Last Revised August 8, 2020
 
 We encourage developers to make use of the DashKite application programming interfaces and the related data, code, and other materials provided by DashKite with the API (the “DashKite APIs”). Collectively, we refer to the terms below, any additional terms, terms within the accompanying API documentation, and any applicable policies and guidelines as the "Terms."  By using the DashKite APIs, you agree to the Terms with DashKite, Inc. (“DashKite”).

@@ -1,37 +1,51 @@
-- var title = "DashKite"
-- var description = "DashKite combines an expertise in distributed design with the most advanced Web technologies to build great products."
-- var url = "https://dashkite.com"
-- var image = "/media/logo.png"
+mixin title(title)
+  title= title
+  meta(property = "og:title" content = title)
+  meta(name = "twitter:title" content = title)
+
+mixin description(description)
+  meta(name = "description" content = description)
+  meta(property = "og:description" content = description)
+  meta(name = "twitter:description" content = description)
+
+mixin url(url)
+  link(rel = "canonical" href = url)
+  meta(property = "og:url" content = url)
+
+mixin image(image)
+  meta(property = "og:image" content = image)
+  meta(name = "twitter:card" content = "summary_large_image")
+  meta(name = "twitter:image" content = image)
+
 
 doctype html
 
 html(lang='en')
 
   head
-    block metaTags
-      meta(charset="utf-8")
-      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block head
+      meta(charset = "utf-8")
+      meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
+      link(rel = "shortcut icon" href = "/favicon.ico")
 
-      title= title
-      meta(name="description", content=description)
-      link(rel="shortcut icon", href="/favicon.ico")
-      link(rel="canonical", href=url)
+      meta(property = "og:site_name" content = "DashKite")
 
-      meta(property="og:title", content=title)
-      meta(property="og:description", content=description)
-      meta(property="og:url", content=url)
-      meta(property="og:site_name" content="DashKite")
-      meta(property = "og:image" content=image)
+      block title
+        +title("DashKite")
 
-      meta(name="twitter:title" content=title)
-      meta(name="twitter:description" content=description)
-      meta(name = "twitter:card" content="summary_large_image")
-      meta(name = "twitter:image" content=image)
+      block description
+        +description("DashKite combines an expertise in distributed design with\
+          the most advanced Web technologies to build great products.")
 
+      block url
+        +url("https://dashkite.com")
 
-    block style
-      style
-        include:stylus -index.styl
+      block image
+        +image("/media/logo.png")
+
+      block style
+        style
+          include:stylus -index.styl
 
   body
 
@@ -45,18 +59,18 @@ html(lang='en')
     footer
       block footer
         nav
-          a(href="/")
+          a(href = "/")
             svg: use(href = "/media/sprites.svg#home")
             span Home
 
-          a(href="/products")
+          a(href = "/products")
             svg: use(href = "/media/sprites.svg#products")
             span Products
 
-          a(href="/open-source")
+          a(href = "/open-source")
             svg: use(href = "/media/sprites.svg#open-source")
-            span Libraries
+            span Open Source
 
-          a(href="/contact")
+          a(href = "/contact")
             svg: use(href = "/media/sprites.svg#contact-us")
             span Contact
