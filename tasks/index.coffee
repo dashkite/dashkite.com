@@ -33,7 +33,7 @@ define "html", ->
   go [
     glob [ "**/*.pug",  "!**/-*/**", "!**/-*" ], source
     wait map read
-    map transform pug, filters: {markdown}
+    map transform pug, filters: {markdown, stylus}
     map extension ".html"
     map write target
   ]

@@ -1,11 +1,18 @@
 extends -layout.pug
 
+append head
+  style
+    :stylus
+      main > header > h1
+        line-height 10rem
+        font-size 9rem
+        color var(--kite-alt-blue)
 
 block main
-  header#home
+  header
     h1 It's Your Web.
 
-  article.intro
+  article
     :markdown
 
       ## We're here to help you take it back.
