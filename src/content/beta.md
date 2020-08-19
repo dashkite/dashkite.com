@@ -1,3 +1,0 @@
-## Beta
-
-Coming soon!

@@ -7,10 +7,7 @@ import * as b from "@dashkite/brick"
 import svgstore from "svgstore"
 import SVGO from "svgo"
 
-import MarkdownIt from "markdown-it"
-import anchor from "markdown-it-anchor"
-import figures from "markdown-it-implicit-figures"
-import emoji from "markdown-it-emoji"
+import marked from "marked"
 import webpack from "webpack"
 
 import http from "http"
@@ -21,15 +18,13 @@ import rewrite from "connect-history-api-fallback"
 import files from "serve-static"
 import {green, red} from "colors/safe"
 
-markdown = do (md = undefined) ->
-  md = MarkdownIt
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  .use anchor
-  .use figures, figcaption: true
-  .use emoji
-  (string) -> md.render string
+markdown = (text) ->
+  marked text,
+    gfm: true
+    headerIds: true
+    mangle: true
+    smartLists: true
+    smartypants: true
 
 bundle = (entry, target) ->
 

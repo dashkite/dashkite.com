@@ -1,17 +1,21 @@
 extends -layout.pug
 
+append head
+  style
+    :stylus
+      h3#hype, h3#hype + p
+        display inline-block
+        vertical-align middle
+      h3#hype + p
+        margin-left 2rem
+      h3#hype + p > img
+        width 12rem
+
+
 block main
 
   header
     h1 Products
 
   article
-    :markdown
-      We're building a variety of apps to empower people to take advantage of
-      the power of the Web safely and securely.
-
-  article
-    include:markdown content/beta.md
-
-  article
-    include:markdown content/alpha.md
+    include:markdown content/products.md

@@ -2,16 +2,23 @@ extends -layout.pug
 
 
 block main
-  header
-    h1 The Web Is A Wonder
+  header#home
+    h1 It's Your Web.
 
   article.intro
-    h2 And we work every day to make it more wondrous.
-    p At DashKite, we combine our expertise in software and distributed design with the most advanced Web technologies to build great things.
-    p We build stuff that's human-focused, blazing fast, and ready to scale.
+    :markdown
+
+      ## We're here to help you take it back.
+
+      At DashKite, we combine our expertise in software and distributed design
+      with the most advanced Web technologies to build great things.
+
+      We build stuff that's human-focused, blazing fast, and ready to scale.
 
   article
-    h2 Updates
     :markdown
+
+      ## Updates
+
       - Coming soon: Hype vanity page builder.
       - Read [the fine print](/legal-information).
