@@ -1,8 +1,16 @@
+We provide products and services to empower you to take back your Web.
+
+All our products share the same [privacy policy][1] and other [legal agreements][2].
+
+## Beta
+
+Coming soon!
+
 ## Alpha
 
 ### Hype
 
-![Hype Logo](/media/hype-logo.png)
+![Hype Logo][3]
 
 Hype is an easy, custom homepage. Quickly setup a personal or professional page with the info and links you want to share with the world. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
 
@@ -14,6 +22,6 @@ Storm is ephemeral group chat made easy. Share a link and start chatting without
 
 Codename Mistral is blogging without the cruft. Quickly setup a clean, focused blogging site to get your ideas out there. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
 
-## Beta
-
-Coming soon!
+[1]: /legal/privacy-policy
+[2]: /legal-information
+[3]: /media/hype-logo.png

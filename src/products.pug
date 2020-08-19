@@ -7,6 +7,8 @@ append head
         display inline-block
         vertical-align middle
       h3#hype + p
+        // make the top margin match the h2 + h3 margin
+        margin-top 4rem
         margin-left 2rem
       h3#hype + p > img
         width 12rem
@@ -15,7 +17,7 @@ append head
 block main
 
   header
-    h1 Products
+    h1 Our Products
 
   article
     include:markdown content/products.md

@@ -37,18 +37,29 @@ main
     width 100%
     max-width 96rem
 
-  article
-    margin-bottom 4rem
+  article, header
+    margin-bottom 3rem
 
-  & > header
-    margin-bottom 4rem
-
-  h1, h2, h3, p, ul, li, blockquote
+  h1, h2, h3, h4, p, ul, blockquote
+    box-sizing border-box
     margin 0
     padding 0
+    margin-bottom 3rem
 
-  h1, h2, h3, h4
-    margin-bottom 4rem
+    &:last-child
+      margin-bottom 0
+
+  h1 + h2, h2 + h3, h3 + h4
+    margin-top 4rem
+
+  li
+    box-sizing border-box
+    margin 0
+    padding 0
+    margin-bottom 2rem
+
+    &:last-child
+      margin-bottom 0
 
   h1
     line-height 7rem
@@ -67,10 +78,9 @@ main
   p, ul, li, blockquote
     line-height 4rem
     font-size (4 * 2/3)rem
-    margin-bottom 3rem
 
   a, a:visited, a:hover
-    display inline-block
+    display inline
     text-decoration underline
 
   ul > li
