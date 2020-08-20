@@ -3,15 +3,13 @@ extends -layout.pug
 append head
   style
     :stylus
-      h3#hype, h3#hype + p
-        display inline-block
-        vertical-align middle
-      h3#hype + p
-        // make the top margin match the h2 + h3 margin
-        margin-top 4rem
-        margin-left 2rem
-      h3#hype + p > img
-        width 12rem
+      h3
+        display flex
+        align-items center
+        & > img
+          // h3 line-height is 4rem
+          height 6rem
+          margin-right 1rem
 
 
 block main
