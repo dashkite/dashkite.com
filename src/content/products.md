@@ -1,6 +1,4 @@
-We provide products and services to empower you to take back your Web.
-
-All our products share the same [privacy policy][1] and other [fine print][2].
+We provide products and services to empower you to take back your Web. Create your homepage, start a blog, chat with your friends, and stay on top of all your favorite content. All our products share the same easy registration and login and the same [privacy policy][1] and other [fine print][2].
 
 ## Beta
 
@@ -9,8 +7,6 @@ Coming soon!
 ## Alpha
 
 ### ![Hype Logo][3] Hype
-
-
 
 Hype is an easy, custom homepage. Quickly setup a personal or professional page with the info and links you want to share with the world. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
 
