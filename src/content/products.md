@@ -20,7 +20,11 @@ Storm is ephemeral group chat made easy. Share a link and start chatting without
 
 ### Project: Mistral
 
-Codename Mistral is blogging without the cruft. Quickly setup a clean, focused blogging site to get your ideas out there. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
+Blogging without the nonsense. Quickly setup a clean, focused blogging site to get your ideas out there. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
+
+### Project: Jet Stream
+
+An RSS/Atom reader for the rest of us. One of the best kept secrets of the Web, content syndication is still alive and well. Why wait for a post on social media when you can get information right from the source? From the biggest media sites to the smallest blog, we deliver it to you in a convenient, familiar format.
 
 [1]: /legal/privacy-policy
 [2]: /legal-information
