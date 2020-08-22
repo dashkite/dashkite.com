@@ -3,6 +3,7 @@ import FS from "fs/promises"
 import puppeteer from "puppeteer"
 import express from "express"
 import Pug from "pug"
+import Stylus from "stylus"
 import Coffee from "coffeescript"
 import markdown from "marked"
 import svgstore from "svgstore"
@@ -30,16 +31,22 @@ bundle = (source, build) ->
     w.mainField "main:coffee"
     w.extension ".coffee"
     w.rule
-      test: /.coffee$/
+      test: /\.coffee$/
       loader: "coffee-loader"
     w.rule
-      test: /.pug$/
+      test: /\.pug$/
       loader: "pug-loader"
       options:
         basedir: source
         filters: {markdown}
     w.rule
-      test: /.yaml$/
+      test: /\.styl$/
+      use: [
+        "css-loader"
+        "stylus-loader"
+      ]
+    w.rule
+      test: /\.yaml$/
       type: "json"
       loader: "yaml-loader"
     w.alias
@@ -85,7 +92,7 @@ pug = (source, build) ->
 
 images = (source, build) ->
   do b.start [
-    b.glob [ "images/**/*", "!images/-svg" ], source
+    b.glob [ "media/**/*", "!media/-sprites" ], source
     b.copy build
   ]
 
