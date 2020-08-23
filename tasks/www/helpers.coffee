@@ -6,6 +6,7 @@ import Pug from "pug"
 import stylus from "stylus"
 import Coffee from "coffeescript"
 import markdown from "marked"
+import YAML from "js-yaml"
 import svgstore from "svgstore"
 import SVGO from "svgo"
 import cheerio from "cheerio"
@@ -100,6 +101,18 @@ pug = (source, build) ->
     b.write build
   ]
 
+yaml = (source, build) ->
+  console.log "building YAML"
+  do b.start [
+    b.glob [ "**/*.yaml" ], source
+    b.read
+    b.tr ({path}, code) ->
+      console.log {code}
+      JSON.stringify YAML.safeLoad code
+    b.extension ".json"
+    b.write build
+  ]
+
 images = (source, build) ->
   do b.start [
     b.glob [ "media/**/*", "!media/-sprites" ], source
@@ -136,4 +149,4 @@ debounce = do (last = undefined) ->
         last = current
         f ax...
 
-export { clean, bundle, coffee, pug, images, browser, debounce, sprites }
+export { clean, bundle, coffee, pug, yaml, images, browser, debounce, sprites }

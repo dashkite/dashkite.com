@@ -6,6 +6,7 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "dependencies": {
     "@dashkite/helium": "^0.3.0",
+    "@dashkite/mercury": "0.0.20",
     "@dashkite/navigate": "^0.1.0",
     "@dashkite/neon": "^0.2.2",
     "@dashkite/oxygen": "^0.2.0",
@@ -25,6 +26,7 @@
     "css-loader": "^4.2.1",
     "express": "^4.17.1",
     "faker": "^4.1.0",
+    "js-yaml": "^3.14.0",
     "marked": "^1.1.1",
     "panda-quill": "^5.0.0",
     "panda-river": "^6.0.0",

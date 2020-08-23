@@ -4,7 +4,7 @@ import {pipe} from "@pandastrike/garden"
 import * as b from "@dashkite/brick"
 import {define, run} from "@dashkite/genie"
 
-import { clean, bundle, coffee, pug, images, sprites,
+import { clean, bundle, coffee, pug, yaml, images, sprites,
   browser, debounce } from "./helpers"
 
 import * as w from "@dashkite/zenpack"
@@ -34,10 +34,11 @@ define "www:development:build", ->
       w.run
     ]
     pug source, build
+    yaml source, build
     images source, build
   ]
 
-define "www:production:build", ->
+define "www:production:build", "build&", ->
 
   await clean build
 
@@ -48,22 +49,11 @@ define "www:production:build", ->
       w.run
     ]
     pug source, build
+    yaml source, build
     images source, build
   ]
 
-define "www:test", ->
-
-  await clean build
-
-  await Promise.all [
-    do pipe [
-      bundle source, build
-      w.mode "development"
-      w.sourcemaps
-      w.run
-    ]
-    pug source, build
-  ]
+define "www:test", "www:development:build", ->
 
   test await Promise.all [
     b.server build, fallback: "index.html"
