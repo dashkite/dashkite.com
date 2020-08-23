@@ -1,4 +1,4 @@
-extends -layout.pug
+extends /templates/head
 
 append head
   style
@@ -10,12 +10,3 @@ append head
           // h3 line-height is 4rem
           height 6rem
           margin-right 1rem
-
-
-block main
-
-  header
-    h1 Our Products
-
-  article
-    include:markdown content/products.md

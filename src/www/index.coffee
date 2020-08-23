@@ -7,12 +7,14 @@ import "./pages"
 # import "./components"
 
 import {ready} from "./helpers"
-import css from "./styles/document.styl"
+import main from "./styles/document.styl"
+import views from "./styles/views"
 
 navigate document
 
 sheets = q.sheets document
-sheets.set "main", css
+sheets.set "main", main
+sheets.set "views", views
 Registry.set {sheets}
 
 ready ->
