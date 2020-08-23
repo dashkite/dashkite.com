@@ -21,4 +21,4 @@ ready ->
     router.dispatch url: window.location.href
   catch error
     console.warn error
-    # browse "home", {}
+    router.browse name: "home"

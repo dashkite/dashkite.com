@@ -3,7 +3,7 @@ import FS from "fs/promises"
 import puppeteer from "puppeteer"
 import express from "express"
 import Pug from "pug"
-import Stylus from "stylus"
+import stylus from "stylus"
 import Coffee from "coffeescript"
 import markdown from "marked"
 import svgstore from "svgstore"
@@ -37,8 +37,13 @@ bundle = (source, build) ->
       test: /\.pug$/
       loader: "pug-loader"
       options:
-        basedir: source
-        filters: {markdown}
+        root: source
+        filters:
+          markdown: markdown
+          stylus: (text) ->
+            stylus text
+            .include source
+            .render()
     w.rule
       test: /\.styl$/
       use: [
@@ -85,7 +90,12 @@ pug = (source, build) ->
       Pug.render code,
         filename: path
         basedir: source
-        filters: {markdown}
+        filters:
+          markdown: markdown
+          stylus: (text) ->
+            stylus text
+            .include source
+            .render()
     b.extension ".html"
     b.write build
   ]
