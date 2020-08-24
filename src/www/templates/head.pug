@@ -1,5 +1,5 @@
 include mixins
 
 block head
-  +title("DashKite: Take Back The Web")
+  +title(`DashKite: ${title || "Take Back The Web"}`)
   script(src = "/index.min.js")

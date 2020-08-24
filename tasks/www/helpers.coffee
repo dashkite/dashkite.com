@@ -5,7 +5,7 @@ import express from "express"
 import Pug from "pug"
 import stylus from "stylus"
 import Coffee from "coffeescript"
-import markdown from "marked"
+import marked from "marked"
 import YAML from "js-yaml"
 import svgstore from "svgstore"
 import SVGO from "svgo"
@@ -40,7 +40,7 @@ bundle = (source, build) ->
       options:
         root: source
         filters:
-          markdown: markdown
+          markdown: marked
           stylus: (text) ->
             stylus text
             .include source
@@ -59,10 +59,8 @@ bundle = (source, build) ->
       configuration: "#{source}/configuration.coffee"
       helpers: "#{source}/helpers/index.coffee"
       resources: "#{source}/resources/"
-      profiles: "#{source}/profiles/"
-      authenticators: "#{source}/authenticators/index.coffee"
+      types: "#{source}/types/"
       templates: "#{source}/templates/"
-      themes: "#{source}/themes/index.coffee"
   ]
 
 coffee = (source, build) ->
@@ -92,7 +90,7 @@ pug = (source, build) ->
         filename: path
         basedir: source
         filters:
-          markdown: markdown
+          markdown: marked
           stylus: (text) ->
             stylus text
             .include source
@@ -102,14 +100,20 @@ pug = (source, build) ->
   ]
 
 yaml = (source, build) ->
-  console.log "building YAML"
   do b.start [
     b.glob [ "**/*.yaml" ], source
     b.read
-    b.tr ({path}, code) ->
-      console.log {code}
-      JSON.stringify YAML.safeLoad code
+    b.tr ({path}, code) -> JSON.stringify YAML.safeLoad code
     b.extension ".json"
+    b.write build
+  ]
+
+markdown = (source, build) ->
+  do b.start [
+    b.glob [ "**/*.md" ], source
+    b.read
+    b.tr ({path}, code) -> marked code
+    b.extension ".html"
     b.write build
   ]
 
@@ -149,4 +153,15 @@ debounce = do (last = undefined) ->
         last = current
         f ax...
 
-export { clean, bundle, coffee, pug, yaml, images, browser, debounce, sprites }
+export {
+  clean
+  bundle
+  coffee
+  pug
+  yaml
+  markdown
+  images
+  browser
+  debounce
+  sprites
+}
