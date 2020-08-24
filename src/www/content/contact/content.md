@@ -3,5 +3,5 @@ Do you have a question about our [open source libraries][] or our [products][]? 
   [open source libraries]: /open-source
   [products]: /products
   [privacy policy]: /legal/privacy-policy
-  [the fine print]: /legal-information
+  [the fine print]: /legal
   [email]: mailto:support@dashkite.com
