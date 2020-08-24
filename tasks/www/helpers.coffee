@@ -87,7 +87,7 @@ pug = (source, build) ->
     b.read
     b.tr ({path}, code) ->
       Pug.render code,
-        filename: path
+        filename: Path.resolve source, path
         basedir: source
         filters:
           markdown: marked

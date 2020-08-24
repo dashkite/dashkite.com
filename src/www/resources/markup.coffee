@@ -8,7 +8,7 @@ Markup =
     do flow [
       m.use m.Fetch.client mode: "cors"
       m.base window.location.origin
-      m.path "/content/#{path}.html"
+      m.path "/content#{path}/content.html"
       m.accept "text/html"
       m.method "get"
       m.request

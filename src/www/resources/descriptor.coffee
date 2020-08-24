@@ -8,12 +8,11 @@ Descriptor =
     do flow [
       m.use m.Fetch.client mode: "cors"
       m.base window.location.origin
-      m.path "/content/#{path}.json"
+      m.path "/content#{path}/description.json"
       m.accept "application/json"
       m.method "get"
       m.request
       m.json
-      tee (context) -> console.log context
       h.get "json"
   ]
 
