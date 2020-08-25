@@ -14,7 +14,7 @@
     "@hapi/accept": "^5.0.1",
     "@pandastrike/garden": "^8.0.0-alpha.1",
     "construct-style-sheets-polyfill": "^2.4.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.0.0-beta.8"
   },
   "devDependencies": {
     "@dashkite/brick": "^0.2.0",
