@@ -11,8 +11,10 @@
     "@dashkite/neon": "^0.2.2",
     "@dashkite/oxygen": "^0.2.0",
     "@dashkite/quark": "^0.3.2",
+    "@hapi/accept": "^5.0.1",
     "@pandastrike/garden": "^8.0.0-alpha.1",
-    "construct-style-sheets-polyfill": "^2.4.0"
+    "construct-style-sheets-polyfill": "^2.4.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@dashkite/brick": "^0.2.0",

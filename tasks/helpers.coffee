@@ -23,7 +23,7 @@ sleep = (ms) ->
 
 clean = (build) ->
   await rmr build
-  await mkdirp "0777", build
+  mkdirp "0777", build
 
 # base webpack bundle
 bundle = (source, build) ->
@@ -61,6 +61,7 @@ bundle = (source, build) ->
       resources: "#{source}/resources/"
       types: "#{source}/types/"
       templates: "#{source}/templates/"
+      pages: "#{source}/pages/index.coffee"
   ]
 
 coffee = (source, build) ->
