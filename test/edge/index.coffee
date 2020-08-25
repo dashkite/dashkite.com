@@ -1,7 +1,12 @@
-import {print, test, success} from "amen"
+import Path from "path"
 import assert from "assert"
-import Registry from "@dashkite/helium"
+
 import cheerio from "cheerio"
+
+import {print, test, success} from "amen"
+import Registry from "@dashkite/helium"
+import * as b from "@dashkite/brick"
+
 import "../../src/edge/origin-request/pages"
 
 do ->
@@ -11,18 +16,23 @@ do ->
     ->
       router = Registry.get "router"
 
-      $ = cheerio.load await router.dispatch url: "/"
-      assert.equal ($ "title").text(), "Hype: Your Page On The Web"
-      assert.equal ($ "meta[name='description']").attr("content"), "You deserve the hype."
-
-      $ = cheerio.load await router.dispatch url: "/foo/bar/baz"
-      assert.equal ($ "title").text(), "Hype: Your Page On The Web"
-      assert.equal ($ "meta[name='description']").attr("content"), "You deserve the hype."
-
-      # TODO: come up with a better fixture situation here.
-      $ = cheerio.load await router.dispatch url: "/view/dan"
-      assert.equal ($ "title").text(), "dan"
+      await router.dispatch url: "/"
+      assert.equal ($ "title").text(), "DashKite: Take Back The Web"
       assert.equal ($ "meta[name='description']").attr("content"),
-        "Hype page for dan"
+        "DashKite combines an expertise in distributed design with
+          the most advanced Web technologies to build great products."
+
+      server = b.server (Path.resolve "build/www"), fallback: "index.html"
+      {port} = server.address()
+
+      window.location = new URL "http://localhost:#{port}/products"
+      await router.dispatch url: window.location
+      assert.equal ($ "title").text(), "DashKite: Our Products"
+      assert.equal ($ "meta[name='description']").attr("content"),
+        "We provide products and services to empower you to take back your Web.
+          Create your homepage, start a blog, chat with your friends, and stay
+          on top of all your favorite content."
+
+      server.close()
 
   if !success then process.exit 1

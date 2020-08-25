@@ -3,7 +3,9 @@ import "./pages"
 
 render = (request) ->
   router = Registry.get "router"
+  window.location = new URL request.uri
   await router.dispatch url: request.uri
+  $.html()
 
 respond = (request) ->
   isCompressed = (request.headers["accept-encoding"][0].value == "gzip")
