@@ -18,6 +18,7 @@ bundle = pipe [
   w.entry
     "origin-request": Path.resolve source, "origin-request", "index.coffee"
     "viewer-request": Path.resolve source, "viewer-request", "index.coffee"
+  w.libraryTarget "umd"
   w.path build
 ]
 
@@ -33,6 +34,7 @@ define "edge:development:bundle", pipe [
 define "edge:staging:bundle", pipe [
   bundle
   w.mode "development"
+  w.nodeEnv "staging"
   w.sourcemaps
   w.run
 ]
@@ -50,7 +52,7 @@ define "edge:development:build", [
 
 define "edge:staging:build", [
   "edge:clean"
-  "edge:development:bundle&"
+  "edge:staging:bundle&"
 ]
 
 define "edge:production:build", [

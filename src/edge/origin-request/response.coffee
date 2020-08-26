@@ -1,9 +1,9 @@
 import {gzip} from "./utils"
+import Registry from "@dashkite/helium"
 import "./pages"
 
 render = (request) ->
   router = Registry.get "router"
-  window.location = new URL request.uri
   await router.dispatch url: request.uri
   $.html()
 

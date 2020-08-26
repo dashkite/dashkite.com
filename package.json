@@ -14,7 +14,10 @@
     "@hapi/accept": "^5.0.1",
     "@pandastrike/garden": "^8.0.0-alpha.1",
     "construct-style-sheets-polyfill": "^2.4.0",
-    "node-fetch": "^3.0.0-beta.8"
+    "mime": "^2.4.6",
+    "node-fetch": "^3.0.0-beta.8",
+    "panda-parchment": "^6.0.3",
+    "source-map-support": "^0.5.19"
   },
   "devDependencies": {
     "@dashkite/brick": "^0.2.0",
@@ -28,6 +31,7 @@
     "css-loader": "^4.2.1",
     "express": "^4.17.1",
     "faker": "^4.1.0",
+    "haiku9": "^4.0.5",
     "js-yaml": "^3.14.0",
     "marked": "^1.1.1",
     "panda-quill": "^5.0.0",
@@ -39,6 +43,7 @@
     "stylus-loader": "^3.0.2",
     "svgo": "^1.3.2",
     "svgstore": "^3.0.0-2",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.1",
+    "yaml-loader": "^0.6.0"
   }
 }

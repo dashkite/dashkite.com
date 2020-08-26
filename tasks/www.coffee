@@ -32,6 +32,7 @@ define "www:development:bundle", pipe [
 define "www:staging:bundle", pipe [
   bundle
   w.mode "development"
+  w.nodeEnv "staging"
   w.sourcemaps
   w.run
 ]
@@ -50,7 +51,7 @@ define "www:development:build", [
 
 define "www:staging:build", [
   "www:clean"
-  "www:development:bundle&"
+  "www:staging:bundle&"
   "www:assets&"
 ]
 

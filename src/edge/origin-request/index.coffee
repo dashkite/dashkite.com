@@ -12,9 +12,7 @@ handler = (event, context, callback) ->
     acceptEncoding: request.headers["accept-encoding"][0].value
 
   try
-    if request.headers["accept"][0].value == "text/html"
-      callback null, await response request
-    else
+    if request.uri.match /^\/(content|media)\//
       switch request.headers["accept-encoding"][0].value
         when "br"
           request.uri = join "/brotli", request.uri
@@ -22,8 +20,9 @@ handler = (event, context, callback) ->
           request.uri = join "/gzip", request.uri
         when "identity"
           request.uri = join "/identity", request.uri
-
       callback null, request
+    else
+      callback null, await response request
   catch e
     # Fallback to just processing the request normally.
     console.error e

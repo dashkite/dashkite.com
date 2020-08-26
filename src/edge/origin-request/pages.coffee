@@ -8,6 +8,5 @@ import template from "../../www/index.pug"
 
 globalThis.fetch ?= fetch
 globalThis.$ = cheerio.load template()
-globalThis.window ?= {}
 
 Registry.set neon: n
