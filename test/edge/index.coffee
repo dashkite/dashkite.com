@@ -22,17 +22,16 @@ do ->
         "DashKite combines an expertise in distributed design with
           the most advanced Web technologies to build great products."
 
-      server = b.server (Path.resolve "build/www"), fallback: "index.html"
-      {port} = server.address()
+      server = b.server (Path.resolve "build/www"),
+        port: 3000
+        fallback: "index.html"
 
-      window.location = new URL "http://localhost:#{port}/products"
-      await router.dispatch url: window.location
+      await router.dispatch url: "/products"
       assert.equal ($ "title").text(), "DashKite: Our Products"
       assert.equal ($ "meta[name='description']").attr("content"),
         "We provide products and services to empower you to take back your Web.
           Create your homepage, start a blog, chat with your friends, and stay
           on top of all your favorite content."
-
       server.close()
 
   if !success then process.exit 1
