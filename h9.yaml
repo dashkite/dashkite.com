@@ -14,14 +14,7 @@ environments:
     cache:
       expires: 86400
       priceClass: 100
-
-  staging:
-    hostnames:
-      - staging-www
-    cache:
-      expires: 86400
-      priceClass: 100
-    edge:
+    edge: &edge
       viewerRequest:
         runtime: nodejs12.x
         src: "build/edge/viewer-request.js"
@@ -33,3 +26,11 @@ environments:
         handler: "lib/origin-request.handler"
         memorySize: 1600
         zip: true
+
+  staging:
+    hostnames:
+      - staging-www
+    cache:
+      expires: 86400
+      priceClass: 100
+    edge: *edge

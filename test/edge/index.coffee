@@ -1,8 +1,6 @@
 import Path from "path"
 import assert from "assert"
 
-import cheerio from "cheerio"
-
 import {print, test, success} from "amen"
 import Registry from "@dashkite/helium"
 import * as b from "@dashkite/brick"

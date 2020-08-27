@@ -1,7 +1,9 @@
+import {join} from "path"
 import Accept from "@hapi/accept"
 import {isEmpty, toJSON} from "panda-parchment"
 import {lookupType, isCompressible, notAcceptable} from "./utils"
 import "source-map-support/register"
+import redirect from "./redirect"
 
 handler = (event, context, callback) ->
   try
@@ -10,8 +12,13 @@ handler = (event, context, callback) ->
     console.log
       requestID: config.requestId
       uri: request.uri
-      accept: request.headers["accept"][0].value
-      acceptEncoding: request.headers["accept-encoding"][0].value
+      accept: request.headers["accept"]?[0]?.value
+      acceptEncoding: request.headers["accept-encoding"]?[0]?.value
+
+    # Check to see if there's a trailing /
+    if (request.uri.match /\/$/)?
+      return callback null,
+        redirect request, request.uri[0..-2]
 
     # Negotiate the final "Accept" Header and assign to request
     try

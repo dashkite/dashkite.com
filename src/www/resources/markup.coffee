@@ -13,6 +13,7 @@ Markup =
       m.accept "text/html"
       m.method "get"
       m.request
+      m.expect.ok
       m.text
       h.get "text"
   ]

@@ -13,8 +13,9 @@ Descriptor =
       m.accept "application/json"
       m.method "get"
       m.request
+      m.expect.ok
       m.json
       h.get "json"
-  ]
+    ]
 
 export default Descriptor
