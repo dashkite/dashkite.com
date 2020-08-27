@@ -18,25 +18,25 @@ router.add "{/path*}",
     flow [
       path
       n.view "main", loading
+      # rare case where we want to show before loading
+      n.show
       attempt [
         # Try to load the content
         flow [
           n.resource Content.load
           merge
           n.view "main", view
-          n.show
         ]
         # If we fail, show Not Found page
         flow [
           tee (context) ->
             context.bindings =
               title: "Not Found"
-              description: "I'm sorry, but we can't find that page."
+              description: "We can't find anything for that URL."
           n.view "main", notFound
         ]
       ]
       n.render "head", head
       n.render "header", header
       n.render "footer", footer
-      n.show
     ]

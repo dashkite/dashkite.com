@@ -12,7 +12,10 @@ handler = (event, context, callback) ->
     acceptEncoding: request.headers["accept-encoding"]?[0]?.value
 
   try
-    if (request.uri.match /^\/(content|media)\//)?
+    # TODO maybe move application.js to /code or something?
+    #      that way this can just be (content|media|code)
+    if (request.uri.match /^\/(content|media)\//)? ||
+        request.uri == "/application.js"
       switch request.headers["accept-encoding"]?[0]?.value
         when "br"
           request.uri = join "/brotli", request.uri
