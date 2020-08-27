@@ -16,7 +16,7 @@ handler = (event, context, callback) ->
       acceptEncoding: request.headers["accept-encoding"]?[0]?.value
 
     # Check to see if there's a trailing /
-    if (request.uri.match /\/$/)?
+    if (request.uri != "/") && (request.uri.match /\/$/)?
       return callback null,
         redirect request, request.uri[0..-2]
 
