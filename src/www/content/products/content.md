@@ -2,13 +2,14 @@ We provide products and services to empower you to take back your Web. Create yo
 
 ## Beta
 
-Coming soon!
+### Hype
+
+![Hype Logo][3]
+
+[Hype][4] is an easy, custom homepage. Quickly setup a personal or professional page with the info and links you want to share with the world. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web. [More ...][4]
+
 
 ## Alpha
-
-### ![Hype Logo][3] Hype
-
-Hype is an easy, custom homepage. Quickly setup a personal or professional page with the info and links you want to share with the world. Pages look great on desktop and mobile, and generate appealing link previews when shared out on the Web.
 
 ### Project: Storm
 
@@ -25,3 +26,4 @@ An RSS/Atom reader for the rest of us. One of the best kept secrets of the Web, 
 [1]: /legal/privacy-policy
 [2]: /legal-information
 [3]: /media/hype-logo.png
+[4]: /products/hype

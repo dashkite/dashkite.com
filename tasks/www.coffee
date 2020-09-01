@@ -68,7 +68,7 @@ define "www:watch", ->
   b.watch "./node_modules", h.debounce 1000, -> run "www:development:build"
 
 define "www:server", [ "www:development:build&", "www:watch&" ], ->
-  {port} = (b.server build, port: 3000, fallback: "index.html").address()
+  {port} = (b.server build, port: 8080, fallback: "index.html").address()
   console.log "server running on port #{port}"
 
 define "www:test", "www:development:build", ->

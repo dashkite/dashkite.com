@@ -1,6 +1,6 @@
 development:
   content:
-    base: http://localhost:3000
+    base: http://localhost:8080
 staging:
   content:
     base: https://staging-www.dashkite.com/
