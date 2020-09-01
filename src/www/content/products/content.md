@@ -25,5 +25,5 @@ An RSS/Atom reader for the rest of us. One of the best kept secrets of the Web, 
 
 [1]: /legal/privacy-policy
 [2]: /legal-information
-[3]: /media/hype-logo.png
+[3]: /media/images/hype-logo.png
 [4]: /products/hype
