@@ -1,9 +1,22 @@
 :root
-  --kite-blue #61d3ff
-  --kite-alt-blue #25a6e3
-  --kite-dark-blue #0e5170
-  --near-black #060609
-  --off-white #fafafc
+  --brand #61D3FF
+  --dark-brand #00384d
+  --light-brand #008dc3
+
+  --primary-shade #F5F6F4
+  --primary-accent #007faf
+  --dark-primary-accent #002a3a
+
+  --secondary-accent #B73B59
+  --secondary-shade #610015
+
+  --info #234467
+  --success #53ba83
+  --warning #d0aa4b
+  --danger #f44336
+
+  --dark-text #0a080c
+  --light-text rgba(255, 255, 255, 0.8)
 
 html
   font-size (6 + 2/3)px
@@ -22,13 +35,13 @@ body
   display grid
   grid-template-rows auto 1fr auto
   height 100vh
-  color var(--near-black)
-  background-color var(--off-white)
+  color var(--dark-text)
+  background-color var(--primary-shade)
 
   & > header
     background-color white
     padding 3rem
-    border-bottom 1px solid silver
+    border-bottom 1px solid var(--dark-primary-accent)
     margin-bottom 3rem
     .logo
       width min-content
@@ -64,7 +77,7 @@ main
     margin-bottom 3rem
     margin-right 3rem
     padding 2rem
-    border 1px solid silver
+    border 1px solid var(--light-accent)
     border-radius 0.5rem
 
   h1, h2, h3, h4, p, ul, blockquote
@@ -95,7 +108,7 @@ main
     line-height 5rem
     font-size 4.5rem
     padding-bottom 1rem
-    border-bottom 1px solid silver
+    border-bottom 1px solid var(--dark-primary-accent)
   h3
     line-height 4rem
     font-size 3.6rem
@@ -116,15 +129,14 @@ main
       margin-left 1em
 
 footer
-  background-color white
-  border-top 1px solid silver
+  background-color var(--dark-primary-accent)
+  color var(--light-text)
   line-height 3rem
   font-size 2.4rem
 
   nav
     display flex
     justify-content center
-    color var(--near-black)
 
     & > a
       // width needs to be evenly divisible into 48rem

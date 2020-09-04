@@ -1,4 +1,3 @@
-import "construct-style-sheets-polyfill"
 import Registry from "@dashkite/helium"
 import * as q from "@dashkite/quark"
 import {navigate} from "@dashkite/navigate"

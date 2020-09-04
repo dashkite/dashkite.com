@@ -128,7 +128,7 @@ sprites = (source, build) ->
   store = svgstore()
   svgo = new SVGO multipass: true
   await do b.start [
-    b.glob [ "images/-svg/**/*.svg" ], source
+    b.glob [ "media/-sprites/**/*.svg" ], source
     b.read
     b.tr ({path, name}, svg) ->
       # $ = cheerio.load svg
@@ -137,7 +137,7 @@ sprites = (source, build) ->
       store.add name, data
   ]
   svg = store.toString()
-  path = Path.join source, "images", "sprites.svg"
+  path = Path.join source, "media", "images", "sprites.svg"
   # svg = await svgo.optimize svg, {path}
   # {data} = svg
   # FS.writeFile path, data
