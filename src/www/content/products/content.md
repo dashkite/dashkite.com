@@ -1,3 +1,18 @@
+<style>
+  h3#hype + p > img {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    height: 2.75rem;
+    margin-right: 1.25rem;
+  }
+</style>
+
 We provide products and services to empower you to take back your Web. Create your homepage, start a blog, chat with your friends, and stay on top of all your favorite content. All our products share the same easy registration and login and the same [privacy policy][1] and other [fine print][2].
 
 ## Beta

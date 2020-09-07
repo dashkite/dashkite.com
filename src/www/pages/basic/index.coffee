@@ -11,6 +11,9 @@ import notFound from "templates/not-found.pug"
 
 path = tee ({bindings}) -> bindings.path = bindings.path.join "/"
 merge = tee (context) -> Object.assign context.bindings, context.resource
+json = tee (context) ->
+  context.bindings = json:
+    JSON.stringify context.bindings
 
 router.add "{/path*}",
   name: "basic"
@@ -25,6 +28,7 @@ router.add "{/path*}",
         flow [
           n.resource Content.load
           merge
+          json
           n.view "main", view
         ]
         # If we fail, show Not Found page

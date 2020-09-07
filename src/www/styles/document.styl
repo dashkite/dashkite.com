@@ -19,9 +19,9 @@
   --light-text rgba(255, 255, 255, 0.8)
 
 html
-  font-size (6 + 2/3)px
+  // font-size 8px
   /* System */
-  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-family system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 
 a, a:visited, a:hover
   text-decoration none
@@ -40,18 +40,18 @@ body
 
   & > header
     background-color white
-    padding 3rem
+    padding 1.25rem
     border-bottom 1px solid var(--dark-primary-accent)
-    margin-bottom 3rem
+    margin-bottom 1.25rem
     .logo
       width min-content
       & > a
         display block
         & > img
-          height 6rem
+          height 2.5rem
 
 main
-  padding 3rem
+  padding 1.25rem
 
   display flex
   flex-flow column
@@ -59,92 +59,23 @@ main
 
   overflow-y scroll
 
-  article, header
-    width 100%
-    max-width 96rem
-
-  article, header
-    margin-bottom 3rem
-
-  article, h2
-    &:not(:first-child)
-      margin-top 6rem
-
-  article p > img
-    box-sizing border-box
-    width calc(50% \- 3rem)
-    float left
-    margin-bottom 3rem
-    margin-right 3rem
-    padding 2rem
-    border 1px solid var(--light-accent)
-    border-radius 0.5rem
-
-  h1, h2, h3, h4, p, ul, blockquote
-    box-sizing border-box
-    margin 0
-    padding 0
-    margin-bottom 3rem
-
-    &:last-child
-      margin-bottom 0
-
-  h1 + h2, h2 + h3, h3 + h4
-    margin-top 4rem
-
-  li
-    box-sizing border-box
-    margin 0
-    padding 0
-    margin-bottom 2rem
-
-    &:last-child
-      margin-bottom 0
-
-  h1
-    line-height 7rem
-    font-size 6.3rem
-  h2
-    line-height 5rem
-    font-size 4.5rem
-    padding-bottom 1rem
-    border-bottom 1px solid var(--dark-primary-accent)
-  h3
-    line-height 4rem
-    font-size 3.6rem
-
-  h4
-    line-height 4rem
-    font-size (4 * 3/4)rem
-
-  p, ul, li, blockquote
-    line-height 4rem
-    font-size (4 * 2/3)rem
-
-  a, a:visited, a:hover
-    display inline
-    text-decoration underline
-
-  ul > li
-      margin-left 1em
 
 footer
   background-color var(--dark-primary-accent)
   color var(--light-text)
-  line-height 3rem
-  font-size 2.4rem
+  line-height 1.25rem
+  font-size 1rem
 
   nav
     display flex
     justify-content center
 
     & > a
-      // width needs to be evenly divisible into 48rem
+      // width needs to be evenly divisible into 20rem
       // otherwise we'll have little wasted margins
-      // so either 8 or 12 rem ... 12 for now until
-      // we add two more buttons
-      width 12rem
-      padding 3rem 1rem 1rem 1rem
+      // so either 4 or 5 rem, for 5 or 4 buttons
+      width 4rem
+      padding 1.25rem 1rem 1rem 1rem
       display flex
       flex-flow column
       align-items center
@@ -152,12 +83,12 @@ footer
       text-decoration none
 
       & > svg
-        margin-bottom 1rem
+        margin-bottom 0.5rem
         display inline-block
         fill @color
         // overflow visible
-        height 4rem
-        width 4rem
+        height 1.75rem
+        width 1.75rem
 
       & > span
         text-align center

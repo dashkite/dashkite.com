@@ -1,4 +1,5 @@
 import Registry from "@dashkite/helium"
+import "@dashkite/vellum"
 import * as q from "@dashkite/quark"
 import {navigate} from "@dashkite/navigate"
 import * as n from "@dashkite/neon"
