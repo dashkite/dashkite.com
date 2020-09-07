@@ -58,6 +58,7 @@ bundle = (source, build) ->
     w.alias
       configuration: "#{source}/configuration.coffee"
       helpers: "#{source}/helpers/index.coffee"
+      content: "#{source}/content/"
       resources: "#{source}/resources/"
       types: "#{source}/types/"
       templates: "#{source}/templates/"

@@ -1,3 +1,4 @@
+import "construct-style-sheets-polyfill"
 import Registry from "@dashkite/helium"
 import "@dashkite/vellum"
 import * as q from "@dashkite/quark"

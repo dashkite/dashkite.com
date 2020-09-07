@@ -8,8 +8,16 @@ class Content
     await content.load path
     content
 
+  @loadFrom: (object) ->
+    console.log object
+    content = new Content
+    Object.assign content, object
+    content
+
   load: (@path) ->
     Object.assign @, await Descriptor.get @path
     @content = await Markup.get @path
+
+
 
 export default Content

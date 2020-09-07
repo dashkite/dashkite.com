@@ -1,3 +1,4 @@
+import {tee} from "@pandastrike/garden"
 import Registry from "@dashkite/helium"
 import Router from "@dashkite/oxygen"
 
@@ -10,4 +11,10 @@ adapt = (f) ->
 router = Router.create()
 Registry.set {router}
 
-export {adapt, router}
+merge = tee (context) -> Object.assign context.bindings, context.resource
+
+json = tee (context) ->
+  context.bindings = json:
+    JSON.stringify context.bindings
+
+export {adapt, router, merge, json}

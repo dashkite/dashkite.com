@@ -1,7 +1,7 @@
 import {wrap, tee, flow} from "@pandastrike/garden"
-import {attempt} from "helpers"
 import Content from "types/content"
-import {adapt, router} from "../helpers"
+import {attempt} from "helpers"
+import {adapt, router, merge, json} from "../helpers"
 import head from "./head.pug"
 import header from "templates/header.pug"
 import footer from "templates/footer.pug"
@@ -10,10 +10,6 @@ import loading from "templates/loading.pug"
 import notFound from "templates/not-found.pug"
 
 path = tee ({bindings}) -> bindings.path = bindings.path.join "/"
-merge = tee (context) -> Object.assign context.bindings, context.resource
-json = tee (context) ->
-  context.bindings = json:
-    JSON.stringify context.bindings
 
 router.add "{/path*}",
   name: "basic"
