@@ -1,4 +1,4 @@
-import {tee, wrap, flow} from "@pandastrike/garden"
+import {tee, wrap, pipe, flow} from "@pandastrike/garden"
 import Content from "types/content"
 import {adapt, router, merge, json} from "../helpers"
 import head from "templates/head.pug"
@@ -12,12 +12,14 @@ router.add "/",
   name: "home"
   adapt (n) ->
     flow [
+      n.resource -> Content.load path: "/home"
+      pipe [
+        merge
+        json
+        n.view "main", view
+      ]
       n.render "head", head
       n.render "header", header
       n.render "footer", footer
-      n.resource -> Content.loadFrom {content: content(), description...}
-      merge
-      json
-      n.view "main", view
       n.show
     ]

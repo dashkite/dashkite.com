@@ -18,7 +18,7 @@ _view = curry rtee (template, context) ->
     context.initializing = true
     page.append "<div class='view' data-path='#{path}'>"
     context.view = $ "[data-path='#{path}']", page
-  context.view.append template bindings
+  # context.view.append template bindings
 
 resource = curry rtee (getter, context) ->
   context.resource = await getter context
