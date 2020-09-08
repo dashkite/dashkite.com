@@ -9,7 +9,6 @@ class Content
     content
 
   @loadFrom: (object) ->
-    console.log object
     content = new Content
     Object.assign content, object
     content

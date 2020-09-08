@@ -51,7 +51,7 @@ body
           height 2.5rem
 
 main
-  padding 1.25rem
+  padding 1rem
 
   display flex
   flex-flow column
@@ -63,8 +63,8 @@ main
 footer
   background-color var(--dark-primary-accent)
   color var(--light-text)
-  line-height 1.25rem
-  font-size 1rem
+  line-height 1rem
+  font-size 0.9rem
   :focus
     box-shadow 0 0 0 1px var(--light-text)
 
@@ -74,11 +74,15 @@ footer
     padding 0.5rem
 
     & > a
-      // width needs to be evenly divisible into 20rem
-      // otherwise we'll have little wasted margins
-      // so either 4 or 5 rem, for 5 or 4 buttons
-      width 4rem
-      padding 0.75rem
+      // min device width we're allowing for is 320px
+      // however, we have 0.5rem (8px) margins on either
+      // side, so that's really 304px, or 19rem (304/16)
+      // so at 4.5rem width per item, we have room for
+      // 4 items (4 x 4.5 = 18), with 1rem leftover for
+      // spacing on either side of the menu itself
+      box-sizing border-box
+      width 4.5rem
+      padding 0.5rem
       display flex
       flex-flow column
       align-items center
@@ -90,8 +94,8 @@ footer
         display inline-block
         fill @color
         // overflow visible
-        height 1.75rem
-        width 1.75rem
+        height 1.5rem
+        width 1.5rem
 
       & > span
         text-align center
