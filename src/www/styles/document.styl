@@ -1,0 +1,101 @@
+:root
+  --brand #61D3FF
+  --dark-brand #00384d
+  --light-brand #008dc3
+
+  --primary-shade #F5F6F4
+  --primary-accent #007faf
+  --dark-primary-accent #002a3a
+
+  --secondary-accent #B73B59
+  --secondary-shade #610015
+
+  --info #234467
+  --success #53ba83
+  --warning #d0aa4b
+  --danger #f44336
+
+  --dark-text #0a080c
+  --light-text rgba(255, 255, 255, 0.8)
+
+html
+  // font-size 8px
+  /* System */
+  font-family system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+
+a, a:visited, a:hover
+  text-decoration none
+  color inherit
+
+:focus
+  outline none
+  box-shadow 0 0 0 1px #333
+body
+  margin 0
+  display grid
+  grid-template-rows auto 1fr auto
+  height 100vh
+  color var(--dark-text)
+  background-color var(--primary-shade)
+
+  & > header
+    background-color white
+    padding 1.25rem
+    border-bottom 1px solid var(--dark-primary-accent)
+    margin-bottom 1.25rem
+    .logo
+      width min-content
+      & > a
+        display block
+        & > img
+          height 2.5rem
+
+main
+  padding 1rem
+
+  display flex
+  flex-flow column
+  align-items center
+
+  overflow-y scroll
+
+
+footer
+  background-color var(--dark-primary-accent)
+  color var(--light-text)
+  line-height 1rem
+  font-size 0.9rem
+  :focus
+    box-shadow 0 0 0 1px var(--light-text)
+
+  nav
+    display flex
+    justify-content center
+    padding 0.5rem
+
+    & > a
+      // min device width we're allowing for is 320px
+      // however, we have 0.5rem (8px) margins on either
+      // side, so that's really 304px, or 19rem (304/16)
+      // so at 4.5rem width per item, we have room for
+      // 4 items (4 x 4.5 = 18), with 1rem leftover for
+      // spacing on either side of the menu itself
+      box-sizing border-box
+      width 4.5rem
+      padding 0.5rem
+      display flex
+      flex-flow column
+      align-items center
+      justify-content flex-start
+      text-decoration none
+
+      & > svg
+        margin-bottom 0.5rem
+        display inline-block
+        fill @color
+        // overflow visible
+        height 1.5rem
+        width 1.5rem
+
+      & > span
+        text-align center

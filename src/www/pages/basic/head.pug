@@ -1,0 +1,20 @@
+extends /templates/head
+
+//- TODO is there a better way to do this?
+
+append head
+  style
+    :stylus
+      h3#hype + p > img
+        // quick reset of main article img style
+        display block
+        float left
+        margin 0
+        padding 0
+        width auto
+        height auto
+        border none
+        border-radius 0
+        // h3 line-height is 4rem
+        height 6rem
+        margin-right 3rem

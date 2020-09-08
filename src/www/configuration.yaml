@@ -1,0 +1,9 @@
+development:
+  content:
+    base: http://localhost:8080
+staging:
+  content:
+    base: https://staging-www.dashkite.com/
+production:
+  content:
+    base: https://www.dashkite.com/

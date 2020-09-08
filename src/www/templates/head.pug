@@ -1,0 +1,27 @@
+include mixins
+
+block head
+  meta( charset = "utf-8" )
+  meta( name = "viewport" content = "width=device-width, initial-scale=1.0" )
+  link( rel = "shortcut icon" href = "/media/images/favicon.ico" )
+
+  //- TODO fix/upgrade parchment
+  //-      might just be an old version?
+  script.
+    window.Buffer = undefined
+  script( src = "/application.js" )
+
+  meta(property = "og:site_name" content = "DashKite")
+
+  +title(`DashKite: ${title || "Take Back The Web"}`)
+
+  block description
+    +description( description ||
+        "DashKite combines an expertise in distributed design with " +
+          "the most advanced Web technologies to build great products." )
+
+  block url
+    +url( url || "https://dashkite.com" )
+
+  block image
+    +image( image || "/media/images/logo.png" )

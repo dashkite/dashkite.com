@@ -1,0 +1,58 @@
+Hype is an easy, custom homepage. Quickly setup a personal or
+professional page with the info and links you want to share with the world.
+Pages look great on desktop and mobile, and generate appealing link previews
+when shared out on the Web. [Try it out.][1]
+
+## Features
+
+### Themes
+
+Hype supports a variety of compelling themes. Here are a few examples:
+
+![Screencap for light theme][2]
+![Screencap for dark theme][3]
+
+![Screencap for rosé theme][4]
+![Screencap for amethyst theme][5]
+
+### Social Badges
+
+Add social badges for your Twitter, Instagram, and other social media accounts.
+
+### Link Previews
+
+You control how your site appears in link previews, when you, or your fans, share it on the Web.
+
+### Search Engine Friendly
+
+Your page will include rich metadata, including a customizable title and description that will be displayed in search results. Pages are designed for search engines to be able to easily index them.
+
+### Analytics Friendly
+
+Add your Google Analytics or UTM codes to your page.
+
+### Markdown Support
+
+Easily include text formatting, headings, links, and links to external images on your site using the easy to learn Markdown text format.
+
+### Fast Loading Pages (CDN)
+
+Your page will be edge cached via CDN so that it will render in the browser in the blink of an eye. Remember, slow loading pages mean you’re losing traffic. You’ll never have to worry about that with Hype.
+
+## About Hype
+
+Hype is produced by [DashKite][6], a Web and mobile software company devoted to helping you take back your Web.
+
+The only data Hype collects about you is page related data and possibly an email address for authentication. This data is never shared with anyone.
+
+All our applications share our [Privacy Policy][7], [Terms Of Use][8], and [other fine print][9].
+
+[1]: https://hype.dashkite.com
+[2]: /media/images/screencaps/themes/light.jpg
+[3]: /media/images/screencaps/themes/dark.jpg
+[4]: /media/images/screencaps/themes/rosé.jpg
+[5]: /media/images/screencaps/themes/forest.jpg
+[6]: /
+[7]: /legal/privacy-policy
+[8]: /legal/terms-of-use
+[9]: /legal

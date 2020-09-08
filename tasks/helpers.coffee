@@ -1,105 +1,129 @@
 import Path from "path"
 import FS from "fs/promises"
-import {promise} from "panda-parchment"
-import {read} from "panda-quill"
-
-import * as b from "@dashkite/brick"
+import puppeteer from "puppeteer"
+import express from "express"
+import Pug from "pug"
+import stylus from "stylus"
+import Coffee from "coffeescript"
+import marked from "marked"
+import YAML from "js-yaml"
 import svgstore from "svgstore"
 import SVGO from "svgo"
+import cheerio from "cheerio"
+import {wrap, pipe, flow} from "@pandastrike/garden"
+import {tee, wait} from "panda-river"
+import {rmr, mkdirp} from "panda-quill"
+import * as b from "@dashkite/brick"
+import * as k from "@dashkite/katana"
+import * as w from "@dashkite/zenpack"
 
-import marked from "marked"
-import webpack from "webpack"
+sleep = (ms) ->
+  new Promise (resolve) ->
+    setTimeout resolve, ms
 
-import http from "http"
-import connect from "connect"
-import logger from "morgan"
-import finish from "finalhandler"
-import rewrite from "connect-history-api-fallback"
-import files from "serve-static"
-import {green, red} from "colors/safe"
+clean = (build) ->
+  await rmr build
+  mkdirp "0777", build
 
-markdown = (text) ->
-  marked text,
-    gfm: true
-    headerIds: true
-    mangle: true
-    smartLists: true
-    smartypants: true
+# base webpack bundle
+bundle = (source, build) ->
+  pipe [
+    w.config source, build
+    w.mainField "main:coffee"
+    w.extension ".coffee"
+    w.rule
+      test: /\.coffee$/
+      loader: "coffee-loader"
+    w.rule
+      test: /\.pug$/
+      loader: "pug-loader"
+      options:
+        root: source
+        filters:
+          markdown: marked
+          stylus: (text) ->
+            stylus text
+            .include source
+            .render()
+    w.rule
+      test: /\.styl$/
+      use: [
+        "css-loader"
+        "stylus-loader"
+      ]
+    w.rule
+      test: /\.yaml$/
+      type: "json"
+      loader: "yaml-loader"
+    w.alias
+      configuration: "#{source}/configuration.coffee"
+      helpers: "#{source}/helpers/index.coffee"
+      content: "#{source}/content/"
+      resources: "#{source}/resources/"
+      types: "#{source}/types/"
+      templates: "#{source}/templates/"
+      pages: "#{source}/pages/index.coffee"
+  ]
 
-bundle = (entry, target) ->
+coffee = (source, build) ->
+  do b.start [
+    b.glob [ "**/*.coffee" ], source
+    b.read
+    b.tr ({path}, code) ->
+      Coffee.compile code,
+        bare: true
+        inlineMap: true
+        filename: path
+        transpile:
+          presets: [[
+            "@babel/preset-env"
+            targets: node: "current"
+          ]]
+    b.extension ".js"
+    b.write build
+  ]
 
-  promise (resolve, reject) ->
+pug = (source, build) ->
+  do b.start [
+    b.glob [ "**/*.pug", "!**/{templates,components,pages}/**/*.pug" ], source
+    b.read
+    b.tr ({path}, code) ->
+      Pug.render code,
+        filename: Path.resolve source, path
+        basedir: source
+        filters:
+          markdown: marked
+          stylus: (text) ->
+            stylus text
+            .include source
+            .render()
+    b.extension ".html"
+    b.write build
+  ]
 
-    callback = (error, result) ->
-      console.error result.toString colors: true
-      if error? || result.hasErrors()
-        reject error ? result.errors
-      else
-        resolve result
+yaml = (source, build) ->
+  do b.start [
+    b.glob [ "**/*.yaml" ], source
+    b.read
+    b.tr ({path}, code) -> JSON.stringify YAML.safeLoad code
+    b.extension ".json"
+    b.write build
+  ]
 
-    config =
-      entry: entry
-      mode: "development"
-      devtool: "inline-source-map"
-      output:
-        path: Path.resolve target
-        filename: "index.js"
-        devtoolModuleFilenameTemplate: (info, args...) ->
-          {namespace, resourcePath} = info
-          "webpack://#{namespace}/#{resourcePath}"
-      module:
-        rules: [
+markdown = (source, build) ->
+  do b.start [
+    b.glob [ "**/*.md" ], source
+    b.read
+    b.tr ({path}, code) -> marked code
+    b.extension ".html"
+    b.write build
+  ]
 
-          test: /\.pug$/
-          use: [
-            loader: "pug-loader"
-            options: filters: {markdown}
-
-          ]
-        ,
-          test: /\.coffee$/
-          use: [ 'coffee-loader' ]
-        ,
-          test: /\.js$/
-          use: [ "source-map-loader" ]
-          enforce: "pre"
-        ,
-          test: /\.yaml$/
-          use: [ "json-loader", "yaml-loader" ]
-        ,
-          test: /\.md$/
-          use: [ "html-loader", "markdown-loader" ]
-        ]
-      resolve:
-        modules: [ Path.resolve "node_modules" ]
-        extensions: [ ".js", ".json", ".coffee" ]
-      plugins: []
-
-    webpack config, callback
-
-serve = (path, options) ->
-
-  ->
-    {port} = options
-    handler = connect()
-
-    if options.logger?
-      handler.use logger options.logger
-
-    # 1. try to find the file based on the URL
-    handler.use files path, options.files
-
-    # 2. rewrite the URL and try again
-    if options.rewrite?
-      handler.use rewrite options.rewrite
-    handler.use files path, options.files
-
-    # 3. give up and error out
-    handler.use finish
-
-    http.createServer handler
-    .listen port, ->
-      console.log green "p9k: server listening on port #{port}"
+images = (source, build) ->
+  do b.start [
+    b.glob [ "media/**/*", "!media/-sprites" ], source
+    b.copy build
+  ]
 
 sprites = (source, build) ->
   store = svgstore()
@@ -114,10 +138,32 @@ sprites = (source, build) ->
       store.add name, data
   ]
   svg = store.toString()
-  path = Path.join source, "media", "sprites.svg"
+  path = Path.join source, "media", "images", "sprites.svg"
   # svg = await svgo.optimize svg, {path}
   # {data} = svg
   # FS.writeFile path, data
   FS.writeFile path, svg
 
-export {markdown, bundle, serve, sprites}
+browser = -> puppeteer.launch()
+
+debounce = do (last = undefined) ->
+  (ms, f) ->
+    ms = BigInt 1e6 * ms
+    (ax...) ->
+      current = process.hrtime.bigint()
+      if !last? || (current - last > ms)
+        last = current
+        f ax...
+
+export {
+  clean
+  bundle
+  coffee
+  pug
+  yaml
+  markdown
+  images
+  browser
+  debounce
+  sprites
+}

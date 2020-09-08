@@ -1,10 +1,10 @@
 name: dashkite
-source: build
+source: build/www
 domain: dashkite.com
 region: us-east-1
 site:
   index: index.html
-  error: 404.html
+  error: index.html
 
 environments:
   production:
@@ -14,6 +14,18 @@ environments:
     cache:
       expires: 86400
       priceClass: 100
+    edge: &edge
+      viewerRequest:
+        runtime: nodejs12.x
+        src: "build/edge/viewer-request.js"
+        handler: "lib/viewer-request.handler"
+        zip: true
+      originRequest:
+        runtime: nodejs12.x
+        src: "build/edge/origin-request.js"
+        handler: "lib/origin-request.handler"
+        memorySize: 1600
+        zip: true
 
   staging:
     hostnames:
@@ -21,3 +33,4 @@ environments:
     cache:
       expires: 86400
       priceClass: 100
+    edge: *edge
