@@ -1,16 +1,21 @@
 style
   :stylus
-    h3#hype + p > img
+    h3#hype + p
       display block
       float left
       margin 0
       padding 0
-      width auto
-      height auto
-      border none
-      border-radius 0
-      height 2.75rem
-      margin-right 1.25rem
+
+      & > img
+        display block
+        margin 0
+        padding 0
+        width auto
+        height auto
+        border none
+        border-radius 0
+        height 2.75rem
+        margin-right 1.25rem
 
 
 :markdown
