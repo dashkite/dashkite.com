@@ -2,7 +2,7 @@ We started DashKite to take back the Web. But wha does that really mean?
 
 ## The Problem
 
-In a remarkable leap of invention, the human race developed a global network that connects us all. We gave that network a friendly face and an evocative name: the World Wide Web. Many people today are too young to recall the excitement of those days. The Web seemed poised to bring us closer together, strengthen communities, and empower individuals.
+In a remarkable leap of invention, the human race developed a global network that connects us all. We gave that network a friendly face and an evocative name: the World Wide Web. The excitement of those days might seem quaint or even naive to Web natives. The Web seemed poised to bring us closer together, strengthen communities, and empower individuals.
 
 And that happened, but not quite how we imagined. The Web, as we know it, is also a platform for fraud, harassment, propaganda, and, ultimately, violence. That sense of hope and excitement that we felt in the early days of the Web has been replaced by one of dread and disappointment.
 
