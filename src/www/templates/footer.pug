@@ -1,17 +1,20 @@
 block footer
-  nav
-    a(href = "/products")
-      svg: use(href = "/media/images/sprites.svg#products")
-      span Products
+  vellum-nav
+    script( type = "application/json")
+      :yaml
+        items:
+        - label: Products
+          link: /products
+          sprite: /media/images/sprites.svg#products
 
-    a(href = "/open-source")
-      svg: use(href = "/media/images/sprites.svg#open-source")
-      span Open Source
+        - label: Open Source
+          link: /open-source
+          sprite: /media/images/sprites.svg#open-source
 
-    a(href = "/contact")
-      svg: use(href = "/media/images/sprites.svg#contact-us")
-      span Contact
+        - label: Contact
+          link: /contact
+          sprite: /media/images/sprites.svg#contact-us
 
-    a(href = "/more")
-      svg: use(href = "/media/images/sprites.svg#more")
-      span More
+        - label: More
+          link: /more
+          sprite: /media/images/sprites.svg#more

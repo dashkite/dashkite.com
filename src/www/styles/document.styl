@@ -59,46 +59,8 @@ main
 
   overflow-y scroll
 
-
 footer
-  background-color var(--dark-primary-accent)
-  color var(--light-text)
-  line-height 1rem
-  font-size 0.9rem
-  :focus
-    box-shadow 0 0 0 1px var(--light-text)
-
-  nav
-    display flex
-    justify-content center
-    padding 0.5rem
-
-    & > a
-      // min device width we're allowing for is 320px
-      // however, we have 0.5rem (8px) margins on either
-      // side, so that's really 304px, or 19rem (304/16)
-      // so at 4.5rem width per item, we have room for
-      // 4 items (4 x 4.5 = 18), with 1rem leftover for
-      // spacing on either side of the menu itself
-      box-sizing border-box
-      width 4.5rem
-      padding-top 1rem
-      padding-right 0.5rem
-      padding-left 0.5rem
-      padding-bottom 0.5rem
-      display flex
-      flex-flow column
-      align-items center
-      justify-content flex-start
-      text-decoration none
-
-      & > svg
-        margin-bottom 0.5rem
-        display inline-block
-        fill @color
-        // overflow visible
-        height 1.5rem
-        width 1.5rem
-
-      & > span
-        text-align center
+  vellum-nav
+    --background var(--dark-primary-accent)
+    --text var(--light-text)
+    --accent var(--light-text)

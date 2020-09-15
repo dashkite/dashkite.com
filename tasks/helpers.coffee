@@ -45,6 +45,8 @@ bundle = (source, build) ->
             stylus text
             .include source
             .render()
+          yaml: (text) ->
+            JSON.stringify YAML.safeLoad text
     w.rule
       test: /\.styl$/
       use: [
