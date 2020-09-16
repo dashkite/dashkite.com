@@ -10,7 +10,7 @@
     "@dashkite/navigate": "^0.2.0",
     "@dashkite/neon": "^0.2.2",
     "@dashkite/oxygen": "^0.2.0",
-    "@dashkite/quark": "^0.4.2",
+    "@dashkite/quark": "^1.0.2",
     "@dashkite/vellum": "^0.1.2",
     "@hapi/accept": "^5.0.1",
     "@pandastrike/garden": "^8.0.0-alpha.1",

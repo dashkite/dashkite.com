@@ -13,19 +13,13 @@
   --dark-background #002a3a
   --dark-text rgba(255, 255, 255, 0.8)
 
-
 html
-  // font-size 8px
-  /* System */
-  font-family system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-family system, -apple-system, ".SFNSText-Regular", "San Francisco", \
+    "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 
 a, a:visited, a:hover
   text-decoration none
   color inherit
-
-:focus
-  outline none
-  box-shadow 0 0 0 1px #333
 
 body
   margin 0
@@ -37,13 +31,20 @@ body
 
   & > header
     background-color white
-    padding 1.25rem
+    padding 0.75rem
     border-bottom 1px solid var(--accent)
     margin-bottom 1.25rem
     .logo
       width min-content
       & > a
         display block
+        padding 0.5rem
+        border-radius 0.25rem
+
+        &:focus
+          outline none
+          box-shadow 0 0 0 1px var(--accent)
+
         & > img
           height 2.5rem
 
