@@ -1,22 +1,18 @@
 :root
-  --brand #61D3FF
-  --dark-brand #00384d
-  --light-brand #008dc3
+  --brand-blue #61D3FF
 
-  --primary-shade #F5F6F4
-  --primary-accent #007faf
-  --dark-primary-accent #002a3a
-
-  --secondary-accent #B73B59
-  --secondary-shade #610015
+  --foreground #0a080c
+  --background #F5F6F4
+  --accent var(--foreground)
 
   --info #234467
   --success #53ba83
   --warning #d0aa4b
   --danger #f44336
 
-  --dark-text #0a080c
-  --light-text rgba(255, 255, 255, 0.8)
+  --dark-background #002a3a
+  --dark-text rgba(255, 255, 255, 0.8)
+
 
 html
   // font-size 8px
@@ -30,18 +26,19 @@ a, a:visited, a:hover
 :focus
   outline none
   box-shadow 0 0 0 1px #333
+
 body
   margin 0
   display grid
   grid-template-rows auto 1fr auto
   height 100vh
-  color var(--dark-text)
-  background-color var(--primary-shade)
+  color var(--text)
+  background-color var(--background)
 
   & > header
     background-color white
     padding 1.25rem
-    border-bottom 1px solid var(--dark-primary-accent)
+    border-bottom 1px solid var(--accent)
     margin-bottom 1.25rem
     .logo
       width min-content
@@ -59,8 +56,10 @@ main
 
   overflow-y scroll
 
+  border-color silver
+
 footer
   vellum-nav
-    --background var(--dark-primary-accent)
-    --text var(--light-text)
-    --accent var(--light-text)
+    --background var(--dark-background)
+    --text var(--dark-text)
+    --accent var(--dark-text)

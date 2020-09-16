@@ -1,4 +1,4 @@
-We started DashKite to take back the Web. But wha does that really mean?
+We started DashKite to take back the Web. But what does that really mean?
 
 ## The Problem
 

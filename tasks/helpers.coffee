@@ -99,6 +99,8 @@ pug = (source, build) ->
             stylus text
             .include source
             .render()
+          yaml: (text) ->
+            JSON.stringify YAML.safeLoad text
     b.extension ".html"
     b.write build
   ]

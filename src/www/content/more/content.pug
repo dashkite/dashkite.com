@@ -1,0 +1,30 @@
+//- because of the odd number of items, we set the max width
+//- to avoid an orphan
+style
+  :stylus
+    vellum-nav
+      max-width 25rem
+
+vellum-nav.large
+  script( type = "application/json" )
+    :yaml
+      items:
+      - label: Products
+        link: /products
+        sprite: /media/images/sprites.svg#products
+
+      - label: Code
+        link: /code
+        sprite: /media/images/sprites.svg#open-source
+
+      - label: Mission
+        link: /mission
+        sprite: /media/images/sprites.svg#compass
+
+      - label: Team
+        link: /team
+        sprite: /media/images/sprites.svg#team
+
+      - label: Contact
+        link: /contact
+        sprite: /media/images/sprites.svg#contact-us
