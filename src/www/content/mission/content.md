@@ -4,7 +4,7 @@ We started DashKite to take back the Web. But what does that really mean?
 
 In a remarkable leap of invention, the human race developed a global network that connects us all. We gave that network a friendly face and an evocative name: the World Wide Web. The excitement of those days might seem quaint or even naive to Web natives. The Web seemed poised to bring us closer together, strengthen communities, and empower individuals.
 
-And that happened, but not quite how we imagined. The Web, as we know it, is also a platform for fraud, harassment, propaganda, and, ultimately, violence. That sense of hope and excitement that we felt in the early days of the Web has been replaced by one of dread and disappointment.
+And that happened, but not quite how we imagined. The Web, as we know it, has become a platform for fraud, harassment, propaganda, and, ultimately, violence. That sense of hope and excitement that we felt in the early days of the Web has been replaced by one of dread and disappointment.
 
 ## The Solution
 
@@ -12,7 +12,7 @@ We need to take the Web back. After all, it was built through public investment:
 
 To do that, we need to make it safe, secure, inclusive, and empowering. The good news is that the technology that powers Web has become far more powerful over the past three decades. But the technology by itself is not enough: we need to rethink how we’re making use of it. That means challenging long-held and even cherished assumptions and accepted best-practices.
 
-This encompasses everything from hiring practices to architecturral decisions. For example, DashKite's security model is designed to minimize the amount of personal information our applications need, substantially reducing the risk of privacy breaches. That meant discarding a lot of the current state-of-the-art in security, because it assumes applications need access to private data.
+This encompasses everything from hiring practices to architecturral decisions. For example, [DashKite's security model][2] is designed to minimize the amount of personal information our applications need, substantially reducing the risk of privacy breaches. That meant discarding a lot of the current state-of-the-art in security, because it assumes applications need access to private data.
 
 ## Our Role
 
@@ -22,4 +22,6 @@ We’re starting simple, with applications that will allow us to test our innova
 
 Of course, we can't do that alone. We welcome [feedback][1] and look forward to working with others that share our desire to take back the Web. Together, we can create a better Web&hellip;and a better world.
 
-[1]: /contact
+[1]: /contact	"Contact Us"
+[2]: /innovations/authorization	"Distributed Authorization For The Web"
+
