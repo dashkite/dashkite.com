@@ -11,10 +11,11 @@ adapt = (f) ->
 router = Router.create()
 Registry.set {router}
 
-merge = tee (context) -> Object.assign context.bindings, context.resource
+merge = tee (context) ->
+  Object.assign context.bindings, context.resource
 
 json = tee (context) ->
-  context.bindings = json:
+  context.bindings.json =
     JSON.stringify context.bindings
 
 export {adapt, router, merge, json}

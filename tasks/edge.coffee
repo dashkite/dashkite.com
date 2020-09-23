@@ -77,6 +77,7 @@ define "edge:test:bundle", pipe [
   w.entry test: Path.resolve "test", "edge", "index.coffee"
   w.path Path.resolve build, "test"
   w.mode "development"
+  w.nodeEnv "test"
   w.sourcemaps
   w.run
 ]

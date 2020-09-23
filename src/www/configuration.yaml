@@ -1,3 +1,6 @@
+test:
+  content:
+    base: http://localhost:3000
 development:
   content:
     base: http://localhost:8080

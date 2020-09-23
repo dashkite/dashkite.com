@@ -41,7 +41,7 @@ render = curry rtee (selector, template, {bindings}) ->
 
 show = tee (context) ->
   $ ".active", context.root
-    .removeClass "active"
+    ?.removeClass "active"
   context.page.addClass "active"
   context.view.addClass "active"
 
