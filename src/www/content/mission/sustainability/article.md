@@ -9,9 +9,9 @@ Specifically, we need a Web that is:
 - **Inclusive.** We want a Web where people to feel welcome, regardless of their race, gender, sexuality, religion, or abilities. But we do not suffer [the paradox of tolerance][pa]: safety takes precedence over inclusivity.
 - **Humane.** We want a Web that strengthens and safeguards human rights, rather than weakening and undermining them. Paramount among these is the right to privacy: the Web should not be a shortcut for mass surveillance.
 
-These interlocking objectives encompass not only the use of the Web, but also its operation. For example, [content moderation on the Web][cm] largely relies on contract labor, paying workers minimal wages while exposing them to prolongued psychological distress, while automating this process is typically discriminatory due to bias that is [codified algorithmically][al].
+These interlocking objectives encompass not only the use of the Web, but also its operation. For example, [content moderation on the Web][cm] largely relies on contract labor, paying workers minimal wages while exposing them to prolongued psychological distress, while automating this process is typically discriminatory due to organizational bias that is [codified algorithmically][al].
 
-Creating a sustainable Web demands more than good intentions: we must also profoundly change the way we think and operate. We must realize that much of what currently passes for best practice is not good enough. Specifically, we must:
+Creating a sustainable Web demands more than good intentions: we must also profoundly change the way we think and work. We must realize that much of what currently passes for best practice is not good enough. Specifically, we must:
 
 1. **Build diverse teams, with diverse leadership**, from the beginning, representative of the people we want to serve. We cannot build an inclusive Web without creating inclusive organizations.
 2. **Foster a movement,** by supporting initiatives, [organizations][bt], and individuals whose mission is compatiable with our own. Building a tech ecosystem that isn’t inherently exploitative is bigger than anyone one person or company.

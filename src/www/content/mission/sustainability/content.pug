@@ -1,8 +1,10 @@
 style
   :stylus
     fig
+      // quark/tachyon green
+      --accent #137752
       width min-content
-      border 1px solid silver
+      border 1px solid var(--accent)
       border-radius 0.5rem
       margin-top 0
       margin-left 1.5rem
@@ -10,10 +12,15 @@ style
       margin-right 0.25rem
       padding 1.25rem
       float: right
+      fill var(--accent)
       svg
         max-width 16rem
+        padding-bottom 1rem
+        border-bottom 1px solid var(--accent)
         margin-bottom 1rem
+        fill #137752
       figcaption
+        padding 0 1rem
         h2
           display inline !important
           border none !important
