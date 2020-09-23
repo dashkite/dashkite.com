@@ -1,0 +1,40 @@
+style
+  :stylus
+    fig
+      width min-content
+      border 1px solid silver
+      border-radius 0.5rem
+      margin-top 0
+      margin-left 1.5rem
+      margin-bottom 0.75rem
+      margin-right 0.25rem
+      padding 1.25rem
+      float: right
+      svg
+        max-width 16rem
+        margin-bottom 1rem
+      figcaption
+        h2
+          display inline !important
+          border none !important
+          margin 0 !important
+          line-height 1.5rem !important
+          font-size 1rem !important
+        p
+          font-style italic !important
+          line-height 1.5rem !important
+          font-size 1rem !important
+        h2 + p
+          display inline !important
+          margin-left 0.25rem !important
+
+fig
+  svg: use( href = '/media/images/sprites.svg#celtic-knot' )
+  figcaption
+    h2 A Celtic Knot
+    p.
+      A sustainable Web is safe, healthy, inclusive, and humane, with each of
+      these interlocking objectives reinforcing the others, like this this
+      Celtic knot.
+
+include:markdown article.md
