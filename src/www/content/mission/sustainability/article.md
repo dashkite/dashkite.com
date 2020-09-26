@@ -1,4 +1,4 @@
-The Web, for all its promise, has become a platform for fraud, harassment, propaganda, and, ultimately, violence. The utility of the Web is offset by these [negative externalities][ne], much as the utility of combustion engines in automobiles is offset by the air pollution they produce. And just as climate change represents an existential threat to civilization, so, to, does the Web threaten to [undermine democracy and erode human rights][rd]. We need a Web that can operate without creating these massive negative externalities. In ecology, we refer this property—utility without equilibrium-disrupting negative externalities—as [_sustainability_][su].
+The Web, for all its promise, has become a platform for fraud, harassment, propaganda, and, ultimately, violence. The utility of the Web is offset by these [negative externalities][ne], much as the utility of combustion engines in automobiles is offset by the air pollution they produce. And just as climate change represents an existential threat to civilization, so, to, does the Web threaten to [undermine democracy and erode human rights][rd]. We need a Web that can operate without creating these massive negative externalities. In ecology, we refer this property as [_sustainability_][su].
 
 We need **a sustainable Web**.
 
@@ -9,7 +9,7 @@ Specifically, we need a Web that is:
 - **Inclusive.** We want a Web where people to feel welcome, regardless of their race, gender, sexuality, religion, or abilities. But we do not suffer [the paradox of tolerance][pa]: safety takes precedence over inclusivity.
 - **Humane.** We want a Web that strengthens and safeguards human rights, rather than weakening and undermining them. Paramount among these is the right to privacy: the Web should not be a shortcut for mass surveillance.
 
-These interlocking objectives encompass not only the use of the Web, but also its operation. For example, [content moderation on the Web][cm] largely relies on contract labor, paying workers minimal wages while exposing them to prolongued psychological distress, while automating this process is typically discriminatory due to organizational bias that is [codified algorithmically][al].
+These interlocking objectives encompass not only the use of the Web, but also its operation. For example, [content moderation on the Web][cm] largely relies on contract labor, paying workers minimal wages while exposing them to prolongued psychological distress. Meanwhile, attempts to automate this process merely [algorithmically codifies][al] organizational bias.
 
 Creating a sustainable Web demands more than good intentions: we must also profoundly change the way we think and work. We must realize that much of what currently passes for best practice is not good enough. Specifically, we must:
 
@@ -20,7 +20,7 @@ Creating a sustainable Web demands more than good intentions: we must also profo
 5. **Improve software quality,** across all metrics, including reliability, security, and performance. We need to leave the gold rush mentality behind and build things with real and lasting value.
 6. **Develop and normalize new revenue models** for Web platforms, such as paid features or subscriptions, that can replace existing intrinsically exploitative models, like advertising and data harvesting.
 
-We acknowledge this list merely scratches the surface. Each of these actions require deliberate study, planning, experimentation, and execution. We have a long road to travel but, fortunately, we don’t walk it alone. We can leverage a great deal of work that has already been done and knowledge that has already been acquired, through experience and research. We believe we’ve reached a fork in that road where we can—and must—choose the path that leads toward a sustainable Web.
+We acknowledge this list merely scratches the surface. Each of these actions require deliberate study, planning, experimentation, and execution. We have a long road to travel but, fortunately, we don’t walk it alone. We can leverage a great deal of work that has already been done and knowledge that has already been acquired, through experience and research. We’ve reached a fork in that road where we can—and must—choose the path that leads toward a sustainable Web.
 
 [su]: https://en.wikipedia.org/wiki/Sustainability	"Sustainability"
 [ne]: https://en.wikipedia.org/wiki/Externality#Negative	"Negative Externality"

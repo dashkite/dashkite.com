@@ -1,0 +1,28 @@
+style
+  include:stylus styles.styl
+
+mixin member(displayName, nickname, title)
+  .member
+    h2
+      = displayName
+      a( href = `https://hype.dashkite.com/page/${nickname}`)
+        svg: use(href = "/media/images/sprites.svg#hype")
+
+    fig: img( src = `/media/images/${nickname}.jpg` alt = displayName )
+
+    h3= title
+
+    block
+
+.team
+  +member("Dan Yoder", "dan", "CEO")
+    include:markdown dan.md
+
+  +member("David Harper", "david", "CTO")
+    include:markdown david.md
+
+  +member("Adele Yoder", "adele", "President")
+    include:markdown adele.md
+
+  +member("Eliset Garcia", "elixmg", "Executive Administrator")
+    include:markdown eliset.md

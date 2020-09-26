@@ -1,0 +1,1 @@
+Co-founder and CTO [David Harper](/team/david-harper) has six years of software development experience, with a focus on security and privacy. David is also an accomplished baker and <del>skilled</del> apparently terrible _Overwatch_ player.

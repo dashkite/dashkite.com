@@ -1,0 +1,1 @@
+Eliset brings skills and experience in business administration and management to DashKite. She earned her BA in Psychology from California State University-San Bernardino, and has recently taken up the fine art of leatherwork.

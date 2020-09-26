@@ -10,11 +10,11 @@ And that happened, but not quite how we imagined. The Web, as we know it, has be
 
 We need to take the Web back. After all, it was built through public investment: it truly is _ours_. Silicon Valley didn’t create it: they just colonized it. There’s nothing stopping us from taking it back. We can still realize its incredible potential.
 
-To do that, we need to make it [sustainable][1]. We use *sustainability* in [the ec sense][2]. As applied to the Web, sustainability encompasses safety, privacy, inclusivity, and other values that ensure that the Web becomes more than a gold rush.
+To do that, we need to make it [more sustainable][su], a concept borrowed from ecology. As applied to the Web, sustainability [encompasses values][su] that ensure that the Web becomes more than a gold rush.
 
-The good news is that the technology that powers Web has become far more powerful over the past three decades. But the technology by itself is not enough: we need to rethink how we’re making use of it. That means challenging long-held and even cherished assumptions and accepted best-practices.
+The good news is that the technology that powers Web has become far more powerful over the past three decades. But the technology by itself is not enough: we need to rethink how we’re making use of it. That means challenging long-held and even [cherished assumptions and accepted best-practices][su].
 
-This encompasses everything from hiring practices to architecturral decisions. For example, [DashKite's security model][3] is designed to minimize the amount of personal information our applications need, substantially reducing the risk of privacy breaches. That meant discarding a lot of the current state-of-the-art in security, because it assumes applications need access to private data.
+This encompasses everything from hiring practices to architectural decisions. For example, [DashKite's security model][au] is designed to minimize the amount of personal information our applications need, substantially reducing the risk of privacy breaches. That meant discarding a lot of the current state-of-the-art in security, because it assumes applications need access to private data.
 
 ## Our Role
 
@@ -22,12 +22,8 @@ Developing a new security model took a lot more time and effort than just doing 
 
 We’re starting simple, with applications that will allow us to test our innovations without gambling with people's privacy, safety, or well-being. In a sense, we're retracing the steps of the early Web, hoping to learn from past mistakes.
 
-Of course, we can't do that alone. We welcome [feedback][4] and look forward to working with others that share our desire to take back the Web. Together, we can create a better Web&hellip;and a better world.
+Of course, we can't do that alone. We welcome [feedback][co] and look forward to working with others that share our desire to take back the Web. Together, we can create a better Web&hellip;and a better world.
 
-[1]: /mission/sustainability	"A Sustainable Web"
-
-[2]: https://en.wikipedia.org/wiki/Sustainability "Sustainability"
-
-[3]: /innovations/authorization	"Distributed Authorization For The Web"
-[4]: /contact	"Contact Us"
-
+[su]: /mission/sustainability	"A Sustainable Web"
+[au]: /innovations/authorization	"Distributed Authorization For The Web"
+[co]: /contact	"Contact Us"
