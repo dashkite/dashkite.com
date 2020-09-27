@@ -1,7 +1,7 @@
-import "construct-style-sheets-polyfill"
 import Registry from "@dashkite/helium"
 import "@dashkite/vellum"
 import * as q from "@dashkite/quark"
+import * as s from "@dashkite/stylist"
 import {navigate} from "@dashkite/navigate"
 import * as n from "@dashkite/neon"
 import "pages"
@@ -10,7 +10,7 @@ import {ready} from "./helpers"
 import main from "./styles/document.styl"
 import views from "./styles/views"
 
-sheets = q.sheets document
+sheets = s.sheets document
 Registry.set {sheets, neon: n}
 
 navigate document
