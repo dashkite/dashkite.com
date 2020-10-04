@@ -8,7 +8,7 @@ mixin member(displayName, nickname, title)
       a( href = `https://hype.dashkite.com/page/${nickname}`)
         svg: use(href = "/media/images/sprites.svg#hype")
 
-    fig: img( src = `/media/images/${nickname}.jpg` alt = displayName )
+    figure: img( src = `/media/images/${nickname}.jpg` alt = displayName )
 
     h3= title
 
