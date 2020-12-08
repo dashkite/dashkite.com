@@ -1,1 +1,1 @@
-We started DashKite to *take back the Web*. But what does that really mean?
+We started DashKite to help you *be yourself* on the Web. But what does that really mean?

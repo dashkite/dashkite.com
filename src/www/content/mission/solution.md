@@ -1,4 +1,4 @@
-We need to take the Web back. After all, it was built through public investment: it truly is _ours_. Silicon Valley didn’t create it: they just colonized it. There’s nothing stopping us from taking it back. We can still realize its incredible potential.
+The Web is what we make of it. After all, it was built through public investment: it truly is _ours_. Silicon Valley didn’t create it: they just colonized it. We can still realize its incredible potential.
 
 To do that, we need to make it [more sustainable][su], a concept borrowed from ecology. As applied to the Web, sustainability encompasses values that ensure that the Web becomes more than a gold rush.
 
