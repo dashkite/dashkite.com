@@ -13,7 +13,7 @@ environments:
       - www
     cache:
       expires: 86400
-      priceClass: 100
+      priceClass: All
     edge: &edge
       viewerRequest:
         runtime: nodejs12.x
