@@ -129,6 +129,15 @@ images = (source, build) ->
     b.copy build
   ]
 
+# TODO This doesn't work correctly yet
+# You can't link to local PDFs because
+# the app tries to route them.
+pdf = (source, build) ->
+  do b.start [
+    b.glob [ "**/*.pdf" ], source
+    b.copy build
+  ]
+
 sprites = (source, build) ->
   store = svgstore()
   svgo = new SVGO multipass: true
@@ -167,6 +176,7 @@ export {
   yaml
   markdown
   images
+  pdf
   browser
   debounce
   sprites

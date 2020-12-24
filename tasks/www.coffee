@@ -18,7 +18,9 @@ define "www:pug", -> h.pug source, build
 define "www:markdown", -> h.markdown source, build
 define "www:yaml", -> h.yaml source, build
 define "www:media", -> h.images source, build
-define "www:assets", [ "www:pug&", "www:markdown&", "www:yaml&", "www:media&" ]
+define "www:pdf", -> h.pdf source, build
+define "www:assets",
+  [ "www:pug&", "www:markdown&", "www:yaml&", "www:media&", "www:pdf&" ]
 
 bundle = h.bundle source, build
 
