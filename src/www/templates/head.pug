@@ -9,7 +9,18 @@ block head
   //-      might just be an old version?
   script.
     window.Buffer = undefined
+
   script( src = "/application.js" )
+
+  script(
+    async = ""
+    src= "https://www.googletagmanager.com/gtag/js?id=G-Y26S28D4QK"
+  )
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-Y26S28D4QK");
 
   meta(property = "og:site_name" content = "DashKite")
 
