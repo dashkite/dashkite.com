@@ -1,4 +1,5 @@
 import {join} from "path"
+import preview from "./preview"
 import response from "./response"
 import "source-map-support/register"
 
@@ -8,6 +9,7 @@ handler = (event, context, callback) ->
   console.log
     requestID: config.requestId
     uri: request.uri
+    querystring: request.querystring
     accept: request.headers["accept"]?[0]?.value
     acceptEncoding: request.headers["accept-encoding"]?[0]?.value
 
@@ -24,6 +26,8 @@ handler = (event, context, callback) ->
         else
           request.uri = join "/identity", request.uri
       callback null, request
+    else if (request.uri.match /^\/preview/)?
+      callback null, await preview request
     else
       callback null, await response request
   catch e
