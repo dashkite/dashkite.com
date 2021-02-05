@@ -24,7 +24,7 @@ environments:
         runtime: nodejs12.x
         src: "build/edge/origin-request.js"
         handler: "lib/origin-request.handler"
-        memorySize: 1600
+        memorySize: 3008
         zip: true
 
   staging:

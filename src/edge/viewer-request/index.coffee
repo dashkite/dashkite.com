@@ -23,7 +23,12 @@ handler = (event, context, callback) ->
     # Negotiate the final "Accept" Header and assign to request
     try
       header = request.headers["accept"]?[0]?.value ?  "*/*"
-      allowedType = lookupType request
+
+      if (request.uri.match /^\/preview/)?
+        allowedType = "application/json"
+      else
+        allowedType = lookupType request
+
       acceptable = Accept.mediaType header, [ allowedType ]
       return callback null, notAcceptable allowedType if isEmpty acceptable
     catch e
@@ -42,6 +47,8 @@ handler = (event, context, callback) ->
     # so the best we can do is dynamic compression with gzip.
     try
       if allowedType == "text/html"
+        allowedTypes = ["gzip", "identity"]
+      else if (request.uri.match /^\/preview/)?
         allowedTypes = ["gzip", "identity"]
       else
         if isCompressible allowedType

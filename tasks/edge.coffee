@@ -1,6 +1,6 @@
 import Path from "path"
 
-import {pipe} from "@pandastrike/garden"
+import {pipe, flow, tee} from "@pandastrike/garden"
 import * as b from "@dashkite/brick"
 import {define, run} from "@dashkite/genie"
 
@@ -8,6 +8,9 @@ import * as h from "./helpers"
 import {bundle as www} from "./www"
 
 import * as w from "@dashkite/zenpack"
+
+import * as aws from "./aws"
+import awsConfig from "./aws-config"
 
 source = Path.resolve "src", "edge"
 build = Path.resolve "build", "edge"
@@ -36,14 +39,20 @@ define "edge:staging:bundle", pipe [
   w.mode "development"
   w.nodeEnv "staging"
   w.sourcemaps
-  w.run
-]
+  flow [
+    aws.setup awsConfig
+    tee ({webpack}) -> w.run webpack
+    aws.cleanup
+] ]
 
 define "edge:production:bundle", pipe [
   bundle
   w.mode "production"
-  w.run
-]
+  flow [
+    aws.setup awsConfig
+    tee ({webpack}) -> w.run webpack
+    aws.cleanup
+] ]
 
 define "edge:development:build", [
   "edge:clean"
