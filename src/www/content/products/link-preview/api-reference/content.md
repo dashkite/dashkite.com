@@ -43,7 +43,7 @@ The preview resource for the URL `https://example.com/an-example-link` would be:
 
 `/preview?url=https%3A%2F%2Fexample.com%2Fan-example-link`
 
-**Important:* The `url` parameter must be [URL encoded][encoded-uri].
+**Important:** The `url` parameter must be [URL encoded][encoded-uri].
 
 #### Parameters
 
