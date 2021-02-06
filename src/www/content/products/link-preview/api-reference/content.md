@@ -13,7 +13,7 @@
 	- [Preview Schema](#preview-schema)
 	- [Media Schema](#media-schema)
 	- [Image Schema](#image-schema)
-	- [Video / Audio Schema](#video-audio-schema)
+	- [Video / Audio Schema](#video--audio-schema)
 	- [Format Schema](#format-schema)
 	- [Player Schema](#player-schema)
 
@@ -73,7 +73,7 @@ Fetches the site preview data.
 | ---------------- | -------------------- | ------------------------------------------------------------ |
 | Content-Type     | `application/json`   |                                                              |
 | Content-Encoding | `gzip` or `identity` |                                                              |
-| Status           | `200` or `304`       | When successful. See *Response Status Codes* below for more. |
+| Status           | `200` or `304`       | When successful. See [Response Status Codes](#response-status-codes). |
 | Cache-Control    | `max-age=60`         |                                                              |
 | ETag             | `true`               |                                                              |
 
@@ -106,16 +106,16 @@ See *Preview Schema*.
 | published   | string/date-time | The publish date in ISO-8601 format.                         |
 | description | string           | The description of the content.                              |
 | url         | string/uri       | The canonical URL of the link, providing an authoritative reference to this resource. |
-| media       | object           | An object describing any associated media. See *Media Schema* below. |
+| media       | object           | An object describing any associated media. See [Media Schema](#media-schema). |
 
 ### Media Schema
 
 | Property | Type/Format  | Description                                                  |
 | -------- | ------------ | ------------------------------------------------------------ |
-| images   | array/object | An array of image descriptions. See *Image Schema* below.    |
-| audio    | array/object | An array of audio descriptions. See *Audio Schema* below.    |
-| videos   | array/object | An array of video descriptions. See *Video Schema* below.    |
-| players  | array/object | An array of media player descriptions. See *Player Schema* below. |
+| images   | array/object | An array of image descriptions. See [Image Schema](#image-schema). |
+| audio    | array/object | An array of audio descriptions. See [Video/Audio Schema](#video--audio-schema). |
+| videos   | array/object | An array of video descriptions. See [Video/Audio Schema](#video—audio-schema). |
+| players  | array/object | An array of media player descriptions. See [Player Schema](#player-schema). |
 
 ### Image Schema
 
@@ -123,13 +123,13 @@ See *Preview Schema*.
 | -------- | ------------ | ------------------------------------------------------------ |
 | caption  | string       | Description of image or alternate text.                      |
 | url      | string/uri   | URL for fallback image.                                      |
-| formats  | array/object | A list of images specified by their mediatype and URL. We recommend arranging these in a [`picture`][picture] element to allow the client to select the optimal format for the circumstance. See *Format Schema* below. |
+| formats  | array/object | A list of images specified by their mediatype and URL. We recommend arranging these in a [`picture`][picture] element to allow the client to select the optimal format for the circumstance. See [Format Schema](#format-schema). |
 
 ### Video / Audio Schema
 
 | Property | Type/Format  | Description                                                  |
 | -------- | ------------ | ------------------------------------------------------------ |
-| formats  | array/object | A list of media specifying their mediatype and URL. We recommend arranging these in [`video`][video] or [`audio`][audio] elements to allow the client to select the optimal format for the circumstance. See *Format Schema* below. |
+| formats  | array/object | A list of media specifying their mediatype and URL. We recommend arranging these in [`video`][video] or [`audio`][audio] elements to allow the client to select the optimal format for the circumstance. See [Format Schema](#format-schema). |
 
 ### Format Schema
 
