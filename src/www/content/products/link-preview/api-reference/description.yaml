@@ -1,4 +1,4 @@
 title: Link Preview API Reference
 description: >
-  Kiki is ephemeral group chat made easy. Share a link and start chatting. When you're done, your chat room disappears forever. Set the title and description of the room, kick obnoxious people out, markdown and emoji support, and more!
-image: /media/images/kiki-logo.png
+  Get rick link previews for your applications. Combines data from oEmbed, Twitter, Open Graph, and generic `<meta>` tags.
+image: /media/images/logo.png
