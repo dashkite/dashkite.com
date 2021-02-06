@@ -114,7 +114,7 @@ See *Preview Schema*.
 | -------- | ------------ | ------------------------------------------------------------ |
 | images   | array/object | An array of image descriptions. See [Image Schema](#image-schema). |
 | audio    | array/object | An array of audio descriptions. See [Video/Audio Schema](#video--audio-schema). |
-| videos   | array/object | An array of video descriptions. See [Video/Audio Schema](#video—audio-schema). |
+| videos   | array/object | An array of video descriptions. See [Video/Audio Schema](#video--audio-schema). |
 | players  | array/object | An array of media player descriptions. See [Player Schema](#player-schema). |
 
 ### Image Schema
