@@ -39,7 +39,11 @@ The `media` field is a complex data object that specifies multiple categories of
 
 **Example**
 
-`/preview?url=https://example.com/an-example-link`
+The preview resource for the URL `https://example.com/an-example-link` would be:
+
+`/preview?url=https%3A%2F%2Fexample.com%2Fan-example-link`
+
+**Important:* The `url` parameter must be [URL encoded][encoded-uri].
 
 #### Parameters
 
