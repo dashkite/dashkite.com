@@ -18,7 +18,7 @@ respond = ({status, cacheControl, body, statusDescription}) ->
     ]
     "cache-control": [
         key: "Cache-Control",
-        value: cacheControl
+        value: cacheControl ? "no-store"
     ]
     "content-type": [
         key: "Content-Type",
