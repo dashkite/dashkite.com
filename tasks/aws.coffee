@@ -4,10 +4,14 @@ import {sep, resolve} from "path"
 
 import SDK from "aws-sdk"
 
-import {flow, curry} from "@pandastrike/garden"
+import {flow, tee, curry} from "@pandastrike/garden"
 import {toJSON, include} from "panda-parchment"
 import {mkdirp, write, rmr} from "panda-quill"
 import Sundog from "sundog"
+
+checkAWSCredentials = tee ->
+  if ! process.env["AWS_PROFILE"]?
+    throw new Error "Environment variable AWS_PROFILE must be defined"
 
 setupTempDirectory = curry (aws, webpack) ->
   console.log "establishing temporary directory"
@@ -45,6 +49,7 @@ appendAlias = (config) ->
 
 setup = (awsConfig) ->
   flow [
+    checkAWSCredentials
     setupTempDirectory awsConfig
     readVault
     writeVault
