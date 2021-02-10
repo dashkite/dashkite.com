@@ -1,11 +1,11 @@
 style
-  include:stylus ../styles.styl
+  include:stylus styles.styl
 
 :markdown
 
   Get rick link previews for your applications. Combines data from oEmbed, Twitter, Open Graph, and generic `<meta>` tags.
 
-  - [Learn more][preview]
+  - [Features](#features)
   - [Pricing][pricing]
   - [API Reference][api-reference]
 
@@ -13,21 +13,8 @@ style
   [pricing]: https://rapidapi.com/dashkite-dashkite-default/api/link-preview2/pricing
   [api-reference]: /products/link-preview/api-reference
 
-h2 Examples
-
-h3 YouTube
-
-vellum-preview(
-  data-url = "https://www.youtube.com/watch?v=ck4RGeoHFko"
-  data-preset = "card"
-)
-
-h3 Instagram
-
-vellum-preview(
-  data-url = "https://www.instagram.com/p/BIqRtogAqry/"
-  data-use-iframe
-)
+section.examples
+  include examples
 
 :markdown
   ## Features

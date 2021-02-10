@@ -90,14 +90,17 @@ pug = (source, build) ->
     b.glob [ "**/*.pug", "!**/{templates,components,pages}/**/*.pug" ], source
     b.read
     b.tr ({path}, code) ->
+      filepath = Path.resolve source, path
+      directory = Path.dirname filepath
       Pug.render code,
-        filename: Path.resolve source, path
+        filename: filepath
         basedir: source
         filters:
           markdown: marked
           stylus: (text) ->
             stylus text
             .include source
+            .include directory
             .render()
           yaml: (text) ->
             JSON.stringify YAML.safeLoad text
