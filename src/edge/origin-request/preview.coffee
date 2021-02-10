@@ -6,7 +6,7 @@ global.fetch = fetch
 
 vault = Vault["link-preview-production-rapid"]
 
-respond = ({status, body, statusDescription}) ->
+respond = ({status, cacheControl, body, statusDescription}) ->
   status: status
   statusDescription: statusDescription
   body: await gzip body
@@ -15,6 +15,10 @@ respond = ({status, body, statusDescription}) ->
     "access-control-allow-origin": [
       key: "Access-Control-Allow-Origin"
       value: "*"
+    ]
+    "cache-control": [
+        key: "Cache-Control",
+        value: cacheControl
     ]
     "content-type": [
         key: "Content-Type",
@@ -45,6 +49,7 @@ preview = (request) ->
     respond
       status: "200"
       statusDescription: "200 OK"
+      cacheControl: response.headers.get "cache-control"
       body: JSON.stringify await response.json()
   catch e
     console.warn e
