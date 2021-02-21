@@ -102,9 +102,30 @@ pug = (source, build) ->
             .include source
             .include directory
             .render()
+          coffeescript: (text) ->
+            console.log "compiling coffeescript from #{path}"
+            Coffee.compile text,
+              bare: true
+              inlineMap: true
+              filename: filepath
+              transpile:
+                presets: [[
+                  "@babel/preset-env"
+                  targets: "defaults"
+                ]]
           yaml: (text) ->
             JSON.stringify YAML.safeLoad text
-    b.extension ".html"
+    tee flow [
+      k.read "path"
+      k.push (path) ->
+        {name, extension} = path
+        if (_extension = Path.extname name) != ""
+          path.extension = _extension
+          path.name = Path.basename name, _extension
+        else
+          path.extension = ".html"
+    ]
+    # b.extension ".html"
     b.write build
   ]
 
