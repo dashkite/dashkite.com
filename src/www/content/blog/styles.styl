@@ -1,4 +1,8 @@
-a.preview
-  display block
-  margin-bottom 2rem
-  text-decoration none !important
+.posts
+  display grid !important
+  grid-template-columns repeat(auto-fit, minmax(19rem, 1fr));
+  grid-gap 1rem
+  grid-auto-flow dense
+
+  & > h2
+    grid-column 1 / -1
