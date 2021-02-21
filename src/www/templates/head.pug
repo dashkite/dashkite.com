@@ -23,6 +23,18 @@ block head
     gtag("js", new Date());
     gtag("config", "G-Y26S28D4QK");
 
+  //- script(
+  //-   src = "https://cdn.usefathom.com/script.js"
+  //-   data-site = "ZPOHROZI"
+  //-   defer
+  //- )
+  script(
+    src = "https://ax.dashkite.com/latest.js"
+    async
+    defer
+  )
+  noscript: img( src = "https://analytics.dashkite.com/noscript.gif" alt = "")
+
   meta(property = "og:site_name" content = "DashKite")
 
   +title(`DashKite: ${title || "Be Yourself."}`)
