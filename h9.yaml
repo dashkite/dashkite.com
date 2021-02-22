@@ -34,3 +34,8 @@ environments:
       expires: 86400
       priceClass: 100
     edge: *edge
+
+  development:
+    hostnames:
+      - dev-www
+    edge: *edge

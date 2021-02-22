@@ -1,39 +1,28 @@
-import {join} from "path"
-import preview from "./preview"
-import response from "./response"
 import "source-map-support/register"
+import Router from "@dashkite/oxygen"
+import {media, preview, feed, application} from "./handlers"
+import {respond, log} from "./helpers"
+
+router = Router.create()
+
+router.add "/content{/path*}", {}, media
+router.add "/media{/path*}", {}, media
+router.add "/application.js", {}, media
+router.add "/preview", {}, preview
+router.add "/blog/{format}/{tag}", {}, feed
+router.add "{/path*}", {}, application
+
 
 handler = (event, context, callback) ->
-  {request, config} = event.Records[0].cf
 
-  console.log
-    requestID: config.requestId
-    uri: request.uri
-    querystring: request.querystring
-    accept: request.headers["accept"]?[0]?.value
-    acceptEncoding: request.headers["accept-encoding"]?[0]?.value
+  log event
+  {request} = event.Records[0].cf
 
   try
-    # TODO maybe move application.js to /code or something?
-    #      that way this can just be (content|media|code)
-    if (request.uri.match /^\/(content|media)\//)? ||
-        request.uri == "/application.js"
-      switch request.headers["accept-encoding"]?[0]?.value
-        when "br"
-          request.uri = join "/brotli", request.uri
-        when "gzip"
-          request.uri = join "/gzip", request.uri
-        else
-          request.uri = join "/identity", request.uri
-      callback null, request
-    else if (request.uri.match /^\/preview/)?
-      callback null, await preview request
-    else
-      callback null, await response request
-  catch e
-    # Fallback to just processing the request normally.
+    router.dispatch request.uri, {request, callback}
+  catch error
     console.error e
-    request.uri = join "/identity", request.uri
-    callback null, request
+    callback null,
+      respond context, status: "503"
 
 export {handler}

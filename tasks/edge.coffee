@@ -31,28 +31,22 @@ define "edge:development:bundle", pipe [
   bundle
   w.mode "development"
   w.sourcemaps
-  w.run
-]
+  aws.run awsConfig
+ ]
 
 define "edge:staging:bundle", pipe [
   bundle
   w.mode "development"
   w.nodeEnv "staging"
   w.sourcemaps
-  flow [
-    aws.setup awsConfig
-    tee ({webpack}) -> w.run webpack
-    aws.cleanup
-] ]
+  aws.run awsConfig
+]
 
 define "edge:production:bundle", pipe [
   bundle
   w.mode "production"
-  flow [
-    aws.setup awsConfig
-    tee ({webpack}) -> w.run webpack
-    aws.cleanup
-] ]
+  aws.run awsConfig
+]
 
 define "edge:development:build", [
   "edge:clean"

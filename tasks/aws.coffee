@@ -7,6 +7,7 @@ import SDK from "aws-sdk"
 import {flow, tee, curry} from "@pandastrike/garden"
 import {toJSON, include} from "panda-parchment"
 import {mkdirp, write, rmr} from "panda-quill"
+import * as w from "@dashkite/zenpack"
 import Sundog from "sundog"
 
 checkAWSCredentials = tee ->
@@ -47,10 +48,10 @@ appendAlias = (config) ->
 
   config
 
-setup = (awsConfig) ->
+setup = (config) ->
   flow [
     checkAWSCredentials
-    setupTempDirectory awsConfig
+    setupTempDirectory config
     readVault
     writeVault
     appendAlias
@@ -61,4 +62,11 @@ cleanup = (config) ->
   await rmr config.aws.temp
   config
 
-export {setup, cleanup}
+run = (config) ->
+  flow [
+    setup config
+    tee ({webpack}) -> w.run webpack
+    cleanup
+  ]
+
+export {setup, cleanup, run}

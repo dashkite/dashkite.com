@@ -17,7 +17,9 @@
     "@pandastrike/garden": "^8.0.1",
     "mime": "^2.4.6",
     "panda-parchment": "^6.0.4",
-    "source-map-support": "^0.5.19"
+    "rss-combiner": "0.0.5",
+    "source-map-support": "^0.5.19",
+    "statuses": "^2.0.1"
   },
   "devDependencies": {
     "@dashkite/brick": "^0.2.0",

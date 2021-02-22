@@ -70,13 +70,21 @@ define "www:watch", ->
   b.watch "./node_modules", h.debounce 1000, -> run "www:development:build"
 
 define "www:server", [ "www:development:build&", "www:watch&" ], ->
-  {port} = (b.server build, port: 8080, fallback: "index.html").address()
+  {port} = (b.server build,
+    port: 8080
+    application: Path.resolve build, "index.html"
+    files:
+      redirect: false
+  ).address()
   console.log "server running on port #{port}"
 
 define "www:test", "www:development:build", ->
 
   test await Promise.all [
-    b.server build, fallback: "index.html"
+    b.server build,
+      application: Path.resolve build, "index.html"
+      files:
+        redirect: false
     h.browser()
   ]
 
