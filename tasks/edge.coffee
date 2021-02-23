@@ -31,6 +31,7 @@ define "edge:development:bundle", pipe [
   bundle
   w.mode "development"
   w.sourcemaps
+  tee (context) -> context.resolve.mainFields = [ "main:coffee", "main" ]
   aws.run awsConfig
  ]
 
@@ -39,6 +40,7 @@ define "edge:staging:bundle", pipe [
   w.mode "development"
   w.nodeEnv "staging"
   w.sourcemaps
+  tee (context) -> context.resolve.mainFields = [ "main:coffee", "main" ]
   aws.run awsConfig
 ]
 

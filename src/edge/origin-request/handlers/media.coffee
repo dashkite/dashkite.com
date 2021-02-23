@@ -1,19 +1,19 @@
+import Path from "path"
+
 media = (match, context) ->
   {request, callback} = context
   switch request.headers["accept-encoding"]?[0]?.value
     when "br"
-      request.uri = join "/brotli", request.uri
+      request.uri = Path.join "/brotli", request.uri
     when "gzip"
-      request.uri = join "/gzip", request.uri
+      request.uri = Path.join "/gzip", request.uri
     else
-      request.uri = join "/identity", request.uri
+      request.uri = Path.join "/identity", request.uri
   try
-    next()
+    callback null, request
   catch error
     console.warn error
-    request.uri = join "/identity", request.uri
+    request.uri = Path.join "/identity", request.uri
     callback null, request
-
-
 
 export {media}

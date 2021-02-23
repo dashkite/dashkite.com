@@ -5,13 +5,13 @@ import {respond, log} from "./helpers"
 
 router = Router.create()
 
-router.add "/content{/path*}", {}, media
-router.add "/media{/path*}", {}, media
-router.add "/application.js", {}, media
-router.add "/preview", {}, preview
-router.add "/blog/{format}/{tag}", {}, feed
-router.add "{/path*}", {}, application
-
+router.add "/", { name: "root" }, application
+router.add "/content{/path*}", { name: "content" }, media
+router.add "/media{/path*}", { name: "media" }, media
+router.add "/application.js", { name: "application.js" }, media
+router.add "/preview", { name: "preview" }, preview
+router.add "/blog/{format}/{tag}", { name: "feed" }, feed
+router.add "{/path*}", { name: "application" }, application
 
 handler = (event, context, callback) ->
 
@@ -19,9 +19,9 @@ handler = (event, context, callback) ->
   {request} = event.Records[0].cf
 
   try
-    router.dispatch request.uri, {request, callback}
+    router.dispatch { url: request.uri }, {request, callback}
   catch error
-    console.error e
+    console.error error
     callback null,
       respond context, status: "503"
 

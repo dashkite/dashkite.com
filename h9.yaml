@@ -31,7 +31,7 @@ environments:
     hostnames:
       - staging-www
     cache:
-      expires: 86400
+      expires: 0
       priceClass: 100
     edge: *edge
 
@@ -39,3 +39,6 @@ environments:
     hostnames:
       - dev-www
     edge: *edge
+    cache:
+      priceClass: 100
+      expires: 0

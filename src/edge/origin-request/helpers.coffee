@@ -15,9 +15,20 @@ respond = ({request, callback}, {status, content, cache}) ->
   canCompress = (request.headers["accept-encoding"][0].value == "gzip")
   status ?= "200"
   description = statuses status
+
+  response =
+    status: status
+    statusDescription: description
+    headers:
+      "access-control-allow-origin": [
+        key: "Access-Control-Allow-Origin"
+        value: "*"
+      ]
+
   isSuccess = ("200" <= status <= "299") && (status != "204")
   body = encoding = undefined
-  if isSuccess && content.body
+
+  if isSuccess && content?
     body = if content.body.constructor == String
       content.type ?= "text/html"
       content.body
@@ -32,17 +43,11 @@ respond = ({request, callback}, {status, content, cache}) ->
       encoding = "identity"
       format = "text"
 
-  # send it
-  callback null,
-    status: status
-    statusDescription: description
-    body: body
-    bodyEncoding: format
-    headers:
-      "access-control-allow-origin": [
-        key: "Access-Control-Allow-Origin"
-        value: "*"
-      ]
+    Object.assign response,
+      body: body
+      bodyEncoding: format
+
+    Object.assign response.headers,
       "content-type": [
           key: "Content-Type",
           value: content.type
@@ -53,12 +58,15 @@ respond = ({request, callback}, {status, content, cache}) ->
       ]
       "cache-control": [
           key: "Cache-Control",
-          value: cache.control ? "no-store"
+          value: cache?.control ? "no-store"
       ]
       "vary": [
         key: "Vary"
         value: "Accept-Encoding"
       ]
+
+  # send it
+  callback null, response
 
 log = (event) ->
   {request, config} = event.Records[0].cf
