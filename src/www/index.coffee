@@ -37,3 +37,11 @@ ready ->
   catch error
     console.warn error
     router.browse name: "home"
+
+
+# Another experiment
+import {Feed} from "../edge/origin-request/handlers/feed/resources"
+
+do ->
+  console.log await Feed.get format: "atom", tag: "all"
+  console.log await Feed.get format: "rss", tag: "all"

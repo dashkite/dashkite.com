@@ -1,46 +1,58 @@
-import combine from "rss-combiner"
-import {Feed as Builder} from "feed"
-Parser = require "rss-parser"
+import cheerio from "cheerio"
+import * as g from "@pandastrike/garden"
+import * as r from "panda-river"
+import atom from "./atom.pug"
+import rss from "./rss.pug"
+
+formats =
+  atom:
+    render: atom
+    selectors:
+      item: "entry"
+      date: "updated"
+  rss:
+    render: rss
+    selectors:
+      item: "item"
+      date: "pubDate"
 
 Feed =
 
   get: ({format, tag}) ->
 
-    parser = new Parser headers: Accept: "application/#{format}+xml"
+    {render, selectors} = formats[format]
 
     base = "https://byline-api.dashkite.com"
 
-    feeds = await Promise.all [
-      parser.parseURL "#{base}/#{format}/dashkite/#{tag}"
-      parser.parseURL "#{base}/#{format}/dan/#{tag}"
-      parser.parseURL "#{base}/#{format}/david/#{tag}"
+    items = await do g.flow [
+      g.wrap [
+        "#{base}/#{format}/dashkite/#{tag}"
+        "#{base}/#{format}/dan/#{tag}"
+        "#{base}/#{format}/david/#{tag}"
+      ]
+      r.wait r.map g.flow [
+        fetch
+        (response) -> response.text()
+        (xml) -> cheerio.load xml, {xml: xmlMode: true}, false
+        ($) ->
+          ($ selectors.item).map (_, e) ->
+            xml: $.xml $ e
+            date: (new Date (($ e).find selectors.date).text()).toISOString()
+        (nodes) -> Array.from nodes
+      ]
+      r.reduce ((items, feed) -> items.concat feed), []
+      (items) -> items.sort ((a, b) -> b.date.localeCompare a.date, "en")
+      r.map ({xml}) -> xml
+      r.collect
     ]
 
-    items  = feeds
-      .reduce ((items, feed) -> items.concat feed.items), []
-      .sort ((a, b) -> b.isoDate.localeCompare a.isoDate, "en")
-
-    feed = new Builder
+    feed =
       title: "DashKite Blog Feed"
       id: "https://dashkite.com/blog/#{format}/#{tag}"
       link: "https://dashkite.com/blog/#{format}/#{tag}"
       favicon: "https://dashkite.com/media/images/favicon.ico"
+      items: items
 
-    # TODO possibly just replace with pug templates?
-    add = (feed, item) ->
-      feed.addItem
-        id: item.id
-        title: item.title
-        author: name: item.author
-        link: item.link
-        date: new Date item.isoDate
-        description: item.summary
-      feed
-
-    items.reduce add, feed
-
-    switch format
-      when "atom" then feed.atom1()
-      when "rss" then feed.rss2()
+    render feed
 
 export {Feed}
