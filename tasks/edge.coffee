@@ -92,5 +92,8 @@ define "edge:test:build", [
   "edge:test:bundle&"
 ]
 
-define "edge:test", "edge:test:build", ->
-  b.node "build/edge/test/test.js", [ "--enable-source.maps" ]
+# define "edge:test", "edge:test:build", ->
+#   b.node "build/edge/test/test.js", [ "--enable-source.maps" ]
+
+define "edge:test", ->
+  require "../test/edge"

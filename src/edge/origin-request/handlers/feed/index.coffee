@@ -1,9 +1,5 @@
-import Feed from "resources/feed"
-import {respond} from "../helpers"
-
-# install global fetch
-import fetch from "node-fetch"
-global.fetch = fetch
+import {Feed} from "./resources"
+import {respond} from "../../helpers"
 
 feed = (match, context) ->
   {format, tag} = match.bindings
