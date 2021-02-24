@@ -75,25 +75,9 @@ define "edge:watch", ->
 # Edge Test
 #
 
-define "edge:test:clean", -> h.clean Path.resolve "build", "edge", "test"
+# TODO make it possible to run against dev or staging?
+# right now there's no difference between dev and staging build
+# except that dev doesn't work due to the configuration being local
 
-define "edge:test:bundle", pipe [
-  bundle
-  w.entry test: Path.resolve "test", "edge", "index.coffee"
-  w.path Path.resolve build, "test"
-  w.mode "development"
-  w.nodeEnv "test"
-  w.sourcemaps
-  w.run
-]
-
-define "edge:test:build", [
-  "edge:test:clean"
-  "edge:test:bundle&"
-]
-
-# define "edge:test", "edge:test:build", ->
-#   b.node "build/edge/test/test.js", [ "--enable-source.maps" ]
-
-define "edge:test", ->
+define "edge:staging:test", ->
   require "../test/edge"

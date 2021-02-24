@@ -7,17 +7,18 @@ import fetch from "node-fetch"
 global.fetch = fetch
 
 import {Application, Preview, Feed} from "./resources"
-# import {Application, Preview} from "./resources"
-# import {Feed} from "../../src/edge/origin-request/handlers/feed/resources"
+
+timeout = 2000
 
 do ->
-  print await test "dashkite.com edge tests", [
+
+  print await test "dashkite.com edge tests [staging]", [
 
     test "application handler", [
 
       test
         description: "home page",
-        wait: 5000
+        wait: timeout
         ->
           $ = cheerio.load await Application.get "/"
           assert.equal ($ "title").text()?, true
@@ -26,7 +27,7 @@ do ->
 
       test
         description: "product page",
-        wait: 5000
+        wait: timeout
         ->
           $ = cheerio.load await Application.get "/products"
           assert.equal ($ "title").text()?, true
@@ -38,7 +39,7 @@ do ->
 
       test
         description: "preview",
-        wait: 5000
+        wait: timeout
         ->
           preview = await Preview.get url: "https://byline.dashkite.com/\
             post/dashkite/-7h5X90ovPH1EvMMOByQEQ/week-in-review-feb-19-2021"
@@ -50,13 +51,36 @@ do ->
     test "feed handler", [
 
       test
-        description: "feed"
-        wait: 10000
+        description: "atom"
+        wait: timeout
         ->
-          console.log feed: await Feed.get format: "atom", tag: "all"
+          $ = cheerio.load await Feed.get format: "atom", tag: "all"
+          assert.equal ($ "title").text()?, true
+
+      test
+        description: "rss"
+        wait: timeout
+        ->
+          $ = cheerio.load await Feed.get format: "rss", tag: "all"
+          assert.equal ($ "title").text()?, true
+
     ]
 
-    test "media handler"
+    test "media handler", [
+
+      test
+        description: "application javascript"
+        wait: timeout
+        ->
+          response = await fetch "https://\
+            staging-www.dashkite.com/\
+            application.js"
+          assert.equal 200, response.status
+          assert.equal "application/javascript",
+            response.headers.get "content-type"
+
+
+    ]
 
   ]
 
