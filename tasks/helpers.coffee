@@ -149,7 +149,7 @@ markdown = (source, build) ->
 
 images = (source, build) ->
   do b.start [
-    b.glob [ "media/**/*", "!media/-sprites" ], source
+    b.glob [ "media/**/*", "!media/-sprites", "robots.txt" ], source
     b.copy build
   ]
 

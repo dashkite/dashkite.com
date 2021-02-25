@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dashkite.com/sitemap.xml
