@@ -1,4 +1,5 @@
 test:
+  # we can't rely on window.location b/c we may be in an edge lambda
   content:
     base: http://localhost:3000
 development:
