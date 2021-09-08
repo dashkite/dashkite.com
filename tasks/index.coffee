@@ -1,12 +1,4 @@
-# TODO this break the coffee compilation for some reason?
-# import "source-map-support/register"
-import "coffeescript/register"
+import * as t from "@dashkite/genie"
+import preset from "@dashkite/genie-presets"
 
-import "./www"
-import "./edge"
-
-import {define} from "@dashkite/genie"
-
-define "test", [ "www:test", "edge:test" ]
-define "build", [ "www:production:build", "edge:production:build" ]
-define "staging:build", [ "www:staging:build", "edge:staging:build" ]
+preset t

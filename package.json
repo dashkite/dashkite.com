@@ -1,57 +1,44 @@
 {
   "name": "dashkite.com",
   "version": "0.10.2",
-  "description": "The DashKite Web site",
-  "repository": "https://github.com/dashkite/dashkite.com",
+  "description": "DashKite Web Site",
+  "scripts": {
+    "test": "genie test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashkite/dashkite.com.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "SEE LICENSE IN LICENSE.md",
-  "dependencies": {
-    "@dashkite/helium": "^0.3.0",
-    "@dashkite/mercury": "0.1.1",
-    "@dashkite/navigate": "^0.2.1",
-    "@dashkite/neon": "^0.3.2",
-    "@dashkite/oxygen": "^0.3.1",
-    "@dashkite/quark": "^1.3.0-beta.6",
-    "@dashkite/stylist": "0.0.3",
-    "@dashkite/vellum": "^0.7.5",
-    "@hapi/accept": "^5.0.1",
-    "@pandastrike/garden": "^8.0.1",
-    "feed": "^4.2.2",
-    "feedparser": "^2.2.10",
-    "mime": "^2.4.6",
-    "panda-parchment": "^6.0.4",
-    "rss-combiner": "0.0.5",
-    "rss-parser": "^3.12.0",
-    "source-map-support": "^0.5.19",
-    "statuses": "^2.0.1"
+  "bugs": {
+    "url": "https://github.com/dashkite/dashkite.com/issues"
+  },
+  "homepage": "https://github.com/dashkite/dashkite.com#readme",
+  "imports": {
+    "#helpers": "./build/browser/src/helpers.js",
+    "#resources/*": "./build/browser/src/resources/*.js",
+    "#templates/*": "./build/browser/src/templates/*.js",
+    "#fixtures/*": "./build/browser/src/fixtures/*.js"
   },
   "devDependencies": {
-    "@dashkite/brick": "^0.2.0",
-    "@dashkite/genie": "0.1.0",
-    "@dashkite/mimic": "^0.1.0",
-    "@dashkite/zenpack": "^0.3.3",
-    "amen": "^3.0.0",
-    "aws-sdk": "^2.838.0",
-    "cheerio": "^1.0.0-rc.5",
-    "coffee-loader": "^1.0.0",
-    "coffeescript": "^2.5.1",
-    "css-loader": "^4.3.0",
-    "express": "^4.17.1",
-    "faker": "^5.1.0",
-    "haiku9": "^4.0.5",
-    "js-yaml": "^3.14.0",
-    "marked": "^1.2.0",
-    "node-fetch": "^3.0.0-beta.9",
-    "panda-quill": "^5.0.0",
-    "panda-river": "^6.0.1",
-    "pug": "^3.0.0",
-    "pug-loader": "^2.4.0",
-    "puppeteer": "^5.3.1",
-    "serve-static": "^1.14.1",
-    "stylus": "^0.54.8",
-    "stylus-loader": "^4.1.0",
-    "sundog": "^6.0.4",
-    "svgo": "^1.3.2",
-    "svgstore": "^3.0.0-2",
-    "yaml-loader": "^0.6.0"
+    "@dashkite/amen": "^0.1.2",
+    "@dashkite/amen-console": "^0.0.1",
+    "@dashkite/assert": "^0.1.3",
+    "@dashkite/genie": "^0.5.4",
+    "@dashkite/genie-presets": "^0.4.13",
+    "@dashkite/joy": "^0.3.11",
+    "@dashkite/mimic": "^0.2.3",
+    "coffeescript": "^2.5.1"
+  },
+  "dependencies": {
+    "@dashkite/helium": "^0.4.1",
+    "@dashkite/mercury": "^0.3.0",
+    "@dashkite/navigate": "^0.3.2",
+    "@dashkite/neon": "^0.5.1",
+    "@dashkite/oxygen": "^0.3.5",
+    "@dashkite/zinc": "^0.3.0",
+    "diffhtml": "^1.0.0-beta.20"
   }
 }

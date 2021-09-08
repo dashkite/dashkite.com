@@ -1,0 +1,62 @@
+presets:
+  coffeescript:
+    targets:
+      browser:
+        - preset: browser
+          glob:
+            - src/**/*.coffee
+        - preset: browser
+          glob:
+            - test/client/**/*.coffee
+          options:
+            mode: debug
+        - preset: node
+          glob:
+            - test/**/*.coffee
+            - '!test/client/**/*.coffee'
+  verify: null
+  update: null
+  release: null
+  esm: null
+  pug:
+    targets:
+      app:
+        - preset: render
+          glob: src/index.pug
+          document: true
+        - preset: compile
+          glob:
+            - src/**/*.pug
+            - '!src/index.pug'
+  server:
+    esm:
+      directories:
+        - .
+        - ..
+        - ../../pandastrike
+        - ../stablelib/packages
+    directory: ./build/browser/src
+    fallback: ./build/browser/src/index.html
+    port: 8001
+    logging: false
+  browser:
+    logging: false
+    fallback: ./build/browser/test/index.html
+  stylus:
+    targets:
+      browser:
+        - preset: css
+          glob: src/index.styl
+        - preset: js
+          glob:
+            - src/**/*.styl
+            - '!src/index.styl'
+  media:
+    sprites:
+      glob: src/media/images/sprites/*.svg
+      target: src/media/images/sprites.svg
+  yaml:
+    targets:
+      browser:
+        - preset: js
+          glob: src/**/*.yaml
