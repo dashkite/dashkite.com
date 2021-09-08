@@ -4,6 +4,15 @@ include mixins
 block head
   //- TODO this allows our syncTreeHook to work for some reason
   script
+  
+  //- import map polyfill
+  script(
+    async
+    src = "https://ga.jspm.io/npm:es-module-shims@0.13.0/dist/es-module-shims.js"
+  ) 
+
+  //- placeholder for insertion of import map
+  script( type = "importmap" )
 
   meta( key = "charset" charset = "utf-8" )
   meta(

@@ -16,7 +16,11 @@ G.generic $, T.isString, isRoot, (selector, root) ->
 G.generic $, T.isString, (selector) -> $ selector, document
 
 O.assign $,
-  ready: (f) -> document.addEventListener "DOMContentLoaded", f
+  ready: (f) ->
+    if document.readyState != "loading"
+      queueMicrotask f
+    else
+      document.addEventListener "DOMContentLoaded", f
   set: F.curry (key, value, el) -> el.setAttribute key, value
 
 export { $ }
