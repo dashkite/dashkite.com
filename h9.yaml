@@ -1,5 +1,5 @@
 name: dashkite
-source: build/www
+source: build/browser
 domain: dashkite.com
 region: us-east-1
 site:
@@ -14,31 +14,9 @@ environments:
     cache:
       expires: 86400
       priceClass: All
-    edge: &edge
-      viewerRequest:
-        runtime: nodejs12.x
-        src: "build/edge/viewer-request.js"
-        handler: "lib/viewer-request.handler"
-        zip: true
-      originRequest:
-        runtime: nodejs12.x
-        src: "build/edge/origin-request.js"
-        handler: "lib/origin-request.handler"
-        memorySize: 3008
-        zip: true
-
-  staging:
-    hostnames:
-      - staging-www
-    cache:
-      expires: 0
-      priceClass: 100
-    edge: *edge
-
   development:
     hostnames:
-      - dev-www
-    edge: *edge
+      - dev
     cache:
       priceClass: 100
       expires: 0
