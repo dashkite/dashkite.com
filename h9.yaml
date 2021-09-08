@@ -1,5 +1,5 @@
 name: dashkite
-source: build/browser
+source: build/browser/src
 domain: dashkite.com
 region: us-east-1
 site:
