@@ -31,6 +31,7 @@ rhythm(base, exp, scale, ratio )
   --brand-color #783664
   --primary-color var(--brand-color)
   --primary-accent-color #883ABE
+  --accent-color var(--primary-accent-color)
 
   --darkest-neutral black
   --lightest-neutral white
@@ -58,6 +59,7 @@ body
     margin 0
     padding 1rem
     padding-right 2rem
+    border-bottom 1px solid var(--primary-color)
     width stretch
     width -webkit-fill-available
     width -moz-available
@@ -82,6 +84,19 @@ body
       & > img
         height 2rem
         margin-right 8px
+    & > nav
+      display flex
+      & > * + *
+        margin-left 1rem
+      & > a, & > a:visited
+        display flex
+        align-items center
+        rhythm 1rem, 1.25, 1, 1
+        color var(--primary-color)
+        text-decoration none
+        & > * + *
+          margin-left 0.5rem
+
 
 h1, h2, h3, h4, h5, p, ul, ol, blockquote
   margin 0
@@ -141,12 +156,16 @@ main
         align-items center
         & > article 
           & > p
-            rhythm 1rem, 1.25, 3, 0.5
+            rhythm 1rem, 1.25, 3, 0.5            
             text-align center
 
-            & > a
-              background var(--primary-accent-color)
-              color white
+            &:nth-of-type(2) > a
+              background var(--accent-color)
+              color var(--lightest-neutral)
               padding 1rem
               text-decoration none
               border-radius 0.5rem
+
+            &:nth-of-type(3) > a
+              color var(--accent-color)
+
