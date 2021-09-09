@@ -23,6 +23,7 @@ presets:
       app:
         - preset: render
           glob: src/index.pug
+          root: ./build/browser/src
           document: true
         - preset: compile
           glob:
