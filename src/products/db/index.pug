@@ -1,0 +1,44 @@
+doctype html
+
+html(class= "purple")
+  head
+    - var title = "DashKite DB | Planet-scale storage made simple"
+    include ../../templates/head
+
+  body
+    header
+      include ../../templates/db-header
+    
+    main
+      .block( class = "banner neutral" )
+        section 
+          header 
+            h1 Planet-scale storage made simple
+          .main Store data that scales globally with DashKite's powerful DB service.
+      .block( class = "section large")
+        section 
+          header
+            h2 Zero headaches
+          .main 
+            i( class = "fas fa-snooze fa-1x")
+            p Since DB is serverless, there is nothing to install or configure. You don’t need to manage servers, capacity, or replication.
+      .block( class = "section large")
+        section 
+          header
+            h2 No code required
+          .main 
+            i( class = "fas fa-magic fa-1x")
+            p Since DB supports a simple HTTP interface, you don’t need to write any code to use it.
+      .block( class = "section large")
+        section 
+          header
+            h2 Flexible and intuitive
+          .main 
+            i( class = "fas fa-leaf fa-1x")
+            p Store data naturally. No rigid database schemas or complex SQL commands. Just GET, PUT, and DELETE your data.
+      .block( class = "image widest shadow" )
+        section 
+          figure 
+            picture 
+              img(src = "/media/images/db-screenshot.png")
+    footer

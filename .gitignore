@@ -1,8 +1,3 @@
-node_modules/
-.DS_Store
-log/
-logs/
-*.log
-*.log.*
-build/
-.atlas/
+node_modules
+build
+.atlas

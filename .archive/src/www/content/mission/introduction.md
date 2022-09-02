@@ -1,1 +1,0 @@
-We started DashKite to help you *be yourself* on the Web. But what does that really mean?

@@ -1,0 +1,19 @@
+doctype html
+
+html(class= "purple")
+  head
+    - var title = "DashKite: Page not found"
+    include templates/head
+
+  body
+    header
+      include templates/header
+    
+    main
+      .block( class = "section larger")
+        section 
+          header
+            h2 Page not found!
+          .main 
+            p Sorry, but the page you were looking for could not be found.
+    footer

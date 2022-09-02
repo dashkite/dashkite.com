@@ -1,0 +1,23 @@
+doctype html
+
+html(class= "purple")
+  head
+    - var title = "DashKite Products"
+    include ../templates/head
+
+  body
+    header
+      include ../templates/header
+    
+    main
+      .block(class = "collection")
+          section
+            header 
+              h2 Products
+            .main
+              .block(class = "nav highlight")
+                nav 
+                  header
+                    h3 Storage
+                  a(href="/products/db") DB
+    footer

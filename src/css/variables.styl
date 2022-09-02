@@ -1,0 +1,203 @@
+:root
+  --top-level-main-overflow none
+  --aside-order 0
+  --main-padding unquote("min(2rem, 5vw)")
+  --header-flex-direction row
+  --header-border-bottom 1px solid var(--primary-accent)
+
+  --block-flex-grow 1
+  --block-flex-shrink 1
+  --block-flex-basis 0
+  --block-max-width none
+  --block-display flex
+  --block-flex-direction row
+  --block-justify-content center
+  --block-flex-wrap nowrap
+  --block-gap 2rem
+
+  --block-figure-width 100%
+  --block-figure-height 100%
+  --block-figcaption-margin-top 0.5rem
+  --block-figcaption-padding-top 0.5rem
+
+  --block-img-object-fit contain
+  --block-img-max-height 100%
+  --block-img-max-width 100%
+
+  --block-embed-overflow scroll
+
+  --block-nav-icon-margin-inline-end 1ch
+  --block-nav-line-height 1
+  --block-nav-flex-direction row
+  --block-nav-header-display flex
+  --block-nav-header-flex-direction row
+  --block-nav-header-gap 1rem
+
+  --block-socials-display flex
+  --block-socials-gap 1rem
+  --block-socials-align-items center
+  --block-socials-flex-direction row
+  --block-socials-link-display flex
+  --block-socials-link-flex-wrap wrap
+  --block-socials-link-gap 0.5rem
+  --block-socials-link-justify-content center
+  --block-socials-link-align-items center
+
+  --block-child-display flex
+  --block-child-flex-direction row
+  --block-child-flex-wrap wrap
+  --block-child-justify-content flex-start
+  --block-child-align-items flex-start
+  --block-child-gap 2rem
+  --block-child-flex-grow 1
+  --block-child-flex-shrink 1
+  --block-child-flex-basis 0
+  --block-child-max-width max-content
+  --block-child-max-height none
+  --block-child-height auto
+  --block-child-width auto
+  --block-child-border none
+  --block-child-padding none
+  --block-child-box-shadow none
+
+  --header-nav-column-gap 2ch
+  --header-nav-flex-direction row
+  --header-img-max-height 4rem //REFACTOR THIS
+  --header-section-footer-margin-left auto
+
+  --aside-display flex
+  --aside-flex-direction column
+  --aside-flex-wrap wrap
+  --aside-justify-content flex-start
+  --aside-align-items flex-start
+  --aside-gap 2rem
+  --aside-flex-grow 1
+  --aside-flex-shrink 1
+  --aside-flex-basis 25%
+  --aside-max-width s("min(33%, %s)", du(1))
+  --aside-max-height none
+  --aside-height auto
+  --aside-width auto
+  --aside-border none
+  --aside-padding none
+  --aside-border-radius none
+  --aside-box-shadow none
+  
+  --aside-img-max-height vu(1)
+  --aside-section-flex-direction column
+  --aside-socials-flex-direction column
+  --aside-socials-align-items flex-start
+  --aside-nav-flex-direction column
+
+  // adding padding for top and bottom
+  // 10vw == 32px on smallest devices = 2rem
+  // so we're basically halving the padding on smaller devices
+  // but it will grow up to the rem value as the width increases
+  --banner-padding-vertical s("min(10vw, 4rem)")
+  --banner-padding-horizontal s("min(5vw, 2rem)")
+
+  --section-flex-direction column
+  --section-flex-wrap nowrap
+  --section-header-display flex
+  --section-header-flex-direction column
+  --section-header-gap 1rem
+  --section-header-subtitle-margin-top 0.5rem
+  --section-main-display block
+  --section-main-overflow scroll
+  --section-figure-margin-top 0.5rem
+  --section-figure-margin-bottom 0.5rem
+  --section-figure-display flex
+  --section-figure-flex-direction column
+  --section-figure-align-items center
+  --section-figure-height unset
+  --section-footer-margin-top auto
+  --section-gap 1rem
+  --section-align-items flex-start
+  --section-img-max-width 33%
+  --section-img-max-height 100%
+  --section-img-margin-top 0
+  --section-img-margin-bottom 1rem
+  --section-aside-float right
+  --section-aside-margin-left 1rem
+  --section-aside-margin-right none
+
+  --article-figure-margin-bottom 0
+  --article-img-max-height 36rem
+  --article-byline-margin-top 0.25rem
+  --article-byline-display flex
+  --article-byline-flex-wrap wrap
+  --article-byline-column-gap 1ch
+  --article-byline-published-font-style italic
+  --article-byline-authors-display flex
+  --article-byline-authors-flex-wrap wrap
+  --article-byline-author-font-weight bold
+  --article-byline-author-seperator ","
+
+  --button-flex-grow 0
+  --button-flex-basis auto
+  --button-justify-content center
+  --button-link-text-decoration none
+  --button-link-display flex
+  --button-link-gap 1rem
+  --button-link-justify-content center
+  --button-link-align-items center
+  --button-link-padding none //add roomy hint support
+
+  --collection-flex-direction column
+  --collection-flex-wrap nowrap
+  --collection-height auto
+  --collection-overflow scroll
+  --collection-gap 4rem
+  --collection-border none
+  --collection-padding none
+  --collection-main-display flex
+  --collection-main-flex-direction row
+  --collection-main-flex-wrap wrap
+  --collection-main-justify-content center
+  --collection-main-align-items flex-start
+  --collection-main-gap 2rem
+  --collection-header-display flex
+  --collection-header-flex-direction row
+  --collection-header-gap 1rem
+  --collection-image-flex-grow 0
+  --collection-image-figure-width s("calc(%s - (2 * min(2rem, 5vw)))", du(1))
+  --collection-summary-img-max-height vu(2)
+  --collection-summary-img-max-width 100%
+
+  --form-flex-direction column
+
+  --product-logo-max-height none
+
+
+.block
+  img
+    --block-img-border-radius var(--border-radius, 0.25rem)
+  
+  .embed
+    --block-embed-max-height s("min(var(--block-child-max-height), %s)", vu(3))
+    --block-embed-max-width s("min(var(--block-child-max-width), %s)", du(3))
+
+  svg.svg-inline--fa
+    --block-icon-font-size s("calc(3 * var(--copy-font-size, 1rem))")
+
+  &.nav 
+    --block-nav-icon-font-size s("calc(1 * var(--copy-font-size, 1rem))")
+  
+  & > :not(a), & > a > *
+    --block-child-border-radius var(--border-radius, none)
+
+  &.article, &.section
+    --section-header-font-size var(--copy-font-size) //this is so max-width is appropriate
+    --section-header-max-width var(--copy-max-width)
+    --section-icon-font-size s("calc(3 * var(--copy-font-size, 1rem))")
+    --article-font-size var(--copy-font-size)
+    --article-max-width var(--copy-max-width)
+    --article-figure-margin-top var(--copy-margin, 1rem)
+    --article-img-max-width var(--copy-max-width)
+  
+  &.button
+    --button-img-height var(--copy-font-size, 1rem)
+    --button-icon-font-size var(--copy-font-size, 1rem)
+
+  .socials
+    --block-socials-icon-font-size s("calc(1.33333333 * var(--copy-font-size, 1rem))")

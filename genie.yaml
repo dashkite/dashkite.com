@@ -1,63 +1,56 @@
 presets:
+  verify: null
+  update: null
+  release: null
   coffeescript:
     targets:
       browser:
         - preset: browser
           glob:
-            - src/**/*.coffee
-        - preset: browser
-          glob:
-            - test/client/**/*.coffee
-          options:
-            mode: debug
+            - 'src/**/*.coffee'
+      node:
         - preset: node
           glob:
-            - test/**/*.coffee
-            - '!test/client/**/*.coffee'
-  verify: null
-  update: null
-  release: null
-  esm: null
+            - 'test/**/*/coffee'
   pug:
     targets:
-      app:
+      browser:
         - preset: render
-          glob: src/index.pug
-          root: ./build/browser/src
-          document: true
-        - preset: compile
-          glob:
+          glob: 
             - src/**/*.pug
-            - '!src/index.pug'
-  server:
-    esm:
-      directories:
-        - .
-        - ..
-        - ../../pandastrike
-        - ../stablelib/packages
-    directory: ./build/browser/src
-    fallback: ./build/browser/src/index.html
-    port: 8001
-    logging: false
-  browser:
-    logging: false
-    fallback: ./build/browser/test/index.html
+          document: false
+          root: ./build/browser/src
+
   stylus:
     targets:
       browser:
         - preset: css
-          glob: src/index.styl
-        - preset: js
           glob:
             - src/**/*.styl
-            - '!src/index.styl'
-  media:
-    sprites:
-      glob: src/media/images/sprites/*.svg
-      target: src/media/images/sprites.svg
+
   yaml:
     targets:
-      browser:
+      node:
         - preset: js
-          glob: src/**/*.yaml
+          glob:
+            - "{src,test}/**/*.yaml"
+
+  media: {}
+
+sky:
+
+  graphene:
+    address: bkqooszc5jqsoyxrcedr6lrsc
+    collections:
+      - byname: www-development.dashkite.com
+        views: []
+        publish:
+          root: build/browser/src
+          glob: "**/*.{js,json,html,css}"
+  
+  buckets:
+    - name: www-development.dashkite.com
+      publish:
+        root: build/browser/src
+        glob: "**/*.{png,gif,jpg,pdf,svg}"
+

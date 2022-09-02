@@ -1,11 +1,15 @@
-.logo
-  img( src = "/media/images/logo.png" )
-  span studio
-
-nav
-  a( href = "https://twitter.com/dashkite" )
-    i.fab.fa-twitter
-    span Twitter
-  a( href = "https://blog.dashkite.com" )
-    i.fas.fa-bookmark
-    span Blog
+.app
+  .block( class = "image short" ) 
+    section
+      a( href = account ? "/home" : "/" )
+        .product-logo
+          include ../media/images/logo.svg
+  .block( class = "nav")
+    nav
+      a(href=`/products`) Products
+      a(href=`/pricing`) Pricing
+  .block( class = "button round highlight")
+    section 
+      a(href="https://workspaces.dashkite.com")
+        span Sign in
+      i( class = "fas fa-chevron-right fa-1x")

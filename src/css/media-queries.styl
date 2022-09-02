@@ -1,0 +1,39 @@
+body
+  @media screen and (max-width: du(2))
+    --header-flex-direction column
+  
+  & > header
+    .block
+      @media screen and (max-width: du(2))
+        center()
+
+aside
+  @media screen and (max-width: du(2))
+    --aside-display none
+
+.section
+  @media screen and (max-width: du(2))
+    --section-aside-float none
+    --section-aside-margin-left none
+    --section-aside-margin-right none
+  header
+    @media screen and (max-width: du(2))
+      --section-header-flex-direction column
+    .nav:last-child
+      @media screen and (max-width: du(2))
+        --block-justify-content flex-start
+        --block-child-justify-content flex-start
+        --text-align left
+
+.collection
+  @media screen and (max-width: du(2))
+    --collection-main-flex-direction column
+    --collection-main-flex-wrap nowrap
+  header
+    @media screen and (max-width: du(2))
+      --collection-header-flex-direction column
+    .nav:last-child
+      @media screen and (max-width: du(2))
+        --block-justify-content flex-start
+        --block-child-justify-content flex-start
+        --text-align left

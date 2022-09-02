@@ -1,4 +1,0 @@
-- [Privacy Policy](/legal/privacy-policy)
-- [Content Policy](/legal/content-policy)
-- [Terms Of Use](/legal/terms-of-use)
-- [API Terms Of Use](/legal/api-terms-of-use)

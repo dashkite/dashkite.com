@@ -1,0 +1,205 @@
+@require colors
+
+/*
+
+du - device units
+
+- multiple of the smallest theoretical device
+- expressed in pixels instead of rem
+  b/c the viewport doesn't grow or shrink
+  in proportion to the default font size
+
+vu - vertical units
+
+- expressed in smaller increments than du,
+  which are typically horizontal, since
+  device widths vary much more than heights
+- we use pixels to be consistent with du
+- the choice of 192px (12 rem) is mostly 
+  just based on experience
+
+*/
+
+du(n)
+  unquote(s("calc(320px * %s)", n))
+
+vu(n)
+  unquote(s("calc(192px * %s)", n))
+
+apply-copy()
+  font-size var(--copy-font-size)
+  line-height var(--copy-line-height)
+  max-width var(--copy-max-width)
+  color var(--neutral-foreground)
+
+apply-caption()
+  font-size var(--caption-font-size)
+  line-height var(--caption-line-height)
+  max-width var(--copy-max-width)
+  color var(--neutral-foreground)
+
+narrow()
+  --block-child-max-width du(3)
+
+narrower()
+  --block-child-max-width du(2)
+
+narrowest()
+  --block-child-max-width du(1)
+  --copy-min-width 0
+  --heading-min-width 0
+
+wide()
+  --block-flex-grow 1
+  --block-flex-basis 25%
+
+wider()
+  --block-flex-grow 2
+  --block-flex-basis 33.33%
+
+widest()
+  --block-flex-basis 100%
+
+left()
+  --block-justify-content flex-start
+  --block-child-justify-content flex-start
+  --text-align left
+
+
+right()
+  --block-justify-content flex-end
+  --block-child-justify-content flex-end
+  --text-align right
+
+
+center()
+  --block-justify-content center
+  --block-child-justify-content center
+  --text-align center
+
+round_()
+  //!important is needed to overwrite --border-radius in .border
+  --border-radius 0.5rem !important
+  --block-img-object-fit cover
+
+rounder()
+  //!important is needed to overwrite --border-radius in .border
+  --border-radius 1rem !important
+  --block-img-object-fit cover
+
+roundest()
+  //!important is needed to overwrite --border-radius in .border
+  --border-radius 1.5rem !important
+  --block-img-object-fit cover
+
+circular()
+  //!important is needed to overwrite --border-radius in .border
+  --border-radius 9999px !important
+  --block-img-object-fit cover
+
+vertical()
+  --block-child-flex-direction column
+  --block-child-flex-wrap nowrap
+
+reverse()
+  --section-aside-float left
+  --section-aside-margin-left none
+  --section-aside-margin-right 1rem
+
+borders()
+  --block-child-border 1px solid var(--border-color)
+  --border-radius 0
+  --block-child-padding 1rem
+
+section-vertical()
+  --section-aside-float none
+  --section-aside-margin-left none
+  --section-aside-margin-right none
+
+shadow()
+  --block-child-box-shadow 0.5rem 0.5rem 0.5rem var(--border-color)
+
+highlight()
+  --h2-h6-color var(--primary-foreground)
+  --border-color var(--primary-foreground)
+  --nav-color var(--primary-foreground)
+  --icon-color var(--primary-foreground)
+
+neutral()
+  --h1-color var(--neutral-foreground)
+  --border-color var(--neutral-accent)
+
+smallest()
+  --copy-font-size var(--smallest-copy-font-size)
+  --copy-line-height var(--smallest-copy-line-height)
+  --caption-font-size var(--smallest-copy-font-size)
+  --caption-line-height var(--smallest-copy-line-height)
+  --first-level-heading-font-size var(--small-heading-font-size)
+  --first-level-heading-line-height var(--small-heading-line-height)
+  --second-level-heading-font-size var(--smaller-heading-font-size)
+  --second-level-heading-line-height var(--smaller-heading-line-height)
+  --third-level-heading-font-size var(--smallest-heading-font-size)
+  --third-level-heading-line-height var(--smallest-heading-line-height)
+
+smaller()
+  --copy-font-size var(--smaller-copy-font-size)
+  --copy-line-height var(--smaller-copy-line-height)
+  --caption-font-size var(--smallest-copy-font-size)
+  --caption-line-height var(--smallest-copy-line-height)
+  --first-level-heading-font-size var(--default-heading-font-size)
+  --first-level-heading-line-height var(--default-heading-line-height)
+  --second-level-heading-font-size var(--small-heading-font-size)
+  --second-level-heading-line-height var(--small-heading-line-height)
+  --third-level-heading-font-size var(--smaller-heading-font-size)
+  --third-level-heading-line-height var(--smaller-heading-line-height)
+
+small()
+  --copy-font-size var(--small-copy-font-size)
+  --copy-line-height var(--small-copy-line-height)
+  --caption-font-size var(--smaller-copy-font-size)
+  --caption-line-height var(--smaller-copy-line-height)
+  --first-level-heading-font-size var(--large-heading-font-size)
+  --first-level-heading-line-height var(--large-heading-line-height)
+  --second-level-heading-font-size var(--default-heading-font-size)
+  --second-level-heading-line-height var(--default-heading-line-height)
+  --third-level-heading-font-size var(--small-heading-font-size)
+  --third-level-heading-line-height var(--small-heading-line-height)
+
+large()
+  --copy-font-size var(--large-copy-font-size)
+  --copy-line-height var(--large-copy-line-height)
+  --caption-font-size var(--default-copy-font-size)
+  --caption-line-height var(--default-copy-line-height)
+  --first-level-heading-font-size var(--larger-heading-font-size)
+  --first-level-heading-line-height var(--larger-heading-line-height)
+  --second-level-heading-font-size var(--large-heading-font-size)
+  --second-level-heading-line-height var(--large-heading-line-height)
+  --third-level-heading-font-size var(--default-heading-font-size)
+  --third-level-heading-line-height var(--default-heading-line-height)
+  --copy-max-width 60ch
+
+larger()
+  --copy-font-size var(--larger-copy-font-size)
+  --copy-line-height var(--larger-copy-line-height)
+  --caption-font-size var(--large-copy-font-size)
+  --caption-line-height var(--large-copy-line-height)
+  --first-level-heading-font-size var(--largest-heading-font-size)
+  --first-level-heading-line-height var(--largest-heading-line-height)
+  --second-level-heading-font-size var(--larger-heading-font-size)
+  --second-level-heading-line-height var(--larger-heading-line-height)
+  --third-level-heading-font-size var(--large-heading-font-size)
+  --third-level-heading-line-height var(--large-heading-line-height)
+  --copy-max-width 48ch
+
+largest()
+  --copy-font-size var(--largest-copy-font-size)
+  --copy-line-height var(--largest-copy-line-height)
+  --caption-font-size var(--larger-copy-font-size)
+  --caption-line-height var(--larger-copy-line-height)
+  --first-level-heading-font-size var(--default-banner-font-size)
+  --first-level-heading-line-height var(--default-banner-line-height)
+  --second-level-heading-font-size var(--largest-heading-font-size)
+  --second-level-heading-line-height var(--largest-heading-line-height)
+  --third-level-heading-font-size var(--larger-heading-font-size)
+  --third-level-heading-line-height var(--larger-heading-line-height)
+  --copy-max-width 32ch

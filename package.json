@@ -1,45 +1,31 @@
 {
-  "name": "dashkite.com",
-  "version": "0.10.2",
-  "description": "DashKite Web Site",
-  "scripts": {
-    "test": "genie test"
-  },
+  "name": "@dashkite/dashkite.com",
+  "version": "0.0.0",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashkite/dashkite.com.git"
+    "url": "git+https://github.com/dashkite/dashkite/dashkite.com.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/dashkite/dashkite.com/issues"
+    "url": "https://github.com/dashkite/dashkite/dashkite.com/issues"
   },
-  "homepage": "https://github.com/dashkite/dashkite.com#readme",
+  "homepage": "https://github.com/dashkite/dashkite/dashkite.com#readme",
   "imports": {
-    "#helpers": "./build/browser/src/helpers.js",
-    "#resources/*": "./build/browser/src/resources/*.js",
-    "#templates/*": "./build/browser/src/templates/*.js",
-    "#fixtures/*": "./build/browser/src/fixtures/*.js"
+    "#templates/*": "./build/browser/src/templates/*.js"
   },
   "devDependencies": {
-    "@dashkite/amen": "^0.1.2",
-    "@dashkite/amen-console": "^0.0.1",
-    "@dashkite/assert": "^0.1.3",
-    "@dashkite/genie": "^0.5.4",
-    "@dashkite/genie-presets": "^0.5.1",
-    "@dashkite/joy": "^0.3.11",
-    "@dashkite/mimic": "^0.2.4",
-    "coffeescript": "^2.5.1",
-    "haiku9": "^4.2.0"
+    "@dashkite/dolores": "file:../dolores",
+    "@dashkite/genie": "^0.5.6",
+    "@dashkite/genie-presets": "file:../genie-presets",
+    "@dashkite/sky-presets": "file:../sky-presets"
   },
   "dependencies": {
-    "@dashkite/helium": "^0.4.2",
-    "@dashkite/mercury": "^0.3.1",
+    "@dashkite/helium": "^0.4.3",
+    "@dashkite/joy": "^0.3.16",
+    "@dashkite/katana": "^0.4.8",
     "@dashkite/navigate": "^0.3.2",
     "@dashkite/neon": "^0.5.1",
-    "@dashkite/oxygen": "^0.3.5",
-    "@dashkite/zinc": "^0.4.0",
-    "diffhtml": "^1.0.0-beta.20"
+    "@dashkite/oxygen": "^0.3.5"
   }
 }

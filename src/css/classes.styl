@@ -1,0 +1,29 @@
+header, footer, aside, .main
+  &:empty
+    display none
+
+.block
+  .socials
+    display var(--block-socials-display)
+    gap var(--block-socials-gap)
+    align-items var(--block-socials-align-items)
+    flex-direction var(--block-socials-flex-direction)
+
+    a
+      display var(--block-socials-link-display)
+      flex-wrap var(--block-socials-link-flex-wrap)
+      gap var(--block-socials-link-gap)
+      justify-content var(--block-socials-link-justify-content)
+      align-items var(--block-socials-link-align-items)
+      color var(--socials-icon-color)
+
+    svg.svg-inline--fa
+      font-size var(--block-socials-icon-font-size)
+      color var(--socials-icon-color)
+
+
+aside
+  .block
+    .socials
+      flex-direction var(--aside-socials-flex-direction)
+      align-items var(--aside-socials-align-items)

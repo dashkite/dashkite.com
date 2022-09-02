@@ -1,4 +1,4 @@
-mixin title(title = "DashKite Studio")
+mixin title(title = "DashKite")
   title= title
   meta( key = "og:title" property = "og:title" content = title )
   meta( key = "twitter:title" name = "twitter:title" content = title )
@@ -35,3 +35,10 @@ mixin image(image)
       name = "twitter:image"
       content = image
     )
+
+mixin logo(product)
+  case product 
+    when 'db'
+      include ../media/images/db.svg
+    when 'sites'
+      include ../media/images/sites.svg
