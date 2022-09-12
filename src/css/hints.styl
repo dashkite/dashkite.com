@@ -183,10 +183,13 @@ main
   .section, .image, .embed
     &.short
       --block-child-height vu(3)
+      --svg-height vu(3)
     &.shorter
       --block-child-height vu(2)
+      --svg-height vu(2)
     &.shortest
       --block-child-height vu(1)
+      --svg-height vu(1)
 
 
 .banner
@@ -239,6 +242,10 @@ main
 
   &.tallest
     --banner-padding-vertical s("min(34vw, 10rem)") !important
+
+  &.cozy
+    --banner-padding-vertical 0
+    --banner-padding-horizontal 0
 
 
 .section
@@ -321,21 +328,8 @@ main
         &.widest
           --collection-image-figure-width 100%
 
-
-.product-logo
-  &.shortest
-    --product-logo-max-height 1rem
-  &.shorter
-    --product-logo-max-height 2rem
-  &.short
-    --product-logo-max-height 3rem
-  &.tall
-    --product-logo-max-height 6rem
-  &.taller
-    --product-logo-max-height 8rem
-  &.tallest
-    --product-logo-max-height 12rem
-
 .nav
   &.highlight
     --h2-h6-color var(--neutral-foreground)
+  &.vertical
+    --block-nav-flex-direction column
