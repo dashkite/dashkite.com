@@ -5,44 +5,16 @@ presets:
         - preset: browser
           glob:
             - src/**/*.coffee
-        - preset: browser
-          glob:
-            - test/client/**/*.coffee
-          options:
-            mode: debug
-        - preset: node
-          glob:
-            - test/**/*.coffee
-            - '!test/client/**/*.coffee'
   verify: null
   update: null
   release: null
   esm: null
   pug:
     targets:
-      app:
+      browser:
         - preset: render
-          glob: src/index.pug
-          root: ./build/browser/src
-          document: true
-        - preset: compile
           glob:
             - src/**/*.pug
-            - '!src/index.pug'
-  server:
-    esm:
-      directories:
-        - .
-        - ..
-        - ../../pandastrike
-        - ../stablelib/packages
-    directory: ./build/browser/src
-    fallback: ./build/browser/src/index.html
-    port: 8001
-    logging: false
-  browser:
-    logging: false
-    fallback: ./build/browser/test/index.html
   stylus:
     targets:
       browser:
@@ -52,12 +24,23 @@ presets:
           glob:
             - src/**/*.styl
             - '!src/index.styl'
-  media:
-    sprites:
-      glob: src/media/images/sprites/*.svg
-      target: src/media/images/sprites.svg
-  yaml:
-    targets:
-      browser:
-        - preset: js
-          glob: src/**/*.yaml
+sky:
+  namespace: web
+  edge:
+    name: edge
+    certificate:
+      verification: dashkite.com
+    origins:
+      # - domain: dashkite.com.s3.us-east-1.amazonaws.com
+      - domain: dashkite.com.s3-website-us-east-1.amazonaws.com
+    aliases:
+      - dashkite.com
+      - www.dashkite.com
+  buckets:
+    - name: dashkite.com
+      website:
+        index: index.html
+        error: error.html
+      publish:
+        root: build/browser/src
+        glob: "**/*"

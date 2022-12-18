@@ -1,1 +1,0 @@
-Prior to joining DashKite, Adele ran business operations for a Panda Strike, a multi-million dollar consultancy. She's Mexicana to her bones, a student of thanatology, and a culinary virtuoso. She loves _Game Of Thrones_ and the music of Andrea Bocelli.

@@ -1,3 +1,0 @@
-In a remarkable leap of invention, the human race developed a global network that connects us all. We gave that network a friendly face and an evocative name: the World Wide Web. The excitement of those days might seem quaint or even naive to Web natives. The Web seemed poised to bring us closer together, strengthen communities, and empower individuals.
-
-And that happened, but not quite how we imagined. The Web, as we know it, has become a platform for fraud, harassment, propaganda, and, ultimately, violence. The sense of hope and excitement that we felt in the Web's early days has been replaced by one of dread and disappointment.

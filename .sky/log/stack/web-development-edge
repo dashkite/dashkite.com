@@ -1,0 +1,332 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Web Edge (Development) (development)"
+Resources:
+
+  Certificate:
+    Type: "AWS::CertificateManager::Certificate"
+    Properties: 
+      DomainName: dashkite.com
+      ValidationMethod: DNS
+      SubjectAlternativeNames:
+        - "*.dashkite.com"
+
+  CachePolicy:
+    Type: "AWS::CloudFront::CachePolicy"
+    Properties:
+      CachePolicyConfig:
+        Name: web-edge-development-cache-policy
+        DefaultTTL: 0
+        MinTTL: 0
+        MaxTTL: 31536000
+        ParametersInCacheKeyAndForwardedToOrigin:
+          CookiesConfig: 
+            CookieBehavior: none
+          EnableAcceptEncodingBrotli: true
+          EnableAcceptEncodingGzip: true
+          HeadersConfig: 
+            HeaderBehavior: whitelist
+            Headers:
+              - Host
+          QueryStringsConfig: 
+            QueryStringBehavior: all
+
+  OriginRequestPolicy:
+    Type: "AWS::CloudFront::OriginRequestPolicy"
+    Properties:
+      OriginRequestPolicyConfig:
+        Name: web-edge-development-origin-request-policy
+        CookiesConfig: 
+          CookieBehavior: none
+        HeadersConfig: 
+          HeaderBehavior: allViewer
+        QueryStringsConfig:
+          QueryStringBehavior: all
+
+  ResponseHeadersPolicy:
+    Type: "AWS::CloudFront::ResponseHeadersPolicy"
+    Properties:
+      ResponseHeadersPolicyConfig:
+        Name: web-edge-development-response-headers-policy
+        CorsConfig: 
+          AccessControlAllowCredentials: true
+          AccessControlAllowHeaders:
+            Items: [ authorization ]
+          AccessControlAllowMethods: 
+            Items: [ GET, HEAD, PUT, POST, PATCH, DELETE, OPTIONS ]
+          AccessControlAllowOrigins: 
+            Items:
+              - "https://*.dashkite.com"
+              - "https://*.dashkite.io"
+          AccessControlExposeHeaders: 
+            Items:
+              - www-authenticate
+              - location
+              - credentials
+          AccessControlMaxAgeSec: 7200
+          OriginOverride: false
+        CustomHeadersConfig:
+          Items: []
+        SecurityHeadersConfig: 
+          ContentSecurityPolicy: 
+            ContentSecurityPolicy: >-
+              default-src https: ;
+              script-src https: blob: 'unsafe-inline' 'unsafe-eval' ;
+              style-src https: 'unsafe-inline' ;
+            Override: false
+          ContentTypeOptions: 
+            Override: true
+          FrameOptions: 
+            FrameOption: DENY
+            Override: true
+          ReferrerPolicy: 
+            Override: true
+            ReferrerPolicy: no-referrer
+          StrictTransportSecurity: 
+            AccessControlMaxAgeSec: 63072000
+            IncludeSubdomains: true
+            Preload: true
+            Override: true
+        ServerTimingHeadersConfig: 
+          Enabled: false
+  Distribution:
+    Type: "AWS::CloudFront::Distribution"
+    DependsOn:
+      - CachePolicy
+      - OriginRequestPolicy
+      - ResponseHeadersPolicy
+      - Certificate
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - 'dashkite.com'
+          - 'www.dashkite.com'
+        Comment: Web Edge (Development) (development)
+        DefaultCacheBehavior:
+          TargetOriginId: dashkite.com.s3.us-east-1.amazonaws.com
+          AllowedMethods: [ GET, HEAD, OPTIONS, PUT, PATCH, POST, DELETE ]
+          CachedMethods: [ GET, HEAD, OPTIONS ]
+          Compress: true
+          CachePolicyId: !Ref CachePolicy
+          OriginRequestPolicyId: !Ref OriginRequestPolicy
+          ResponseHeadersPolicyId: !Ref ResponseHeadersPolicy
+          ViewerProtocolPolicy: redirect-to-https
+
+        DefaultRootObject: ""
+        Enabled: true
+        HttpVersion: http2
+        IPV6Enabled: false
+        Origins:
+          - Id: dashkite.com.s3.us-east-1.amazonaws.com
+            DomainName: dashkite.com.s3.us-east-1.amazonaws.com
+            CustomOriginConfig:
+              HTTPSPort: 443
+              OriginKeepaliveTimeout: 60
+              OriginProtocolPolicy: "https-only"
+              OriginReadTimeout: 60
+              OriginSSLProtocols: [ "TLSv1.2" ]
+
+        PriceClass: PriceClass_100
+        ViewerCertificate:
+          AcmCertificateArn: !Ref Certificate
+          MinimumProtocolVersion: "TLSv1.2_2021"
+          SslSupportMethod: "sni-only"
+      Tags:
+        - Key: component
+          Value: web
+        - Key: environment
+          Value: development
+
+  RecordSetDashkiteCom:
+    Type: "AWS::Route53::RecordSetGroup"
+    DependsOn:
+      - Distribution
+    Properties:
+      Comment: >-
+        dashkite.com alias for 
+        web edge 
+        (development)
+      HostedZoneId: /hostedzone/Z2HS9SG5BP15UN
+      RecordSets:
+        - Name: 'dashkite.com.'
+          Type: A
+          AliasTarget:
+            DNSName: !GetAtt [ Distribution, "DomainName" ]
+            EvaluateTargetHealth: false
+            HostedZoneId: Z2FDTNDATAQYW2
+        - Name: 'www.dashkite.com.'
+          Type: A
+          AliasTarget:
+            DNSName: !GetAtt [ Distribution, "DomainName" ]
+            EvaluateTargetHealth: false
+            HostedZoneId: Z2FDTNDATAQYW2
+
+Outputs:
+  CloudFrontDistributions:
+    Value: !Ref Distribution
+
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Web Edge (Development) (development)"
+Resources:
+
+  Certificate:
+    Type: "AWS::CertificateManager::Certificate"
+    Properties: 
+      DomainName: dashkite.com
+      ValidationMethod: DNS
+      SubjectAlternativeNames:
+        - "*.dashkite.com"
+
+  CachePolicy:
+    Type: "AWS::CloudFront::CachePolicy"
+    Properties:
+      CachePolicyConfig:
+        Name: web-edge-development-cache-policy
+        DefaultTTL: 0
+        MinTTL: 0
+        MaxTTL: 31536000
+        ParametersInCacheKeyAndForwardedToOrigin:
+          CookiesConfig: 
+            CookieBehavior: none
+          EnableAcceptEncodingBrotli: true
+          EnableAcceptEncodingGzip: true
+          HeadersConfig: 
+            HeaderBehavior: whitelist
+            Headers:
+              - Host
+          QueryStringsConfig: 
+            QueryStringBehavior: all
+
+  OriginRequestPolicy:
+    Type: "AWS::CloudFront::OriginRequestPolicy"
+    Properties:
+      OriginRequestPolicyConfig:
+        Name: web-edge-development-origin-request-policy
+        CookiesConfig: 
+          CookieBehavior: none
+        HeadersConfig: 
+          HeaderBehavior: allViewer
+        QueryStringsConfig:
+          QueryStringBehavior: all
+
+  ResponseHeadersPolicy:
+    Type: "AWS::CloudFront::ResponseHeadersPolicy"
+    Properties:
+      ResponseHeadersPolicyConfig:
+        Name: web-edge-development-response-headers-policy
+        CorsConfig: 
+          AccessControlAllowCredentials: true
+          AccessControlAllowHeaders:
+            Items: [ authorization ]
+          AccessControlAllowMethods: 
+            Items: [ GET, HEAD, PUT, POST, PATCH, DELETE, OPTIONS ]
+          AccessControlAllowOrigins: 
+            Items:
+              - "https://*.dashkite.com"
+              - "https://*.dashkite.io"
+          AccessControlExposeHeaders: 
+            Items:
+              - www-authenticate
+              - location
+              - credentials
+          AccessControlMaxAgeSec: 7200
+          OriginOverride: false
+        CustomHeadersConfig:
+          Items: []
+        SecurityHeadersConfig: 
+          ContentSecurityPolicy: 
+            ContentSecurityPolicy: >-
+              default-src https: ;
+              script-src https: blob: 'unsafe-inline' 'unsafe-eval' ;
+              style-src https: 'unsafe-inline' ;
+            Override: false
+          ContentTypeOptions: 
+            Override: true
+          FrameOptions: 
+            FrameOption: DENY
+            Override: true
+          ReferrerPolicy: 
+            Override: true
+            ReferrerPolicy: no-referrer
+          StrictTransportSecurity: 
+            AccessControlMaxAgeSec: 63072000
+            IncludeSubdomains: true
+            Preload: true
+            Override: true
+        ServerTimingHeadersConfig: 
+          Enabled: false
+  Distribution:
+    Type: "AWS::CloudFront::Distribution"
+    DependsOn:
+      - CachePolicy
+      - OriginRequestPolicy
+      - ResponseHeadersPolicy
+      - Certificate
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - 'dashkite.com'
+          - 'www.dashkite.com'
+        Comment: Web Edge (Development) (development)
+        DefaultCacheBehavior:
+          TargetOriginId: dashkite.com.s3-website-us-east-1.amazonaws.com
+          AllowedMethods: [ GET, HEAD, OPTIONS, PUT, PATCH, POST, DELETE ]
+          CachedMethods: [ GET, HEAD, OPTIONS ]
+          Compress: true
+          CachePolicyId: !Ref CachePolicy
+          OriginRequestPolicyId: !Ref OriginRequestPolicy
+          ResponseHeadersPolicyId: !Ref ResponseHeadersPolicy
+          ViewerProtocolPolicy: redirect-to-https
+
+        DefaultRootObject: ""
+        Enabled: true
+        HttpVersion: http2
+        IPV6Enabled: false
+        Origins:
+          - Id: dashkite.com.s3-website-us-east-1.amazonaws.com
+            DomainName: dashkite.com.s3-website-us-east-1.amazonaws.com
+            CustomOriginConfig:
+              HTTPSPort: 443
+              OriginKeepaliveTimeout: 60
+              OriginProtocolPolicy: "https-only"
+              OriginReadTimeout: 60
+              OriginSSLProtocols: [ "TLSv1.2" ]
+
+        PriceClass: PriceClass_100
+        ViewerCertificate:
+          AcmCertificateArn: !Ref Certificate
+          MinimumProtocolVersion: "TLSv1.2_2021"
+          SslSupportMethod: "sni-only"
+      Tags:
+        - Key: component
+          Value: web
+        - Key: environment
+          Value: development
+
+  RecordSetDashkiteCom:
+    Type: "AWS::Route53::RecordSetGroup"
+    DependsOn:
+      - Distribution
+    Properties:
+      Comment: >-
+        dashkite.com alias for 
+        web edge 
+        (development)
+      HostedZoneId: /hostedzone/Z2HS9SG5BP15UN
+      RecordSets:
+        - Name: 'dashkite.com.'
+          Type: A
+          AliasTarget:
+            DNSName: !GetAtt [ Distribution, "DomainName" ]
+            EvaluateTargetHealth: false
+            HostedZoneId: Z2FDTNDATAQYW2
+        - Name: 'www.dashkite.com.'
+          Type: A
+          AliasTarget:
+            DNSName: !GetAtt [ Distribution, "DomainName" ]
+            EvaluateTargetHealth: false
+            HostedZoneId: Z2FDTNDATAQYW2
+
+Outputs:
+  CloudFrontDistributions:
+    Value: !Ref Distribution
+

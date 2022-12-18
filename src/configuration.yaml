@@ -1,9 +1,0 @@
-development:
-  breeze:
-    api: https://breeze-development-api.dashkite.com
-    authority: breeze-development-api.dashkite.com
-    # TODO this means you can't login on a deployed dev env
-    redirectURL: http://localhost:3000/oauth
-    entry: dashkite.com/studio
-    entryDisplayName: Studio Profile
-    postSuccessPage: bookmark
