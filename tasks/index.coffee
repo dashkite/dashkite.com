@@ -4,3 +4,5 @@ import sky from "@dashkite/sky-presets"
 
 preset t
 sky t
+
+t.after "build", "sky:s3:publish:dashkite.com"

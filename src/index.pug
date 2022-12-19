@@ -1,3 +1,27 @@
-doctype html
-body
-  h1 We'll be right back! Please hold.
+extends templates/default
+
+append head
+  +title("Coming Soon")
+  +description(
+      `A revolutionary **generative programming** platform
+      for building **consent-driven applications** without
+      writing code.`
+    )
+  +url( "https://dashkite.com" )
+  //- +image( image )
+
+
+block main
+
+  .promo
+
+    h1 Coming Soon
+
+    :markdown
+      A revolutionary **generative programming** platform
+      for building **consent-driven applications** without
+      writing code.
+
+    .cta
+      :markdown
+        [Sign up for our newsletter](https://newsletter.dashkite.com/)

@@ -1,0 +1,33 @@
+.cards
+  display flex
+  flex-wrap wrap
+  gap 1rem
+  justify-content center
+
+  width calc(100vw - 2rem)
+  margin-left 1rem
+  margin-right 1rem
+  
+  & > .card
+    margin 0
+    border 1px solid var(--border-color)
+    border-radius 0.5rem
+    padding 1rem
+    flex-grow 1
+    flex-basis 18rem
+    max-width 24rem
+
+    h2
+      line-height 1.75rem
+      font-size calc(1.75rem * 0.9)
+
+    p, li, blockquote
+      line-height 1.5rem
+      font-size calc(1.5rem * 0.6)
+
+    .inset
+      float right
+      max-width 6rem
+      margin-left 0.5rem
+      margin-bottom 0.5rem
+      border-radius 0.5rem

@@ -15,15 +15,18 @@ presets:
         - preset: render
           glob:
             - src/**/*.pug
+            - "!src/templates"
   stylus:
     targets:
       browser:
         - preset: css
-          glob: src/index.styl
-        - preset: js
           glob:
             - src/**/*.styl
-            - '!src/index.styl'
+            - "!src/styles"
+
+  media:
+    target: build/browser
+
 sky:
   namespace: web
   edge:

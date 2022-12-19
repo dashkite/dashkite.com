@@ -1,0 +1,67 @@
+extends ../templates/default
+
+append head
+  +title("Our Team")
+  +description(
+      `Our research into consent-driven applications, in various nascent forms, brought us together, ultimately resulting in the vision we have today. We started out building experimental alternative social Web platforms (Civic and Smalltown), but came to understand, through our research and work with systemically excluded founders, that a better solution—and one more in keeping with the deeper archiecture of the Web—was to empower people and organizations to build their own solutions. Our research led us to a generative programming model, where creators can build consent-driven applications without programming.`
+    )
+  +url( "https://dashkite.com/team" )
+  //- +image( image )
+
+block main
+
+  section( name = "team" )
+
+    h1 Our Team
+
+    :markdown
+      Our research into consent-driven applications, in various nascent forms, brought us together, ultimately resulting in the vision we have today. We started out building experimental alternative social Web platforms (Civic and Smalltown), but came to understand, through our research and work with news organizations and systemically excluded founders, that a better solution—and one more in keeping with the deeper archiecture of the Web—was to empower people and organizations to build their own solutions. Our research led us to a generative programming model, where creators can build consent-driven applications without programming.
+
+  .cards
+
+    section.card
+
+      h2 Dan Yoder
+
+      .social
+        a( rel = "me" href = "https://mastodon.social/@danyoder" )
+          i.fa-brands.fa-mastodon
+
+      img.inset( src = "/media/images/dan-yoder.jpg")
+
+      :markdown
+        Dan has more than three decades of experience in the software industry, with a strong record of commercializing innovative research. In addition co-founding DashKite, Dan founded a multi-million-dollar development consultancy. He has also worked with major brands like AT&T and Disney. He has given numerous talks at technical conferences and his work has appeared in Business Insider and Gizmodo, among other publications.
+
+    section.card
+
+      h2 David Harper
+
+      .social
+        a( href = "https://freeformflow.com" )
+          i.fa-sharp.fa-solid.fa-house-blank
+        a( href = "https://hachyderm.io/@freeformflow" )
+          i.fa-brands.fa-mastodon
+
+      img.inset( src = "/media/images/david-harper.jpg")
+      
+      :markdown
+        David has eight years of software development experience, focusing on security and privacy. He is the co-author of Web Grants, our ethical source framework for least privilege authorization, and Confidential, our prescriptive framework for cryptography. He is a former Ph.D. student in computational chemistry at the California Institute of Technology. He earned his BS in Chemical Engineering from Clemson.
+
+    section.card
+
+      h2 Chand Rajendra-Nicolucci
+
+      img.inset( src = "/media/images/chand-rajendra-nicolucci.jpg")
+
+      :markdown
+        Chand Rajendra-Nicolucci is a public interest technologist who has held research fellowships with the Knight First Amendment Institute at Columbia University and the [Initiative for Digital Public Infrastructure](https://publicinfrastructure.org/) (iDPI) at the University of Massachusetts Amherst. He is currently the Head of Product at iDPI. His research has appeared in the Yale Journal of Law and Technology, Axios, Slate, and The Wall Street Journal.
+
+    section.card
+
+      h2 Eliset Garcia
+
+      img.inset( src = "/media/images/eliset-garcia.jpg")
+
+      :markdown
+
+        Eliset brings her skills and experience in entrepeneurship, business administration, and management to DashKite. She earned her BA in Psychology from California State University-San Bernardino.

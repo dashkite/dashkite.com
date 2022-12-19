@@ -1,0 +1,59 @@
+mixin title(title)
+  title= `DashKite: ${title}`
+  meta( key = "og:title" property = "og:title" content = `DashKite: ${title}` )
+  meta( key = "twitter:title" name = "twitter:title" content = `DashKite: ${title}` )
+
+mixin description(description)
+  if description
+    meta( key = "description" name = "description" content = description )
+    meta(
+      key = "og:description"
+      property = "og:description"
+      content = description
+    )
+    meta(
+      key = "twitter:description"
+      name = "twitter:description"
+      content = description
+    )
+
+mixin url(url)
+  if url
+    link( key = "url" rel = "canonical" href = url )
+    meta( key = "og:url" property = "og:url" content = url )
+
+mixin image(image)
+  if image
+    meta( key = "og:image" property = "og:image" content = image )
+    meta(
+      key = "twitter:card"
+      name = "twitter:card"
+      content = "summary_large_image"
+    )
+    meta(
+      key = "twitter:image"
+      name = "twitter:image"
+      content = image
+    )
+
+meta( key = "charset" charset = "utf-8" )
+meta(
+  key = "viewport"
+  name = "viewport"
+  content = "width=device-width, initial-scale=1.0"
+)
+link( key = "icon" rel = "shortcut icon" href = "/media/images/favicon.ico" )
+
+meta(
+  key = "og:site-name"
+  property = "og:site_name"
+  content = "DashKite"
+)
+
+//- script( src="/index.js" type="module" )
+script(
+  src = "https://kit.fontawesome.com/01b2bc8364.js" 
+  crossorigin = "anonymous"
+)
+
+link( rel = "stylesheet" href = "/index.css" )
