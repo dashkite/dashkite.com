@@ -34,7 +34,6 @@ sky:
     certificate:
       verification: dashkite.com
     origins:
-      # - domain: dashkite.com.s3.us-east-1.amazonaws.com
       - domain: dashkite.com.s3-website-us-east-1.amazonaws.com
     aliases:
       - dashkite.com
