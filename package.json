@@ -3,7 +3,8 @@
   "version": "0.10.2",
   "description": "DashKite Web Site",
   "scripts": {
-    "test": "genie test"
+    "test": "genie test",
+    "build": "genie build"
   },
   "repository": {
     "type": "git",
