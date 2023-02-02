@@ -1,0 +1,281 @@
+{
+	"default": null,
+	"files": [
+		{
+			"name": "/build/browser/src/actions/assign.js",
+			"hash": "JT2nDEILNvCrWkLcb2gDynURp+VDWMfnVd8tILQwT7Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 408
+		},
+		{
+			"name": "/build/browser/src/actions/attributes.js",
+			"hash": "E7g+g2NwFlxfZKGnIcheNQFz5TVath25PkgACgSOdSA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 824
+		},
+		{
+			"name": "/build/browser/src/actions/call.js",
+			"hash": "HLwX5BeZs/vxgDkoLLkef6iELFGlzqHHIt9lQ6f7o0s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 348
+		},
+		{
+			"name": "/build/browser/src/actions/description.js",
+			"hash": "vZZ2sTQBzBL9kUkE4kirHCoJ8DShyny0JkYD3FmvfqY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 320
+		},
+		{
+			"name": "/build/browser/src/actions/disable.js",
+			"hash": "Sq0oF7uDEEVl8nIXRhueUQW6DMxoq0vHau56JvSwo6k=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 827
+		},
+		{
+			"name": "/build/browser/src/actions/dispatch.js",
+			"hash": "3GrPmaf1z1e86SwLO69zkBVkA7fT1sSgpdRTaeu6i1g=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 360
+		},
+		{
+			"name": "/build/browser/src/actions/focus.js",
+			"hash": "R5XXUgcz2IDay/SXaJP+SdKSoOv7F4enVt+THi3Dz8A=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 383
+		},
+		{
+			"name": "/build/browser/src/actions/form.js",
+			"hash": "7Ij4sb1maCxvs0pGBdaVkKZGB1+k0Qxd8nSTAqUgXY0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 590
+		},
+		{
+			"name": "/build/browser/src/actions/get.js",
+			"hash": "yutu94uNvsFZh8dujDHIU2lnNr383RqTwZ9wr9rPkTY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 292
+		},
+		{
+			"name": "/build/browser/src/actions/index.js",
+			"hash": "8KtdkFWHsz+VUgv9N/J2NZfakgk9AZxJa3Jaay+VbJU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 348
+		},
+		{
+			"name": "/build/browser/src/actions/render.js",
+			"hash": "nSqBx3lxfEAjUKyPtBr2OzoZXIY/DD3F5cdSGXHAmno=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 370
+		},
+		{
+			"name": "/build/browser/src/actions/set.js",
+			"hash": "nrPPfGRkRqOAYYX1ftEE4JR9KpdTEtt4J0n0wZt6goI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 312
+		},
+		{
+			"name": "/build/browser/src/actions/sheets.js",
+			"hash": "yBFIBq2GWtf9Pm0lkv/ZHmJWyLLuiBu/KbSCbM0oS5w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 680
+		},
+		{
+			"name": "/build/browser/src/event/index.js",
+			"hash": "D+epgTqqHMKz7/23R9POje0qpGgJkAC0eZKxZrPpmN8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 204
+		},
+		{
+			"name": "/build/browser/src/event/intercept.js",
+			"hash": "ZK8+5SoUfyFMy3GMXdjEy+v3HEHzg7mNrXaWi9acqmU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 249
+		},
+		{
+			"name": "/build/browser/src/event/local.js",
+			"hash": "XAbsioLZCVJDUhW7TtTbcCMvQCqe/emodb54wRcTIbE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 161
+		},
+		{
+			"name": "/build/browser/src/event/matches.js",
+			"hash": "vsvZ3fVV7i+T7Ny22MZC2zSI64kHfagyn9QJPD2an4M=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 825
+		},
+		{
+			"name": "/build/browser/src/event/prevent.js",
+			"hash": "PiUF7eElM+2/yuL4AjblOhRfHpBjqO7UjBp64X/zvQY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 279
+		},
+		{
+			"name": "/build/browser/src/event/stop.js",
+			"hash": "NuWOWWNWHOvtJXoE0mNP4HmByxbCroexRI/gNcwTkSU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 256
+		},
+		{
+			"name": "/build/browser/src/event/target.js",
+			"hash": "a9c5Qb+GCZaXU4EOrlYpeH5/f0u/3QVoqnPv2wK5H0w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 501
+		},
+		{
+			"name": "/build/browser/src/event/within.js",
+			"hash": "WdtxDDgmO/thIVKkSZK6Y6i7l2QD7OAWM3ugPoC68f0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 600
+		},
+		{
+			"name": "/build/browser/src/handle.js",
+			"hash": "VUSvrqFWM1/fEJ80Daoc6Z95vFiAWBaSuCnvnfKKB/4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 854
+		},
+		{
+			"name": "/build/browser/src/index.js",
+			"hash": "PL01TIBNzfXLYHsEJOiGLllz3uj7/vE/HqBPF3JOAQQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 172
+		},
+		{
+			"name": "/build/browser/src/initialize/activate.js",
+			"hash": "hLXbWNDUhcfhMIKcWXra7ZHmtTsX9Q718Iphy7N4U5g=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 671
+		},
+		{
+			"name": "/build/browser/src/initialize/capture.js",
+			"hash": "qkHc8PJKsmLRIFuDDI7eKvPIHusBKUj/Bp+F2lFJPsk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 457
+		},
+		{
+			"name": "/build/browser/src/initialize/click.js",
+			"hash": "4lPPKOlz1NlwN9s9KmxdBa7t3wACXEer+NhPGTZgNjc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 285
+		},
+		{
+			"name": "/build/browser/src/initialize/deactivate.js",
+			"hash": "cKLyoCH8r1CLAHJ/Zxl0CHVBdzUW18HzXyP5Bbudn6c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 745
+		},
+		{
+			"name": "/build/browser/src/initialize/describe.js",
+			"hash": "K0qM5ZKhUkh6VrCCljebFfWB/WnYSrJMQu/Zf4WAA6Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 834
+		},
+		{
+			"name": "/build/browser/src/initialize/event.js",
+			"hash": "ka6ZRf7BBdGKe6sUN02/BwyVBWQ5pbP68vy0gBuiMf8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 430
+		},
+		{
+			"name": "/build/browser/src/initialize/index.js",
+			"hash": "w6X4LXHfBnANBfer9UJklMvuTVLh35cXjQV85QYlndw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 385
+		},
+		{
+			"name": "/build/browser/src/initialize/modify.js",
+			"hash": "eJ+NOAIhkaoR0Gd0PL1Qtyi4FDhI4rYnkQPZVM4XYH8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 900
+		},
+		{
+			"name": "/build/browser/src/initialize/mutate.js",
+			"hash": "AQFVVdPvnGN27VJOGwfVUVMyNZ97+VM2qV5Ot5pXQtY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 522
+		},
+		{
+			"name": "/build/browser/src/initialize/navigate.js",
+			"hash": "ru8t3thwazPANKQW51zvF0xqn9xHJEsSekjk8wP3xhg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 396
+		},
+		{
+			"name": "/build/browser/src/initialize/observe.js",
+			"hash": "wy7Zf1td2v1voukmQyJq0LS0kgnIgRLOOcEqzgRXSY4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 722
+		},
+		{
+			"name": "/build/browser/src/initialize/ready.js",
+			"hash": "j8eL+Y7DabUFZ+rxyYJixA1SUqZPpzd2jGY4txgqjDY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 320
+		},
+		{
+			"name": "/build/browser/src/initialize/shadow.js",
+			"hash": "q0+kN+xX3Khm7WA+Y5Gq3AW4TojRnXus4SiD4SzMhkA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 368
+		},
+		{
+			"name": "/build/browser/src/initialize/submit.js",
+			"hash": "xaU8aWRoq5WySZvJYmAonuDC2Wqf5FxJHQqBAEk0moA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 388
+		},
+		{
+			"name": "/build/browser/src/mixins/connect.js",
+			"hash": "FDE3susym513IrZKRRFW3++UhGkCrGHb0cFZ1n96bmc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 352
+		},
+		{
+			"name": "/build/browser/src/mixins/diff.js",
+			"hash": "6zbGlDRYf41m15miKtGWnpxaKsh+09cYmpYxwslRy5Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2034
+		},
+		{
+			"name": "/build/browser/src/mixins/disconnect.js",
+			"hash": "sN2Um486BT77iMd5OXcTiGJvmypnkfksAdsW6G+4vjU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 371
+		},
+		{
+			"name": "/build/browser/src/mixins/index.js",
+			"hash": "VtYkOjY5c0OG9RmgHzZ03l5I0TLEKS417bPZXj8i2NA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 148
+		},
+		{
+			"name": "/build/browser/src/mixins/initialize.js",
+			"hash": "ZusJtN32lwFyyK5YRujLp33E6vNf0jMJAwSST2xdaak=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 438
+		},
+		{
+			"name": "/build/browser/src/mixins/tag.js",
+			"hash": "Q6ww2Hf5g63jqeEGVH4yhR8cHhDSz45GnH+l18JszfU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 916
+		},
+		{
+			"name": "/LICENSE.md",
+			"hash": "XnigeKaVxNak4j/k6BYv+tlxo3apivkEZybvzaIE+4s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4671
+		},
+		{
+			"name": "/package.json",
+			"hash": "jV3zi40LIG+ZE3slDwbxszcbfoK8r2AUqnu6HBhbn7w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1183
+		},
+		{
+			"name": "/README.md",
+			"hash": "1PZhuBjnxVUqerJhuBmOxLwvo423uQXsfZ5hL9iwp9E=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1766
+		}
+	]
+}

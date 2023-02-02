@@ -1,0 +1,155 @@
+{
+	"default": "/lib/base64.min.js",
+	"files": [
+		{
+			"name": "/base64.bench.ts",
+			"hash": "GlWRrl++losUsB1bwDnmHz96WBCacGkVBGgjxlEvrBg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 876
+		},
+		{
+			"name": "/base64.test.ts",
+			"hash": "0mMgEZXVgJWQ4Hx/+BbzMX3UdhlA9jCiCsv+/SZ9p24=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2713
+		},
+		{
+			"name": "/base64.ts",
+			"hash": "utQlQVhgQRE70sA9u60cC7CNKgxbWmAMjyjPM2zwdNY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 9715
+		},
+		{
+			"name": "/lib/base64.bench.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib/base64.bench.js",
+			"hash": "pndRpyuJAJ0AKMGjOCOMh85I7HN4XPyd61vGBbtZxI8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1162
+		},
+		{
+			"name": "/lib/base64.bench.js.map",
+			"hash": "qj1XgNlyMjL+IQVfIEm6VONa6ih/m2GMohSEBpfZiVY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 929
+		},
+		{
+			"name": "/lib/base64.d.ts",
+			"hash": "fWHXC/24Mre3TJ/xsY/fuwQVz+IFSkRsooQ2n857jts=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1235
+		},
+		{
+			"name": "/lib/base64.js",
+			"hash": "5vur5T2JJs/TuqQFdJNJPyTYxR7OQo2X19u2jV8AEWA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 10907
+		},
+		{
+			"name": "/lib/base64.js.map",
+			"hash": "BSLCV2u1f8Qfhagn7lHnJShNCuAZTeqfLsj2rHiS5aY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 9779
+		},
+		{
+			"name": "/lib/base64.test.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib/base64.test.js",
+			"hash": "5pwq3ASxg83PiHFs71G1Idl6aMxVqpvujzDr/NK6lkM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2836
+		},
+		{
+			"name": "/lib/base64.test.js.map",
+			"hash": "SnBXwtcTgFcQ4M3nSjd6X1KRh72DoEqQi4jsdwx9BBw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3456
+		},
+		{
+			"name": "/lib-es6/base64.bench.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib-es6/base64.bench.js",
+			"hash": "0+2BRdTJqgZuaSZnhGU87JNt+snDojg5guKs/J6NPxA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 973
+		},
+		{
+			"name": "/lib-es6/base64.bench.js.map",
+			"hash": "sc7jSdEWavlwJRDJ149DhfzzPn+6LMCra8MN/hKgNQI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1006
+		},
+		{
+			"name": "/lib-es6/base64.d.ts",
+			"hash": "fWHXC/24Mre3TJ/xsY/fuwQVz+IFSkRsooQ2n857jts=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1235
+		},
+		{
+			"name": "/lib-es6/base64.js",
+			"hash": "kCpQ0lfzFYYiE7Oi1abikUpKaLUnqpX68C+6NxJ/vL0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 10722
+		},
+		{
+			"name": "/lib-es6/base64.js.map",
+			"hash": "WF8p9FH9kVRYgom13lCElnesFarXZbespprESGLHQNM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 9753
+		},
+		{
+			"name": "/lib-es6/base64.test.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib-es6/base64.test.js",
+			"hash": "8qTjW+kK/jvIYMkdG8A88aUpCDwy9x/N5/4fJx66pJk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2742
+		},
+		{
+			"name": "/lib-es6/base64.test.js.map",
+			"hash": "4+as71MOhzOOkE4JqzrfYcgZRQ9mh/Jhnrm1KY9hnpU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3509
+		},
+		{
+			"name": "/LICENSE",
+			"hash": "FgW3e+vgGNsfwnvSL7ze7RM1xheTehJCmaiwQrQrD7Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1110
+		},
+		{
+			"name": "/package.json",
+			"hash": "71c2sw9i0zNHsop3tbPwUSfmox4N6U1u+/fZllQvCms=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 790
+		},
+		{
+			"name": "/tsconfig.json",
+			"hash": "znb/53L2guM6iX+S/h0onxEiwD4Wtx1Ujfrtk76YP6I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 629
+		},
+		{
+			"name": "/tsconfig-es6.json",
+			"hash": "wHJR+QlZ3qtEjWjHwu7QCgH32XOBBiJ0x86nh2CAR4I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 628
+		}
+	]
+}

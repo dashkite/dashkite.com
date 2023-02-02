@@ -1,0 +1,45 @@
+{
+  "name": "@dashkite/amen",
+  "version": "0.1.2",
+  "description": "A simple test library for use with async functions",
+  "keywords": [
+    "test",
+    "asynchronous",
+    "promises"
+  ],
+  "homepage": "https://github.com/pandastrike/amen",
+  "bugs": {
+    "url": "https://github.com/pandastrike/amen/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pandastrike/amen.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "contributors": [
+    {
+      "name": "Dan Yoder",
+      "email": "dan@pandastrike.com"
+    }
+  ],
+  "exports": {
+    ".": {
+      "import": "./build/import/src/index.js",
+      "node": "./build/node/src/index.js"
+    }
+  },
+  "main": "build/node/src/index.js",
+  "files": [
+    "build/import/src",
+    "build/node/src"
+  ],
+  "scripts": {
+    "test": "genie test"
+  },
+  "devDependencies": {
+    "@dashkite/genie": "^0.4.0",
+    "@dashkite/genie-presets": "^0.1.12",
+    "@dashkite/masonry": "^0.10.8",
+    "coffeescript": "^2.5.1"
+  }
+}

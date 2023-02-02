@@ -1,0 +1,35 @@
+{
+	"default": null,
+	"files": [
+		{
+			"name": "/build/browser/src/helpers.js",
+			"hash": "weNO8HxxyiG6Sk2+bNCmVNzeXHKOvIZXae7DriSz41Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 328
+		},
+		{
+			"name": "/build/browser/src/index.js",
+			"hash": "slSPZwPi7CjX6Fj60ZU6lfE4njH2UrhKHVKdZm+2C40=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4713
+		},
+		{
+			"name": "/LICENSE.md",
+			"hash": "XnigeKaVxNak4j/k6BYv+tlxo3apivkEZybvzaIE+4s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4671
+		},
+		{
+			"name": "/package.json",
+			"hash": "I8Pwowg++5ciYN77yyBO7mKaK23KlpnTBj+qF5LGldw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1174
+		},
+		{
+			"name": "/README.md",
+			"hash": "d10oQ7k/HkanV7Jw2Z7KbOhLV/pCTbj6nzqkHedc7KQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3237
+		}
+	]
+}

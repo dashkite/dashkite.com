@@ -5,7 +5,7 @@
   height="48px">
 <style>
   .invert.bg {
-    fill: #24292f;
+    fill: #7c23b7;
   }
   .invert.fg {
     fill: #fff;

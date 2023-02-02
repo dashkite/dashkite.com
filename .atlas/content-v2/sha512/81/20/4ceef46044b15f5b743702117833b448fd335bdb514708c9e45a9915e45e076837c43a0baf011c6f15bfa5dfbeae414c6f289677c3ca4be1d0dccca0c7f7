@@ -1,0 +1,59 @@
+{
+	"default": "/url-template.min.js",
+	"files": [
+		{
+			"name": "/.babelrc",
+			"hash": "jDL4OCxNCMQ5l0zL6Mo7axlMyhRJBKF9x6ambMn9TgE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 137
+		},
+		{
+			"name": "/.gitmodules",
+			"hash": "ek9C6VyQYDrdUtrFTwoXDnvSgCnH4IKYS1+RIqFTYoM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 113
+		},
+		{
+			"name": "/.travis.yml",
+			"hash": "TJhCM7ZiP39FG0d7EAK/DMqVRcKQRKYX7cK1DrXa1Xg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 40
+		},
+		{
+			"name": "/LICENSE",
+			"hash": "cHI7kOPyaqKAhhboRs2M00n+M4ZP0yipGlu50z5Y6dk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1469
+		},
+		{
+			"name": "/package.json",
+			"hash": "EZiNvhjXaZskRWmqJN4w/P79EbaZrVaZRF4DP5xkc3E=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1023
+		},
+		{
+			"name": "/README.md",
+			"hash": "lwTBgyiqOSa63smo92eC3qVWpaSzkx3RDkyusuJbYWI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1197
+		},
+		{
+			"name": "/url-template.cjs",
+			"hash": "KsBsDDTz0eqcfvRXhWLv0asTn8hRBzI6D3eDWpzbZGE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4053
+		},
+		{
+			"name": "/url-template.d.ts",
+			"hash": "qVi6UNxDrof1PHbFdsLSir4uGFSRqRiOwd4z50p/0iY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 136
+		},
+		{
+			"name": "/url-template.js",
+			"hash": "XUeoJSxXNBv3YhGWipoj/Ne19y3MXTtq8OsYkRw2Cg4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4942
+		}
+	]
+}

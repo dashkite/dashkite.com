@@ -1,15 +1,17 @@
-.app
-  .block( class = "image short" ) 
-    section
-      a( href = account ? "/home" : "/" )
-        .svg
-          include ../media/images/logo.svg
-  .block( class = "nav")
-    nav
-      a(href=`/products`) Products
-      a(href=`/pricing`) Pricing
-  .block( class = "button round highlight")
-    section 
-      a(href="https://workspaces.dashkite.com")
-        span Sign in
-      i( class = "fas fa-chevron-right fa-1x")
+.header
+  .app
+    .block( class = "image shorter" ) 
+      section
+        a( href = "/" )
+          .svg
+            include ../media/images/logo.svg
+    .block( class = "nav")
+      nav(style="--header-nav-column-gap: 3rem;")
+        a(href="/products") Products
+        a(href="/pricing") Pricing
+        a(href="/team") Team
+    .block( class = "button round highlight")
+      section 
+        a(href="https://workspaces.dashkite.com")
+          span Sign in
+        i( class = "fas fa-chevron-right fa-1x")

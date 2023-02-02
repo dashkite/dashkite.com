@@ -1,0 +1,47 @@
+{
+  "name": "@dashkite/neon",
+  "version": "0.5.1",
+  "description": "Combinators for dynamic browser pages.",
+  "keywords": [
+    "combinators",
+    "functional",
+    "fp",
+    "spa",
+    "coffeescript"
+  ],
+  "homepage": "https://github.com/dashkite/page-graph#readme",
+  "bugs": {
+    "url": "https://github.com/dashkite/page-graph/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashkite/neon.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Dan Yoder",
+  "exports": {
+    ".": {
+      "browser": "./build/browser/src/index.js"
+    }
+  },
+  "files": [
+    "build/browser/src"
+  ],
+  "scripts": {
+    "test": "genie test"
+  },
+  "dependencies": {
+    "@dashkite/joy": "^0.3.11",
+    "diffhtml": "^1.0.0-beta.20"
+  },
+  "devDependencies": {
+    "@dashkite/amen": "^0.1.2",
+    "@dashkite/amen-console": "^0.0.1",
+    "@dashkite/assert": "^0.1.3",
+    "@dashkite/genie": "^0.5.4",
+    "@dashkite/genie-presets": "^0.4.13",
+    "@dashkite/katana": "^0.4.8",
+    "@dashkite/mimic": "^0.2.4",
+    "coffeescript": "^2.5.1"
+  }
+}

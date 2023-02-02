@@ -1,0 +1,131 @@
+{
+	"default": "/build/node/src/index.min.js",
+	"files": [
+		{
+			"name": "/build/browser/src/convert.js",
+			"hash": "3xO3sOue06XzDZXxPBjtbwdlu8JpZU+mKaRg1jZPhKc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1524
+		},
+		{
+			"name": "/build/browser/src/encoders/base16.js",
+			"hash": "AVZV9LB4+MeDQTUPSUhNiBLZQS0pViXbdC1SHcuLX5c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1228
+		},
+		{
+			"name": "/build/browser/src/encoders/base36.js",
+			"hash": "4lPOWhgjBPIaozbgmSXBFRJaCthYk9bM7sw7XrvNeVA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1247
+		},
+		{
+			"name": "/build/browser/src/encoders/base64.js",
+			"hash": "ql2HZ4fe1hrdsqNlYRdIf6aNwt/9a96UUz2Ids+e4Hw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 735
+		},
+		{
+			"name": "/build/browser/src/encoders/helpers.js",
+			"hash": "IyqADdrdJGTV9vP/51FrA0+6e7IuGc+fK+ll1KRkmJY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 812
+		},
+		{
+			"name": "/build/browser/src/encoders/index.js",
+			"hash": "MaL54RyYvuIDMSsKCfoJfctYFIr90H6uMzx1P62mhtI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 140
+		},
+		{
+			"name": "/build/browser/src/encoders/json.js",
+			"hash": "Je8vKXKC9TPbbojkPdedf1zpCW4rqxjbb9YcQhhLP1k=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 193
+		},
+		{
+			"name": "/build/browser/src/encoders/utf8.js",
+			"hash": "MMGY6VqyURjApGKdGzbFahi5+gBV3+Leo560aK0ElCc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 522
+		},
+		{
+			"name": "/build/browser/src/index.js",
+			"hash": "8s6qwbuMrlvOGD9RFnpLzM+GLWLDFJA3bcUtjOgtCIs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 66
+		},
+		{
+			"name": "/build/node/src/convert.js",
+			"hash": "fZTUZyYZzno8POZqvNw9prtWBo4epiksJlYBUmda3AI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6885
+		},
+		{
+			"name": "/build/node/src/encoders/base16.js",
+			"hash": "SeAXz2CrPPWAL0cklZ2YkyMTL/pFwP6qTXkgNG5CsU0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4559
+		},
+		{
+			"name": "/build/node/src/encoders/base36.js",
+			"hash": "SZMtaOIPsziFCJOiBJ2qZf7R+VYWnfSTrfjOZkPBUMw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4024
+		},
+		{
+			"name": "/build/node/src/encoders/base64.js",
+			"hash": "PByILz0dM2hoKTyTAji8nV/fXPkW6ci+0iELDjjM4oM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2915
+		},
+		{
+			"name": "/build/node/src/encoders/helpers.js",
+			"hash": "cZo9vku5FYxDKqiZBTTb7V0KjWsk3eSIiCJ6bLDJ2KA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3188
+		},
+		{
+			"name": "/build/node/src/encoders/index.js",
+			"hash": "BQkB+u8PHBMJtMqcvG55uU8ibiwmWzR4THyxF3wMZtY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1916
+		},
+		{
+			"name": "/build/node/src/encoders/json.js",
+			"hash": "Gocl5GLyBUq6/746yWUhYCBYTheczV0Aegmk9Dd3VAI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1053
+		},
+		{
+			"name": "/build/node/src/encoders/utf8.js",
+			"hash": "HwbWJRMCeQSIlXJjx59XMy7MD9U+bLa0AwCYTDs11Nw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1336
+		},
+		{
+			"name": "/build/node/src/index.js",
+			"hash": "wpBhfYRWTmNUyg8kTlYCFrRRCeQRMJ1j9NrwYo1fcsA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 954
+		},
+		{
+			"name": "/LICENSE.md",
+			"hash": "XnigeKaVxNak4j/k6BYv+tlxo3apivkEZybvzaIE+4s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4671
+		},
+		{
+			"name": "/package.json",
+			"hash": "hMYgbg+bnDi0KnEJ3RuiRthwoyX4r2/uzzoML8iJvks=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1363
+		},
+		{
+			"name": "/README.md",
+			"hash": "vkcYDQ2tB6wqDE0BOvIG5jRQ2sv+JsErwKc1QdHOqIY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2218
+		}
+	]
+}

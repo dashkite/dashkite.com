@@ -1,0 +1,15 @@
+@require "css/css"
+
+.product-link
+  p
+    color var(--link-color)
+  &:hover
+    p::after
+      content "\00a0 \2192"
+
+    span 
+      color var(--neutral-foreground)
+
+  span 
+    color var(--neutral-accent)
+

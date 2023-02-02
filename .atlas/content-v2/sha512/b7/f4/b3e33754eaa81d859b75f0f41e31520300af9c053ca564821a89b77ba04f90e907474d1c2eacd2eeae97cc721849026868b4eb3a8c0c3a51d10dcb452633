@@ -1,0 +1,51 @@
+{
+  "name": "@dashkite/stylist",
+  "version": "0.0.6",
+  "description": "High level interface for managing stylesheets",
+  "keywords": [],
+  "homepage": "https://github.com/dashkite/stylist#readme",
+  "bugs": {
+    "url": "https://github.com/dashkite/stylist/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashkite/stylist.git"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "contributors": [
+    {
+      "name": "Dan Yoder",
+      "email": "dan@dashkite.com"
+    },
+    {
+      "name": "David Harper",
+      "email": "david@dashkite.com"
+    }
+  ],
+  "exports": {
+    ".": {
+      "import": "./build/import/src/index.js"
+    }
+  },
+  "main": "build/src/index.js",
+  "files": [
+    "build/src",
+    "src",
+    "build/import/src"
+  ],
+  "scripts": {
+    "test": "genie test"
+  },
+  "dependencies": {
+    "@dashkite/joy": "^0.3.6"
+  },
+  "devDependencies": {
+    "@dashkite/amen": "^0.1.2",
+    "@dashkite/amen-console": "^0.0.1",
+    "@dashkite/assert": "^0.1.0",
+    "@dashkite/genie": "0.4.1",
+    "@dashkite/genie-presets": "^0.1.13",
+    "coffeescript": "^2.5.1"
+  },
+  "main:coffee": "src/index.coffee"
+}

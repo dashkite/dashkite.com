@@ -1,0 +1,71 @@
+{
+	"default": "/build/node/src/index.min.js",
+	"files": [
+		{
+			"name": "/build/import/src/destructure.js",
+			"hash": "jrxt2O3APRKurHQ7oNPpaZYb6HSlAwJUqwUZauE0dqg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6377
+		},
+		{
+			"name": "/build/import/src/index.js",
+			"hash": "wBoHAnWcIUDktQb4Bc70dPaNRs7wdp7xcpsYgZVUVjM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 121
+		},
+		{
+			"name": "/build/import/src/parse.js",
+			"hash": "oLUL6cYsflCyDFbhT44iEzQ0DPlw/zHk3UKYqFvI/9s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 744
+		},
+		{
+			"name": "/build/import/src/router.js",
+			"hash": "Lf/BeCO4lzpPCTrJWe+d7karoge5rUAz0L5/jvR02R4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 909
+		},
+		{
+			"name": "/build/node/src/destructure.js",
+			"hash": "jFK2PyZUJgkt/8J4pZ1sJEZMG20MeacgNp85B+gCYY0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 21627
+		},
+		{
+			"name": "/build/node/src/index.js",
+			"hash": "ytaOf1imsEtlJgBP+deuSmgTxyE7vB5vGtBJtSmplho=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 771
+		},
+		{
+			"name": "/build/node/src/parse.js",
+			"hash": "Tg658h5ej5G0KP+Zx5zimVrQyXjLnmdIgi9S3TA4faA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3371
+		},
+		{
+			"name": "/build/node/src/router.js",
+			"hash": "ZO8tGnJx5UB72R6ztVHeaWR2KWirrRirvySqPk6MdTc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3297
+		},
+		{
+			"name": "/LICENSE.md",
+			"hash": "XnigeKaVxNak4j/k6BYv+tlxo3apivkEZybvzaIE+4s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4671
+		},
+		{
+			"name": "/package.json",
+			"hash": "dCzC7Q2CJHtdLfJMqGHzQpbxGQFfB3Nn2qHKX83hNqY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 904
+		},
+		{
+			"name": "/README.md",
+			"hash": "uj4mIW7u41tJ+xK1SgA3dO+q9OwsZrGTrcSL/ZMZmvE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 834
+		}
+	]
+}

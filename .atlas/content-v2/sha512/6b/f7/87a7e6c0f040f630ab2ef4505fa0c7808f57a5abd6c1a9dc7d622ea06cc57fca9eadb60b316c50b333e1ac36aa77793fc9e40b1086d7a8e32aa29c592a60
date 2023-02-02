@@ -1,0 +1,119 @@
+{
+	"default": "/build/src/index.min.js",
+	"files": [
+		{
+			"name": "/build/import/src/build.js",
+			"hash": "aKQtkO6eif3gWC1Z8H3RIA+9BAsSib7BUKSv7mUaknM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 207
+		},
+		{
+			"name": "/build/import/src/helpers/convert.js",
+			"hash": "jomBf5urKlTj4h/vgPUqHFD7X/Swy/kib3SBDC+D5F8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1038
+		},
+		{
+			"name": "/build/import/src/helpers/diff.js",
+			"hash": "ffacD/u7+ZUlGkIn4/KuY1qolrMGiwnedtJ3/JJK+aU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1018
+		},
+		{
+			"name": "/build/import/src/helpers/hash.js",
+			"hash": "8fvjnYOFxk/WoGToofiq9e6RMr9cJ25AEwUpvHIrInA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 655
+		},
+		{
+			"name": "/build/import/src/helpers/index.js",
+			"hash": "tWVkC3TAFt/R+RHqwMLUlvGOqk2EBaw9hA5x0f/q4ng=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 113
+		},
+		{
+			"name": "/build/import/src/helpers/memoize.js",
+			"hash": "VV1uMgOQlpEUoglihGeF2wxVmjoDP38q14qgYdyr/gw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 421
+		},
+		{
+			"name": "/build/import/src/index.js",
+			"hash": "0ooJKZNUhkWdXhMtdwvRPBC7UbvnSvg00SiwFlX8vsY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 56
+		},
+		{
+			"name": "/build/import/src/sheets.js",
+			"hash": "2EW3EeC1v0j+Lf5ul5zcsiNOwvUZJZFw16ktWJMHvLk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 885
+		},
+		{
+			"name": "/LICENSE.md",
+			"hash": "XnigeKaVxNak4j/k6BYv+tlxo3apivkEZybvzaIE+4s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4671
+		},
+		{
+			"name": "/package.json",
+			"hash": "rpjsoBkNUcDXMPVl+yixcCsSZtHqjwYSIlBianxkZh0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1149
+		},
+		{
+			"name": "/README.md",
+			"hash": "/oLX+6W0GlBK52CZC6vm1fUxjQlbjVhLMuqvpbMczdc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 129
+		},
+		{
+			"name": "/src/build.coffee",
+			"hash": "jHX39G0qZj2oxBV9o6u50GbrCHNUdAJBR6gNBgN4FC4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 135
+		},
+		{
+			"name": "/src/helpers/convert.coffee",
+			"hash": "fTpgsEHPIUPT/b0MaZFbR1LRr6qIwS8HGM71g9ddU/E=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 769
+		},
+		{
+			"name": "/src/helpers/diff.coffee",
+			"hash": "StfUp+udn3Z/bWv3Wr4SAMXXIQbEYpPTW7+Kvs9b49Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 782
+		},
+		{
+			"name": "/src/helpers/hash.coffee",
+			"hash": "Cs9N0fnYEOoAISWKYDeueUnU4RQpq1rYVfwETXcH4iQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 637
+		},
+		{
+			"name": "/src/helpers/index.coffee",
+			"hash": "hk0d7gjDJ4X8Tqou/1ty1nIKnCCpejByq3fSP97J5r0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 98
+		},
+		{
+			"name": "/src/helpers/memoize.coffee",
+			"hash": "K+X+EtPbsCATQTqAltkLDf+wQ0B84OcpcimIIO5I+FQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 195
+		},
+		{
+			"name": "/src/index.coffee",
+			"hash": "EX6wJ8R8G/PJbgA60OyYuTfxNKZsfFd/jzUWvUnd22c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 49
+		},
+		{
+			"name": "/src/sheets.coffee",
+			"hash": "VlZxE+sbp8P24jOwL98iccG6T7xqt1oNqRbnydhZ7UI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 571
+		}
+	]
+}

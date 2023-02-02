@@ -1,0 +1,16 @@
+doctype html
+
+html(class= "purple")
+  head
+    - var title = "DashKite: Pricing"
+    - var description = "Choose the right plan for you"
+    - var url = "https://dashkite.com/pricing"
+    include ../templates/head
+
+  body
+    header
+      include ../templates/header
+    main
+      dashkite-pricing-table( data-product = "db", data-workspace = "1234", data-trial = true )
+    footer
+      include ../templates/footer

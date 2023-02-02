@@ -95,6 +95,9 @@
   // but it will grow up to the rem value as the width increases
   --banner-padding-vertical s("min(10vw, 4rem)")
   --banner-padding-horizontal s("min(5vw, 2rem)")
+  --banner-split-flex-direction row
+  --banner-split-image-order 1
+  --banner-split-image-min-width du(1)
 
   --section-flex-direction column
   --section-flex-wrap nowrap
@@ -136,6 +139,8 @@
   --button-flex-grow 0
   --button-flex-basis auto
   --button-justify-content center
+  --button-padding-vertical 0.5rem 
+  --button-padding-horizontal 0.75rem
   --button-link-text-decoration none
   --button-link-display flex
   --button-link-gap 1rem
@@ -197,7 +202,7 @@
   
   &.button
     --button-img-height var(--copy-font-size, 1rem)
-    --button-icon-font-size var(--copy-font-size, 1rem)
+    --button-icon-font-size s("calc(.75 * var(--copy-font-size, 1rem))")
 
   .socials
     --block-socials-icon-font-size s("calc(1.33333333 * var(--copy-font-size, 1rem))")

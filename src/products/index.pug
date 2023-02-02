@@ -15,9 +15,12 @@ html(class= "purple")
             header 
               h2 Products
             .main
-              .block(class = "nav highlight")
+              .block(class = "nav highlight vertical")
                 nav 
                   header
                     h3 Storage
-                  a(href="/products/db") DB
+                  a.product-link(href="/products/db" style = "flex-direction: column; align-items: flex-start;") 
+                    p DB
+                    span No Code database
     footer
+      include ../templates/footer

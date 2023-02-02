@@ -1,4 +1,4 @@
-header, header > .app, header > .page,  header > .page-2
+.header, .header > .app, .header > .page, .header > .page-2
   &:empty
     display none
 
@@ -27,7 +27,7 @@ header, header > .app, header > .page,  header > .page-2
         &:last-child
           right()
 
-      img, svg, .svg
+      img, svg
         max-height var(--header-img-max-height)
 
 
@@ -110,6 +110,29 @@ main, main > .collection > section > .main
 
       padding var(--banner-padding-vertical) var(--banner-padding-horizontal)
 
+    
+    &.banner-split
+      widest()
+      largest()
+      
+      flex-direction var(--banner-split-flex-direction)
+      padding s("min(5vw, 2rem)") 1rem s("min(5vw, 2rem)") 0
+      justify-content space-between
+
+      & > section
+        flex-direction column
+        justify-content center
+        align-self center
+        flex-wrap nowrap
+
+      & > .svg
+        max-width s("min(50%, %s)", du(1.5))
+        max-height 100%
+        min-width var(--banner-split-image-min-width)
+        order var(--banner-split-image-order)
+        align-self center
+
+      
 
     &.article, &.section
 
@@ -184,6 +207,7 @@ main, main > .collection > section > .main
     &.section
       .main
         overflow var(--section-main-overflow)
+        font-size var(--copy-font-size, 1rem)
       
       section
         align-items var(--section-align-items)
@@ -206,7 +230,7 @@ main, main > .collection > section > .main
       borders()
       --copy-min-width 0
 
-      section
+      & > section
         flex-grow var(--button-flex-grow)
         flex-basis var(--button-flex-basis)
         justify-content var(--button-justify-content)

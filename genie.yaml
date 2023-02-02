@@ -1,26 +1,22 @@
 presets:
-  verify: null
-  update: null
-  release: null
   coffeescript:
     targets:
       browser:
         - preset: browser
           glob:
-            - 'src/**/*.coffee'
-      node:
-        - preset: node
-          glob:
-            - 'test/**/*/coffee'
+            - src/**/*.coffee
+  verify: null
+  update: null
+  release: null
+  esm: null
   pug:
     targets:
       browser:
         - preset: render
-          glob: 
+          document: true
+          glob:
             - src/**/*.pug
-          document: false
-          root: ./build/browser/src
-
+            - "!src/templates"
   stylus:
     targets:
       browser:
@@ -28,29 +24,26 @@ presets:
           glob:
             - src/**/*.styl
 
-  yaml:
-    targets:
-      node:
-        - preset: js
-          glob:
-            - "{src,test}/**/*.yaml"
-
-  media: {}
+  media:
+    target: build/browser
 
 sky:
-
-  graphene:
-    address: bkqooszc5jqsoyxrcedr6lrsc
-    collections:
-      - byname: www-development.dashkite.com
-        views: []
-        publish:
-          root: build/browser/src
-          glob: "**/*.{js,json,html,css}"
-  
+  namespace: web
+  edge:
+    name: edge
+    certificate:
+      verification: dashkite.com
+    cache: dynamic
+    origins:
+      - domain: dashkite.com.s3-website-us-east-1.amazonaws.com
+    aliases:
+      - dashkite.com
+      - www.dashkite.com
   buckets:
-    - name: www-development.dashkite.com
+    - name: dashkite.com
+      website:
+        index: index.html
+        error: error.html
       publish:
         root: build/browser/src
-        glob: "**/*.{png,gif,jpg,pdf,svg}"
-
+        glob: "**/*"

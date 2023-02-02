@@ -1,0 +1,77 @@
+{
+	"default": "/nacl-fast.min.js",
+	"files": [
+		{
+			"name": "/AUTHORS.md",
+			"hash": "ZAYq5BLbsLy+wv8wZtN52dVlbqGL0wNdZCQ2sTIf4Rc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 837
+		},
+		{
+			"name": "/CHANGELOG.md",
+			"hash": "oOrX9VQQMrFqy5i0JNqEemnZd5SUIOdCFyicSDH/mlU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 7548
+		},
+		{
+			"name": "/LICENSE",
+			"hash": "iNm062BXnBkew5HKBMFhMFctfu3EqG2qWL8oxuFMm80=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1210
+		},
+		{
+			"name": "/nacl.d.ts",
+			"hash": "YFkvWuG3OclgepmJXUo61chlsWkD5BgOULJW42CkoQQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3103
+		},
+		{
+			"name": "/nacl.js",
+			"hash": "JVVSOreemAx67JSq9sgOPBIPugTpxKlaufqnh4YCOA4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 32657
+		},
+		{
+			"name": "/nacl.min.js",
+			"hash": "lzzFczzHQy4w7kaCCY9BMJT0lLzPdqVnwjkIxQNd27w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 18456
+		},
+		{
+			"name": "/nacl-fast.js",
+			"hash": "a803o7INzpE/gtSyPk4rZhBYtLlT34o/jEXVasT3JEc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 61966
+		},
+		{
+			"name": "/nacl-fast.min.js",
+			"hash": "PsU1wASu6yJXhdjpP7M7+Z9S45m9ffwBlptWKbrqUTE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 32110
+		},
+		{
+			"name": "/nacl-fast-es6.js",
+			"hash": "z1B8QSeS6qRiDv1r/qIQcN0253YN5UtDffCASsLQOp4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 61882
+		},
+		{
+			"name": "/package.json",
+			"hash": "MXZoU0YGzttXS2b7Z5+H55BE2swa0O+QVEUwlUvS1Gk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1741
+		},
+		{
+			"name": "/PULL_REQUEST_TEMPLATE.md",
+			"hash": "Zf5By9mQs90PcGKmBSuIduIhsp4e0S6sGGv4dDbiRMs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1040
+		},
+		{
+			"name": "/README.md",
+			"hash": "RxnCLRJvwXz7ZHx1CksZNJCZcsu9sJnlnrABK97jH3s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 14543
+		}
+	]
+}

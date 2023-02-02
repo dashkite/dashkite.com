@@ -1,0 +1,665 @@
+{
+	"default": "/dist.es5+umd/msgpack.min.js",
+	"files": [
+		{
+			"name": "/dist.es5+esm/CachedKeyDecoder.mjs",
+			"hash": "6ZK1r2wD6ccFc8qWrhvh/5f9YBgJx/43BER6VHIzmU8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2750
+		},
+		{
+			"name": "/dist.es5+esm/CachedKeyDecoder.mjs.map",
+			"hash": "fiZAEgDO3vMioozVxzFe6ULQI+hEEX20jiWBgwMY4eE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2179
+		},
+		{
+			"name": "/dist.es5+esm/context.mjs",
+			"hash": "t5BHwcLfg37hLQX42K4+njjUHkO1AHQXLA01RUHnlS0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 97
+		},
+		{
+			"name": "/dist.es5+esm/context.mjs.map",
+			"hash": "t6R8+vItGCFudsbQFG3edDPLLW3uyXS3qtWHRKh2lF8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 118
+		},
+		{
+			"name": "/dist.es5+esm/decode.mjs",
+			"hash": "W4ECu0+XtsW6F0jwuAwcpJQBWQCON2fmYVf/SitGEJI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1137
+		},
+		{
+			"name": "/dist.es5+esm/decode.mjs.map",
+			"hash": "R9iaTHQm/2cWSsAkIQzEjLdTmtoMUElsCUBUt3hBMGs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 856
+		},
+		{
+			"name": "/dist.es5+esm/decodeAsync.mjs",
+			"hash": "IY8gNfWgoDRlyPERiC+WxGpO2Ph/TVOaWSQJ1UuGqro=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4276
+		},
+		{
+			"name": "/dist.es5+esm/decodeAsync.mjs.map",
+			"hash": "HFbJPLaN8vqP9P/d17p2IKhrO+F6f1L44y2DFHeyNNs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1525
+		},
+		{
+			"name": "/dist.es5+esm/DecodeError.mjs",
+			"hash": "vGTUInrO8SMwAfRKMLbfGG+720ZunT9VhzgOUVc3W8g=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1392
+		},
+		{
+			"name": "/dist.es5+esm/DecodeError.mjs.map",
+			"hash": "OgxJBuS0nGtEescFIIjXiMMZous78gz6tUX6K+ozQXc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 514
+		},
+		{
+			"name": "/dist.es5+esm/Decoder.mjs",
+			"hash": "bumhZgIDlCYjulSyUQxQnXMpDmAoB8uqGVNqd6hQHSQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 30789
+		},
+		{
+			"name": "/dist.es5+esm/Decoder.mjs.map",
+			"hash": "ZF4++7CgsCSzRx62o7YEkCrbWXh8IsjlrNQZX4xRvFc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 16851
+		},
+		{
+			"name": "/dist.es5+esm/encode.mjs",
+			"hash": "o4W3yDvOb4LUrJx0IR1ZB2qAxIlhZb8t9HoYfXRB7g0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 738
+		},
+		{
+			"name": "/dist.es5+esm/encode.mjs.map",
+			"hash": "+/eCxfH3EXO6OuEpDQWPHhbdDsG8ANAvYycRJFIn2eQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 537
+		},
+		{
+			"name": "/dist.es5+esm/Encoder.mjs",
+			"hash": "P9jPRDJFjvKoetNk6oaR5483fOxIgk8UHX16xIE8jwg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 13786
+		},
+		{
+			"name": "/dist.es5+esm/Encoder.mjs.map",
+			"hash": "FBt1AIoouH+xWFHOdouB3uqLuVRbGBJsRCmr5Wvm2+Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 12026
+		},
+		{
+			"name": "/dist.es5+esm/ExtData.mjs",
+			"hash": "vw6nXX/OcuDaMra2+dm9RWDNsQwzH/dugpfupiNLafE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 314
+		},
+		{
+			"name": "/dist.es5+esm/ExtData.mjs.map",
+			"hash": "XpeGBqJzo+GcKPcoMIYcJSANB0M8p2Wdma+/r5omAyY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 242
+		},
+		{
+			"name": "/dist.es5+esm/ExtensionCodec.mjs",
+			"hash": "AXV1rlRb8ZMJaaRVfSANgAWS2SvHU0WLO7WIhxZs1ss=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2498
+		},
+		{
+			"name": "/dist.es5+esm/ExtensionCodec.mjs.map",
+			"hash": "RX1+AJd025VeDQpEpx1MGglZ/6qfnGzk+znWDLlQ1TA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2167
+		},
+		{
+			"name": "/dist.es5+esm/index.mjs",
+			"hash": "CskaJL14crWysE/DL8kE8qJi+DAkD6ZySV+uFm3RQvo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1129
+		},
+		{
+			"name": "/dist.es5+esm/index.mjs.map",
+			"hash": "70q5LZJ16x0HoX7PVLFl0bxPWjQgSdEz1vuB2zDPbqc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 998
+		},
+		{
+			"name": "/dist.es5+esm/timestamp.mjs",
+			"hash": "d3AByFcTGe4FDAZo1bWejLYJ+wwlEmfMaTB6BKAfBuI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3522
+		},
+		{
+			"name": "/dist.es5+esm/timestamp.mjs.map",
+			"hash": "7/di0cZV+j0HNpPF8KyUXShdenAAyQDJaW86HWuFiOI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3317
+		},
+		{
+			"name": "/dist.es5+esm/utils/int.mjs",
+			"hash": "fkJ6PNip/nRvXApN9MwtjRsORR5CIdMOcdcc9n42Wi0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 967
+		},
+		{
+			"name": "/dist.es5+esm/utils/int.mjs.map",
+			"hash": "GJgxAEO4MCusYph2sdPonER2ymEHp0FPHTQizzVaReI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1154
+		},
+		{
+			"name": "/dist.es5+esm/utils/prettyByte.mjs",
+			"hash": "HTLg/QIk9loL4N3L+iCijWBUd0q+1g7id7u3Zd9EJ0E=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 178
+		},
+		{
+			"name": "/dist.es5+esm/utils/prettyByte.mjs.map",
+			"hash": "4IKLSuScN4eevssv0nLWYpI/inwA9w6xMep4ZjFhxa0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 338
+		},
+		{
+			"name": "/dist.es5+esm/utils/stream.mjs",
+			"hash": "3fnyhXC53mV6a2ukGWvL78O68EKK+atwk98EpvsITAM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4763
+		},
+		{
+			"name": "/dist.es5+esm/utils/stream.mjs.map",
+			"hash": "Ma+yJLrdFkqQI7EkXmD0hYj5pFkksdRJVpvU1wmf93w=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 871
+		},
+		{
+			"name": "/dist.es5+esm/utils/typedArrays.mjs",
+			"hash": "x3UkCZZMhMM9hYEY1+lF/mE6r3mrQZPBG9X9uZERjnI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 728
+		},
+		{
+			"name": "/dist.es5+esm/utils/typedArrays.mjs.map",
+			"hash": "mK/7ODD8IobRdzIGO1ed3VJGUftX5k0OhpQWnjW8vuw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 769
+		},
+		{
+			"name": "/dist.es5+esm/utils/utf8.mjs",
+			"hash": "XC1fDkxMEPSpc74mrlGPZpOiSyY67MQ7KfA82uQ/4RY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6029
+		},
+		{
+			"name": "/dist.es5+esm/utils/utf8.mjs.map",
+			"hash": "b/xFcn3/J+GF93ybGevhruyaqT5rYHjONsdw54+CNYo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6017
+		},
+		{
+			"name": "/dist.es5+umd/msgpack.js",
+			"hash": "EFO5GZixuMcjMzd1e45tAaXABoWeqBnqnX2J7cyca/0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 79709
+		},
+		{
+			"name": "/dist.es5+umd/msgpack.js.map",
+			"hash": "wwEmjIb1RnL39MCxw+n+DzHzouDZiYJ3N35GOpqf7fg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 105778
+		},
+		{
+			"name": "/dist.es5+umd/msgpack.min.js",
+			"hash": "vwJWJ+De/RMHpz5Zn9g6HAE/vRDhzkZHSLiHGQqzjws=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 31508
+		},
+		{
+			"name": "/dist.es5+umd/msgpack.min.js.map",
+			"hash": "sR2zK1830Up8t1GI9EsffVZ2OWZ1+LqtAPBxAAUjOFk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 85495
+		},
+		{
+			"name": "/dist/CachedKeyDecoder.d.ts",
+			"hash": "wQvBFGPxY28BMN/MBsfkGQjyUN798e4XxRdlTwFKizI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 588
+		},
+		{
+			"name": "/dist/CachedKeyDecoder.js",
+			"hash": "ve8AUbZJwK2i47HvOB+7kCzoZwUov7g/1eKS8fPku9Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2464
+		},
+		{
+			"name": "/dist/CachedKeyDecoder.js.map",
+			"hash": "eyqX38G0uzQwtGBSzqTJ2yWxlB1LP9KVKoPaRSqyUxU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2052
+		},
+		{
+			"name": "/dist/context.d.ts",
+			"hash": "Y6FedyjWbCXc2lh2U9qP9c4EP1Qh1BDEutzFcPQJnKU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 350
+		},
+		{
+			"name": "/dist/context.js",
+			"hash": "aWQcMECoAlRhQKnEZloxBcmAD3V92uXj4TWrx2AdsNA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 162
+		},
+		{
+			"name": "/dist/context.js.map",
+			"hash": "I1VTvXiuF9TSckoDQvnZs1dgaQ5c3W+TS4KI/UKiY+8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 118
+		},
+		{
+			"name": "/dist/decode.d.ts",
+			"hash": "QSXdF2FskWW2m2/wCRLYZPkXhNHUojq7z51EHV0hh8c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1686
+		},
+		{
+			"name": "/dist/decode.js",
+			"hash": "oAAiUagruSQUEzpxFt3jPtCh08vM5M3h263FupoYkx4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1291
+		},
+		{
+			"name": "/dist/decode.js.map",
+			"hash": "Pqt+r1hgI/Dc7qzuBRzBwSs7oy0TWy6Re7kmCnSV274=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 790
+		},
+		{
+			"name": "/dist/decodeAsync.d.ts",
+			"hash": "lJcA0VqyM+ze4hjdUXEvwY4xdUuXm0/fIt3/3u/0hZc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1049
+		},
+		{
+			"name": "/dist/decodeAsync.js",
+			"hash": "V1JLPQB3cyvDPcGT6wrw8sfW/3P+Ha6HUaXEGrhZN9g=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1872
+		},
+		{
+			"name": "/dist/decodeAsync.js.map",
+			"hash": "MYWhlyGy9+7ZNyuI0E2ENHhhCdzPKwnApiluEYa/bAU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1373
+		},
+		{
+			"name": "/dist/DecodeError.d.ts",
+			"hash": "ktM2xko1hCfGaXO+coyK98MYHPLnZkI8pr3gR9cDZoo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 85
+		},
+		{
+			"name": "/dist/DecodeError.js",
+			"hash": "WohJnttQHZ+K/Ijfyjmcmo87dWqX000WDsGpHSF3YRM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 595
+		},
+		{
+			"name": "/dist/DecodeError.js.map",
+			"hash": "QslxiGXXNx/ZSLtBQq7B4uGEWaTNsHaAmX3ibqsrKOU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 479
+		},
+		{
+			"name": "/dist/Decoder.d.ts",
+			"hash": "ocuUxhU8Bap0ov/8wrnyuuitHVl77SqtKTmtr/qmv7A=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2134
+		},
+		{
+			"name": "/dist/Decoder.js",
+			"hash": "koefQO4zdH3gymOq1TNWRzrHaBBl2EFORihbo0FxAfs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 20381
+		},
+		{
+			"name": "/dist/Decoder.js.map",
+			"hash": "aseDknvTZEWBoWRuC1d5jzgQZ71KoxfOjMD+Dekz7/I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 16197
+		},
+		{
+			"name": "/dist/encode.d.ts",
+			"hash": "yvgxnPa58SIrnGS7bAMsgTuv8tMYur2fTT5e1KVIMJc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1965
+		},
+		{
+			"name": "/dist/encode.js",
+			"hash": "YYjahgbEFC1jcVvltg9wmPdUBAjxYftpto5KuQZ4LRg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 829
+		},
+		{
+			"name": "/dist/encode.js.map",
+			"hash": "qkHxsSCDyHTBNfWbIbb7dPWwJWqT6G6ApHXHo6dk5XI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 496
+		},
+		{
+			"name": "/dist/Encoder.d.ts",
+			"hash": "tJbToKMCQcCQ+UfPKIY/IdgdRvpr7QB1ISXieZiHqGk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1514
+		},
+		{
+			"name": "/dist/Encoder.js",
+			"hash": "yHDK6kuUfaQyCThCW38lNXTbPB4mrqHOTMRsWCgrXZo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 12408
+		},
+		{
+			"name": "/dist/Encoder.js.map",
+			"hash": "0GkkOfobg6qDG8s3cmBpj24bT/Xqh9mOc9WK6+/7JdA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11402
+		},
+		{
+			"name": "/dist/ExtData.d.ts",
+			"hash": "3id8Z3kJURlupkuzQbLPaEqTGa5NrGHB1iKAtTcVmLs=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 236
+		},
+		{
+			"name": "/dist/ExtData.js",
+			"hash": "yxpHSEr8eKxtuyUR2qboFwyN+b+Cc3YAwGHeiG888fA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 367
+		},
+		{
+			"name": "/dist/ExtData.js.map",
+			"hash": "iJOrB/XYmVkt8GracjVlzGZ/vm7ZhvT7CwpwAHsrVqI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 240
+		},
+		{
+			"name": "/dist/ExtensionCodec.d.ts",
+			"hash": "gr/RnM7j9AEb8hKw+eHQSZ8Hhvq1+GoPNWn2gB/0Kk8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1206
+		},
+		{
+			"name": "/dist/ExtensionCodec.js",
+			"hash": "Ar+FAebP90J2Njr7aYvdt8667kXGfQHEkqi9I2v4A8s=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2445
+		},
+		{
+			"name": "/dist/ExtensionCodec.js.map",
+			"hash": "AQQTzM+TwJ5hXUTTBxrdTDymWPDU66WlVD70z4oLczc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2063
+		},
+		{
+			"name": "/dist/index.d.ts",
+			"hash": "GkV/k2e6nx7xP5p7kFgcImA4XaJTCsoTF+XmtAIBxLQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1339
+		},
+		{
+			"name": "/dist/index.js",
+			"hash": "ADN74AqwdUo7blYEuQ9YtharYxYkvP1FJkMRIpJR1gc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3546
+		},
+		{
+			"name": "/dist/index.js.map",
+			"hash": "Zr0B/jcAWCbeQ8hEITVCQdlqYVoBuX+CJ80jY1YG17Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 682
+		},
+		{
+			"name": "/dist/timestamp.d.ts",
+			"hash": "D6U5xZsGFU2jSx1EGVCJOZu28Phgkt2HYaNTOVGNwso=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 661
+		},
+		{
+			"name": "/dist/timestamp.js",
+			"hash": "RWQgY7xa0njjesba4+QpSqb2+gozDlW/DfF7pBTTE2E=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4103
+		},
+		{
+			"name": "/dist/timestamp.js.map",
+			"hash": "H5YO+7FHni8/YO/D3pC8IJRZUGEHwP36LtaS0TDtZb0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3242
+		},
+		{
+			"name": "/dist/utils/int.d.ts",
+			"hash": "9lgd3uYlJshh42YwNC3T7NNDtyTu7Mdlhz3ZXkSDB6E=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 370
+		},
+		{
+			"name": "/dist/utils/int.js",
+			"hash": "ni6vOYU+DukKSytZ4HtmwREoOc80bqrjhk1cSPq6Icw=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1255
+		},
+		{
+			"name": "/dist/utils/int.js.map",
+			"hash": "ueEh7W1EWFqE9DAxShX/m+yI/xKTSVXhgsbeKUy0rwU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1173
+		},
+		{
+			"name": "/dist/utils/prettyByte.d.ts",
+			"hash": "PWRYWdZcS+Nu1fpglTATCporP1TJyJiAVriRKRrHNE8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 58
+		},
+		{
+			"name": "/dist/utils/prettyByte.js",
+			"hash": "bZCF27EOELgKxVk24ziYjxJfdYRQnUewh5lJtduYB70=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 293
+		},
+		{
+			"name": "/dist/utils/prettyByte.js.map",
+			"hash": "DUeVHgXe7cjYcRqibHbQW7zyKL8bJHaHwb0c3cmVmUc=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 347
+		},
+		{
+			"name": "/dist/utils/stream.d.ts",
+			"hash": "PXa/Etl+9O2bCAOuYCtn8DW1XMTeNVlYxO08uoMxlzk=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 383
+		},
+		{
+			"name": "/dist/utils/stream.js",
+			"hash": "MWNUAi+Ub52BmFFfY3yKlNr+JFYlmRYtakqY83sWZzI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1181
+		},
+		{
+			"name": "/dist/utils/stream.js.map",
+			"hash": "FoetuNX4tK1OltreSK+1JjLs1t15Wkf3a1Z6SEr6VUo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 860
+		},
+		{
+			"name": "/dist/utils/typedArrays.d.ts",
+			"hash": "joRTK6fTmzE5Oew2mTAG7ruCOO4ONb4IfHJh+8x5stM=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 235
+		},
+		{
+			"name": "/dist/utils/typedArrays.js",
+			"hash": "yxYdgxzc2wMe2sEJBTyPrU8CydbtyaWKfXFefO5klz4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 938
+		},
+		{
+			"name": "/dist/utils/typedArrays.js.map",
+			"hash": "hXgz+8j6VLOXplwmOyF8IAAFjRtgOcKkoM/z5tjvX+c=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 785
+		},
+		{
+			"name": "/dist/utils/utf8.d.ts",
+			"hash": "GWtMWIgTRkmxig6eA6I18jK8I3uTtmGv1uDLUkS/O5k=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 652
+		},
+		{
+			"name": "/dist/utils/utf8.js",
+			"hash": "m54R6/xx2Flnrb7vqBdeOlv+9UjoHEo8ALKs5rTGXwI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6414
+		},
+		{
+			"name": "/dist/utils/utf8.js.map",
+			"hash": "Lx9y+aHiHTji33arKDLhlkL7HBHQWRJKWVppCBQO/I0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 5983
+		},
+		{
+			"name": "/LICENSE",
+			"hash": "2VpBG82trIXWeKmTZ/9RcZ5TU5+l7pmUlDzXYMSuZOQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 740
+		},
+		{
+			"name": "/mod.ts",
+			"hash": "I/KGqLmN+I/Ll/fQ2HxnIYzP+jP8sf8JJtaPfMnCJzE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 42
+		},
+		{
+			"name": "/package.json",
+			"hash": "O3RYpIXAZiyfbWCjC8iOcsqkfOmxA1hVcLTPykkz2ak=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3916
+		},
+		{
+			"name": "/README.md",
+			"hash": "W53Tmbcbm77f4IqbLuB/asxTPwgG+W6trc6exsVenN4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 23117
+		},
+		{
+			"name": "/src/CachedKeyDecoder.ts",
+			"hash": "GW51AotAGGCpdHKz5SNXxtaQImvx2ausa7mT/xPxvlE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2445
+		},
+		{
+			"name": "/src/context.ts",
+			"hash": "cU+fvkDsDGf6ozteSNbMihjHr/wSrVvBkCSMPxHrAlg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 395
+		},
+		{
+			"name": "/src/decode.ts",
+			"hash": "Xk0WevhG4TkaNELRAdAkEjhAAqenu5Hrtw9CC7OFRRE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2370
+		},
+		{
+			"name": "/src/decodeAsync.ts",
+			"hash": "ZtK7xK2LQpvllIs7n+8sMyU0K7MNsd1J4hPmaQzqk2g=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2416
+		},
+		{
+			"name": "/src/DecodeError.ts",
+			"hash": "k9Fp7U6y7kA8F/TUCgJDLoSZTXSM7AEzgi8wGqiA2co=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 415
+		},
+		{
+			"name": "/src/Decoder.ts",
+			"hash": "PckPfm5Vv5P9bu1nrV3weOJNwqEiKqVhUNA+cFwg944=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 17742
+		},
+		{
+			"name": "/src/encode.ts",
+			"hash": "pM2mlmB0PQ1ClsOmuu1zDmgR7sf2P8Zdx5sDnwx/MQY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2408
+		},
+		{
+			"name": "/src/Encoder.ts",
+			"hash": "pClbzcr95TT7R2jVMCRIFXxUOXHWMd0wpu0OQa7Ff3Q=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 10692
+		},
+		{
+			"name": "/src/ExtData.ts",
+			"hash": "jZf+Q1aOEZoe65Ph7xxDHgok45L7DG/+13WqweV58kQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 188
+		},
+		{
+			"name": "/src/ExtensionCodec.ts",
+			"hash": "SJg4cS6dJmpYq9XotfBqqGVXlXdExHCOYu/x3yzfIm4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3313
+		},
+		{
+			"name": "/src/index.ts",
+			"hash": "YWTPmHlnxeiZkvEqn5Bx3WMD+uD19MvwqpjoBGFccl4=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1426
+		},
+		{
+			"name": "/src/timestamp.ts",
+			"hash": "ey/+VY4IxZqEQ1DNV0BH2VAx/D15vamAfnz0/yHsQsQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3313
+		},
+		{
+			"name": "/src/utils/int.ts",
+			"hash": "NvXLN5B3lGMfL1BfMTEAUlnMl29ztqAKJXYfJesg68Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1060
+		},
+		{
+			"name": "/src/utils/prettyByte.ts",
+			"hash": "wyqLMcx3OdTYIO1pic2n1uAKtpNthwyA9r9/nQslTt8=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 137
+		},
+		{
+			"name": "/src/utils/stream.ts",
+			"hash": "4m4oUJ1m/If3atvfvRpelbRa2mv8u/m1M4nwsGabD3U=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1211
+		},
+		{
+			"name": "/src/utils/typedArrays.ts",
+			"hash": "uAVI7j3XPryEK6NvRifHuX5FAV6p2nwygCauc65KiCg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 775
+		},
+		{
+			"name": "/src/utils/utf8.ts",
+			"hash": "Pe4r1mY4hLJhbs42jXn7A26oCxqWCTFYC2ceSfVLToU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 5102
+		}
+	]
+}

@@ -2,14 +2,20 @@ body
   width 100vw
   height 100vh
   display grid
-  grid-template-rows auto auto auto 1fr auto
+  grid-template-rows auto 1fr auto
   justify-content center
   justify-items center
   color var(--neutral-foreground)
   background-color var(--primary-background)
-  // background linear-gradient( #D1C1D8, #F2E1C8 )
 
-  & > header > *
+  & > header > .header
+    display flex
+    flex-direction column
+    border-bottom var(--header-border-bottom)
+    align-items center
+    width 100vw
+
+  & > header > .header > *
     box-sizing border-box
     width 100vw
     display flex
@@ -19,7 +25,7 @@ body
     justify-content space-between
     align-items center
     padding 0.5rem 1.5rem
-    border-bottom var(--header-border-bottom)
+    max-width du(5)
 
     h1, h2
       color var(--h1-color)
@@ -42,6 +48,7 @@ body
     column-gap 2rem
     padding var(--main-padding)
     width 100%
+    max-width du(5)
 
   & > footer
     smallest()

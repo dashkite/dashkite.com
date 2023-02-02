@@ -84,6 +84,7 @@
     
     & > nav
       flex-direction var(--block-nav-flex-direction)
+      flex-wrap nowrap
     nav
       header
         display var(--block-nav-header-display)
@@ -108,7 +109,7 @@
     borders()
     --copy-min-width 0
 
-    section
+    & > section
       flex-grow var(--button-flex-grow)
       flex-basis var(--button-flex-basis)
       justify-content var(--button-justify-content)
@@ -116,6 +117,7 @@
       gap 0.5rem
       background-color var(--button-color, var(--primary-backround))
       color var(--button-text-color, var(--neutral-foreground))
+      padding var(--button-padding-vertical) var(--button-padding-horizontal)
 
     a
       text-decoration var(--button-link-text-decoration)

@@ -1,39 +1,47 @@
 body
-  @media screen and (max-width: du(2))
+  @media screen and (max-width: du(3))
     --header-flex-direction column
   
   & > header
     .block
-      @media screen and (max-width: du(2))
+      @media screen and (max-width: du(3))
         center()
 
 aside
-  @media screen and (max-width: du(2))
+  @media screen and (max-width: du(3))
     --aside-display none
 
 .section
-  @media screen and (max-width: du(2))
+  @media screen and (max-width: du(3))
     --section-aside-float none
     --section-aside-margin-left none
     --section-aside-margin-right none
   header
-    @media screen and (max-width: du(2))
+    @media screen and (max-width: du(3))
       --section-header-flex-direction column
     .nav:last-child
-      @media screen and (max-width: du(2))
+      @media screen and (max-width: du(3))
         --block-justify-content flex-start
         --block-child-justify-content flex-start
         --text-align left
 
 .collection
-  @media screen and (max-width: du(2))
+  @media screen and (max-width: du(3))
     --collection-main-flex-direction column
     --collection-main-flex-wrap nowrap
   header
-    @media screen and (max-width: du(2))
+    @media screen and (max-width: du(3))
       --collection-header-flex-direction column
     .nav:last-child
-      @media screen and (max-width: du(2))
+      @media screen and (max-width: du(3))
         --block-justify-content flex-start
         --block-child-justify-content flex-start
         --text-align left
+
+.banner-split
+  @media screen and (max-width: du(3))
+    center()
+    --banner-split-flex-direction column
+    --banner-split-image-order -1
+    --banner-padding-vertical s("min(5vw, 2rem)")
+    padding s("min(5vw, 2rem)") 0

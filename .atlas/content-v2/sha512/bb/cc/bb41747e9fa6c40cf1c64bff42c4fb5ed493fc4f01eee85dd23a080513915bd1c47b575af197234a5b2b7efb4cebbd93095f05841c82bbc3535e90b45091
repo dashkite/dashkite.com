@@ -1,0 +1,155 @@
+{
+	"default": "/lib/utf8.min.js",
+	"files": [
+		{
+			"name": "/lib/utf8.bench.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib/utf8.bench.js",
+			"hash": "Qv+wl6CbHeYTodVMXg7yEJFTBavADZL2b6IWdcUBZYI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6897
+		},
+		{
+			"name": "/lib/utf8.bench.js.map",
+			"hash": "NTjJpDRa4ZBhF22ZuXSHeu4MLKqhDYXYkoXKjr26JBg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 480
+		},
+		{
+			"name": "/lib/utf8.d.ts",
+			"hash": "ChLQKXYbCcIBjzmtFnpsboSF0VcmuXErtjSIbzUNhPE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 536
+		},
+		{
+			"name": "/lib/utf8.js",
+			"hash": "LuVqqXxoDvVnaTyZQQFFal+hDUKt0+GBvFt1B5rrLL0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4771
+		},
+		{
+			"name": "/lib/utf8.js.map",
+			"hash": "4d3Ll0wl2d/99o20lP3QQH7IL4FgQxI5If15zeftFiQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4749
+		},
+		{
+			"name": "/lib/utf8.test.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib/utf8.test.js",
+			"hash": "dC8uy6DFuP4YcuyLHEigqfDhA4MAzEEWhi7j/9z8kWg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3929
+		},
+		{
+			"name": "/lib/utf8.test.js.map",
+			"hash": "z+eJnaI92zJjMdk3erLPGr/tcYegCHgLnhwvrBP7Eig=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2168
+		},
+		{
+			"name": "/lib-es6/utf8.bench.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib-es6/utf8.bench.js",
+			"hash": "CDfWHKFQDL7Y4g4PtIpZKwxayYQC0S20R+c1bxWvImY=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 6767
+		},
+		{
+			"name": "/lib-es6/utf8.bench.js.map",
+			"hash": "tHuGbdjKi05/JOqwaJ4NEKs6NC4pnub51At/yOo2Cjg=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 552
+		},
+		{
+			"name": "/lib-es6/utf8.d.ts",
+			"hash": "ChLQKXYbCcIBjzmtFnpsboSF0VcmuXErtjSIbzUNhPE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 536
+		},
+		{
+			"name": "/lib-es6/utf8.js",
+			"hash": "f3KJ3TsplkstL6XCT/TDTjXd9sOROQYcGM2YUns/65k=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4626
+		},
+		{
+			"name": "/lib-es6/utf8.js.map",
+			"hash": "nfGALkt06b2FQ+gN/NJSRrOh/PX2FGDoO4h+NmY1aEQ=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4720
+		},
+		{
+			"name": "/lib-es6/utf8.test.d.ts",
+			"hash": "jmCbtxwguFjHfw6fkLsTGduEd7E/n5ZfGh4YUkv1CIE=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 11
+		},
+		{
+			"name": "/lib-es6/utf8.test.js",
+			"hash": "QJuef+I79s06/EHQ8/rTbrQqDFEpPgke6sBoifbaEqI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3828
+		},
+		{
+			"name": "/lib-es6/utf8.test.js.map",
+			"hash": "vbvfzD3BYTb2sY5H1H/zA5J4hr1vKwVB/L0l5qS8JGo=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 2229
+		},
+		{
+			"name": "/LICENSE",
+			"hash": "FgW3e+vgGNsfwnvSL7ze7RM1xheTehJCmaiwQrQrD7Y=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 1110
+		},
+		{
+			"name": "/package.json",
+			"hash": "AN4vsithuEd3dvZobWSdLGnWuMG3YX42E7sHh7xmfPU=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 805
+		},
+		{
+			"name": "/tsconfig.json",
+			"hash": "znb/53L2guM6iX+S/h0onxEiwD4Wtx1Ujfrtk76YP6I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 629
+		},
+		{
+			"name": "/tsconfig-es6.json",
+			"hash": "wHJR+QlZ3qtEjWjHwu7QCgH32XOBBiJ0x86nh2CAR4I=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 628
+		},
+		{
+			"name": "/utf8.bench.ts",
+			"hash": "jTXNsA3eQmYM+T/LIbJpgJh0JQgPPsW/JbK61ZW28VA=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3171
+		},
+		{
+			"name": "/utf8.test.ts",
+			"hash": "EKu35QP8mZ4YQVvRyATvOkJ0MhAuHkBig/auiG3Fvh0=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 3775
+		},
+		{
+			"name": "/utf8.ts",
+			"hash": "1dFXJGOCt1pgT6RdRqJ1ONVKxweeiIcDTvmPkXeZbAI=",
+			"time": "1985-10-26T08:15:00.000Z",
+			"size": 4592
+		}
+	]
+}

@@ -1,7 +1,11 @@
 {
-  "name": "@dashkite/dashkite.com",
-  "version": "0.0.0",
-  "description": "",
+  "name": "dashkite.com",
+  "version": "0.10.2",
+  "description": "DashKite Web Site",
+  "scripts": {
+    "test": "genie test",
+    "build": "genie build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dashkite/dashkite/dashkite.com.git"
@@ -10,22 +14,16 @@
   "bugs": {
     "url": "https://github.com/dashkite/dashkite/dashkite.com/issues"
   },
-  "homepage": "https://github.com/dashkite/dashkite/dashkite.com#readme",
-  "imports": {
-    "#templates/*": "./build/browser/src/templates/*.js"
-  },
+  "homepage": "https://github.com/dashkite/dashkite.com#readme",
   "devDependencies": {
-    "@dashkite/dolores": "file:../dolores",
-    "@dashkite/genie": "^0.5.6",
-    "@dashkite/genie-presets": "file:../genie-presets",
-    "@dashkite/sky-presets": "file:../sky-presets"
+    "@dashkite/amen": "^0.2.0",
+    "@dashkite/amen-console": "^0.0.2",
+    "@dashkite/assert": "^0.1.4",
+    "@dashkite/genie": "^0.5.11",
+    "@dashkite/genie-presets": "^0.6.2",
+    "@dashkite/sky-presets": "link:../sky-presets"
   },
   "dependencies": {
-    "@dashkite/helium": "^0.4.3",
-    "@dashkite/joy": "^0.3.16",
-    "@dashkite/katana": "^0.4.8",
-    "@dashkite/navigate": "^0.3.2",
-    "@dashkite/neon": "^0.5.1",
-    "@dashkite/oxygen": "^0.3.5"
+    "@dashkite/workspace-components": "link:../workspace-components"
   }
 }
