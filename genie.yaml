@@ -13,10 +13,14 @@ presets:
     targets:
       browser:
         - preset: render
-          document: true
           glob:
             - src/**/*.pug
             - "!src/templates"
+            - "!src/pricing/index.pug"
+        - preset: render
+          document: true
+          glob:
+            - src/pricing/index.pug
   stylus:
     targets:
       browser:

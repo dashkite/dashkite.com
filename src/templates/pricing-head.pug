@@ -2,6 +2,10 @@
 include mixins
 
 block head
+  //- TODO this allows our syncTreeHook to work for some reason
+  script
+  script(src = "https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js" async=true )
+  script(type="importmap")
 
   meta( key = "charset" charset = "utf-8" )
   meta(
@@ -33,7 +37,8 @@ block head
     data-auto-add-css="false"
   )
 
-  link(rel = "stylesheet" href = "/index.css" )
+  link(data-key = "css" rel = "stylesheet" href = "/index.css" )
+  script( async=true src="/index.js" type="module" )
   link( rel="stylesheet" href="https://use.typekit.net/xsi8fpm.css" )
 
   
