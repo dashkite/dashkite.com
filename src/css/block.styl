@@ -114,20 +114,21 @@
       flex-basis var(--button-flex-basis)
       justify-content var(--button-justify-content)
       align-items center
-      gap 0.5rem
       background-color var(--button-color, var(--primary-backround))
       color var(--button-text-color, var(--neutral-foreground))
       padding var(--button-padding-vertical) var(--button-padding-horizontal)
 
     a
-      text-decoration var(--button-link-text-decoration)
       display var(--button-link-display)
       gap var(--button-link-gap)
       justify-content var(--button-link-justify-content)
       align-items var(--button-link-align-items)
       padding var(--button-link-padding)
-      &:visited, &:hover
-        color unset 
+      white-space nowrap
+      font-size var(--copy-font-size)
+      line-height var(--copy-line-height)
+      max-width var(--copy-max-width)
+      color var(--button-text-color, var(--neutral-foreground))
 
     img
       height var(--button-img-height)
