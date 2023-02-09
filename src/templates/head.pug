@@ -2,7 +2,6 @@
 include mixins
 
 block head
-
   meta( key = "charset" charset = "utf-8" )
   meta(
     key = "viewport"
@@ -31,9 +30,12 @@ block head
     src = "https://kit.fontawesome.com/2a37c5fc17.js"
     crossorigin = "anonymous"
     data-auto-add-css="false"
+    async=true
   )
 
+  link( rel = "preload" as="style" href = "/index.css" )
   link(rel = "stylesheet" href = "/index.css" )
+  link( rel="preload" as="style" href="https://use.typekit.net/xsi8fpm.css" )
   link( rel="stylesheet" href="https://use.typekit.net/xsi8fpm.css" )
 
   
