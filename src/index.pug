@@ -12,42 +12,43 @@ html(class= "purple borderless-header")
       include templates/header
     
     main
-      .block( class = "banner-split" )
-        section 
-          header 
-            h1
-              | Next-Generation
-              br
-              | No Code
-          .main(style="--copy-font-size: var(--large-copy-font-size); --copy-max-width: 60ch;")
-            :markdown
-              DashKite is developing a revolutionary **generative programming** platform for building **consent-driven applications** without writing code.
-        .svg
-          include media/images/yuppyCoding.svg
-      .block(class = "collection widest")
-        section
-          .main
-            .block( class = "section large")
-              section 
-                header
-                  h2 No Code with No Limits
-                .main 
-                  i( class = "fas fa-rocket-launch fa-1x")
-                  p DashKite supports your No Code project every step of the way. From doodling and tinkering to your millionth user.
-            .block( class = "section large")
-              section 
-                header
-                  h2 No Code with No Learning Curve
-                .main 
-                  i( class = "fas fa-magic fa-1x")
-                  p You don't need to take a class to use our products. We work tirelessly to make them as intuitive as possible, empowering you to get more done with less.
-            .block( class = "section large")
-              section 
-                header
-                  h2 No Code that's Built for the Future
-                .main 
-                  i( class = "fas fa-road fa-1x" )
-                  p DashKite's products put security and consent first, ensuring your project is ready for the future of the Web.
+      main
+        .block( class = "banner-split" )
+          section 
+            header 
+              h1
+                | Next-Generation
+                br
+                | No Code
+            .main(style="--copy-font-size: var(--large-copy-font-size); --copy-max-width: 60ch;")
+              :markdown
+                DashKite is developing a revolutionary **generative programming** platform for building **consent-driven applications** without writing code.
+          .svg
+            include media/images/yuppyCoding.svg
+        .block(class = "collection widest")
+          section
+            .main
+              .block( class = "section large")
+                section 
+                  header
+                    h2 No Code with No Limits
+                  .main 
+                    i( class = "fas fa-rocket-launch fa-1x")
+                    p DashKite supports your No Code project every step of the way. From doodling and tinkering to your millionth user.
+              .block( class = "section large")
+                section 
+                  header
+                    h2 No Code with No Learning Curve
+                  .main 
+                    i( class = "fas fa-magic fa-1x")
+                    p You don't need to take a class to use our products. We work tirelessly to make them as intuitive as possible, empowering you to get more done with less.
+              .block( class = "section large")
+                section 
+                  header
+                    h2 No Code that's Built for the Future
+                  .main 
+                    i( class = "fas fa-road fa-1x" )
+                    p DashKite's products put security and consent first, ensuring your project is ready for the future of the Web.
     footer
       include templates/footer
 
