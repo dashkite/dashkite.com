@@ -2,8 +2,8 @@
   p
     color var(--link-color)
   &:hover
-    p::after
-      content "\00a0 \2192"
+    .nav-item::after
+      content "\2192"
 
     span 
       color var(--neutral-foreground)
@@ -11,11 +11,108 @@
   span 
     color var(--neutral-accent)
 
-html
-  @media screen and (max-width: 960px)
-    --header-border-bottom 1px solid var(--primary-accent)
-
 .header.app
   --header-nav-column-gap 3rem
-  @media screen and (max-width: 960px)
-    --header-nav-column-gap 3ch
+
+.header.app.product
+  border-bottom 1px solid rgba(0,0,0,0.15)
+
+.header.page
+  border-bottom none
+
+body > main > main:not(.root, .db)
+  padding-top 3rem
+  padding-bottom 3rem
+
+#more
+  display none
+
+label.more
+  display none
+  height s("calc(1.33333333 * var(--copy-font-size, 1rem))")
+  user-select none
+  svg.svg-inline--fa
+    height 1em
+    display inline
+    font-size s("calc(1.33333333 * var(--copy-font-size, 1rem))")
+
+.menu-container
+  display flex
+  flex-direction row
+  justify-content space-between
+  align-items center
+  flex-grow var(--block-flex-grow)
+  flex-shrink var(--block-flex-shrink)
+  flex-basis var(--block-flex-basis)
+  max-width var(--block-max-width)
+
+// hamburger menu
+@media screen and (max-width: 960px)
+  body > header
+    .header.app
+      .block
+        --block-justify-content flex-start
+        --block-child-justify-content flex-start
+        --text-align left
+
+        --copy-font-size var(--default-copy-font-size)
+        --copy-line-height var(--default-copy-line-height)
+        --caption-font-size var(--small-copy-font-size)
+        --caption-line-height var(--small-copy-line-height)
+        --first-level-heading-font-size var(--larger-heading-font-size)
+        --first-level-heading-line-height var(--larger-heading-line-height)
+        --second-level-heading-font-size var(--large-heading-font-size)
+        --second-level-heading-line-height var(--large-heading-line-height)
+        --third-level-heading-font-size var(--default-heading-font-size)
+        --third-level-heading-line-height var(--default-heading-line-height)
+        --copy-max-width 72ch
+        --copy-min-width min(12rem, 100vw)
+    
+    &:has(#more:checked) ~ main, &:has(#more:checked) ~ footer
+      display none
+
+  
+  .header.app
+    &.common
+      border-bottom none
+    &:has(#more:checked)
+      border-bottom none
+    &:has(#more:checked) ~ .header
+      display none
+    
+    .nav
+      display none
+      width 100%
+      nav
+        flex-direction column
+        align-items flex-start
+        width 100%
+        max-width none
+        a
+          width 100%
+          max-width none
+          justify-content space-between
+          border-bottom 1px solid var(--primary-accent)
+    
+    .image
+      align-self flex-start
+    
+    .button
+      display none
+      align-self center
+    
+    .menu-container
+      width 100%
+
+      &:has(#more:checked) ~ .nav, &:has(#more:checked) ~ .button
+        display flex
+
+  .header.page
+    .nav
+      align-self flex-start
+      --copy-font-size var(--large-copy-font-size)
+      --copy-line-height var(--large-copy-line-height)
+
+  label.more
+    display block
+    cursor pointer

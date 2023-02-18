@@ -1,8 +1,13 @@
-.header.app
+.header.app.common
   .container
-    .block( class = "image shorter" ) 
-      section
-        a( href = "/" )
-          .svg
-            include ../media/images/logo.svg
+    .menu-container
+      .block( class = "image shorter" ) 
+        section
+          a( href = "/" )
+            .svg
+              include ../media/images/logo.svg
+      label.more(for="more")
+        i(class = "fal fa-bars fa-1x")
+      input(type="checkbox" id="more")
     include nav
+

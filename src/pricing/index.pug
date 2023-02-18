@@ -1,6 +1,6 @@
 doctype html
 
-html(class= "purple")
+html(class= "purple borderless-header")
   head
     - var title = "DashKite: Pricing"
     - var description = "Choose the right plan for you"
@@ -12,6 +12,6 @@ html(class= "purple")
       include ../templates/header
     main
       main
-        dashkite-pricing-table( data-product = "db", data-trial )
+        dashkite-pricing-table( data-product = "db", data-trial, data-title = "Pricing" )
     footer
       include ../templates/footer

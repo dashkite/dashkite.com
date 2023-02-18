@@ -1,6 +1,6 @@
 doctype html
 
-html(class= "purple")
+html(class= "purple borderless-header")
   head
     - var title = "DashKite: Products"
     include ../templates/head
@@ -11,17 +11,19 @@ html(class= "purple")
     
     main
       main
-        .block(class = "collection")
-            section
-              header 
-                h2 Products
-              .main
-                .block(class = "nav highlight vertical")
-                  nav 
-                    header
-                      h3 Storage
-                    a.product-link(href="/products/db" style = "flex-direction: column; align-items: flex-start;") 
-                      p DB
-                      span No Code database
+        .block(class = "collection neutral")
+          section
+            header 
+              h1 Products
+            .main
+              .block(class = "nav highlight vertical")
+                nav 
+                  header
+                    h3 Storage
+                  a.product-link(href="/products/db" style = "flex-direction: column; align-items: flex-start;")
+                    .nav-item
+                      i( class = "fal fa-database fa-1x")
+                      | db
+                    span No Code database
     footer
       include ../templates/footer
