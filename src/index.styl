@@ -29,7 +29,6 @@ body > main > main:not(.root, .db)
 
 label.more
   display none
-  height s("calc(1.33333333 * var(--copy-font-size, 1rem))")
   user-select none
   svg.svg-inline--fa
     height 1em
@@ -114,5 +113,9 @@ label.more
       --copy-line-height var(--large-copy-line-height)
 
   label.more
-    display block
+    display flex
+    flex-direction column
     cursor pointer
+    span 
+      font-size var(--smallest-copy-font-size)
+      line-height var(--smallest-copy-line-height)
