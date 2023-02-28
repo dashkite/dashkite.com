@@ -11,7 +11,9 @@ block head
     name = "viewport"
     content = "width=device-width, initial-scale=1.0"
   )
-  link( key = "icon" rel = "shortcut icon" href = "/media/images/favicon.ico" )
+  link( key = "ico" rel = "icon" href = "/favicon.ico" sizes="any" )
+  link( key = "icon" rel = "icon" href = "/icon.svg" type="image/svg+xml" )
+  link( key = "apple-touch" rel="apple-touch-icon", href="/apple-touch-icon.png")
   +title( title )
 
   meta(
