@@ -10,39 +10,42 @@ html(class= "purple")
       include ../../templates/db-header
     
     main
-      main.db
-        .block( class = "banner neutral" )
-          section(style="flex-direction: column; align-items: center;")
+      main
+        .block.db( class = "banner-split neutral" )
+          section
             header 
               h1 A database that's simple, fast, and scalable
-            .main(style="font-size: var(--large-copy-font-size);") Need something more powerful than a spreadsheet but without the headaches of a traditional database?
+            .main
+              p Need something more powerful than a spreadsheet but without the headaches of a traditional database?
             footer
-              .block( class = "button round highlight" style="--copy-font-size: var(--large-copy-font-size);")
+              .block( class = "button round highlight")
                 section
                   a(href="https://workspaces.dashkite.com") Get started &#8594;
-        .block(class = "collection widest")
+          .svg
+            include ../../media/images/croods.svg
+        .block(class = "collection vertical center widest")
           section
             .main
-              .block(class = "section large")
+              .block(class = "section center large")
                 section 
+                  i( class = "fal fa-snooze fa-1x")
                   header
                     h2 Zero headaches
                   .main 
-                    i( class = "fas fa-snooze fa-1x")
-                    p Since DB is serverless, there is nothing to install or configure. You don’t need to manage servers, capacity, or replication.
-              .block( class = "section large")
+                    p DB is serverless, so there is nothing to install or configure. You don’t need to manage servers, capacity, or replication.
+              .block( class = "section center large")
                 section 
+                  i( class = "fal fa-magic fa-1x")
                   header
                     h2 No code required
-                  .main 
-                    i( class = "fas fa-magic fa-1x")
-                    p Since DB supports a simple HTTP interface, you don’t need to write any code to use it.
-              .block( class = "section large")
+                  .main
+                    p DB supports a simple HTTP interface, so you don’t need to write any code to use it. Just share a link to get started.
+              .block( class = "section center large")
                 section 
+                  i( class = "fal fa-leaf fa-1x")
                   header
                     h2 Flexible and intuitive
                   .main 
-                    i( class = "fas fa-leaf fa-1x")
-                    p Store data naturally. No rigid database schemas or complex SQL commands. Just GET, PUT, and DELETE your data.
+                    p DB is a key-value database, so you don't need to worry about rigid database schemas or complex SQL commands. Just get, put, and delete your data.
     footer
       include ../../templates/footer

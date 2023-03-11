@@ -1,3 +1,6 @@
+a[rel="me"]
+  display none
+
 .image
   --svg-height var(--header-img-max-height)
 
@@ -23,9 +26,8 @@
 .header.page
   border-bottom none
 
-body > main > main:not(.root, .db)
-  padding-top 3rem
-  padding-bottom 3rem
+body > main > main
+  padding 3rem 8rem
 
 #more
   display none
@@ -38,6 +40,24 @@ label.more
     display inline
     font-size s("calc(1.33333333 * var(--copy-font-size, 1rem))")
 
+.banner-split
+  &.vertical
+    header
+      max-width none
+    .main
+      --copy-max-width 60ch
+  header
+    max-width 72ch
+  .main
+    --copy-font-size var(--large-copy-font-size)
+    --copy-line-height var(--large-copy-line-height)
+    --copy-max-width 50ch
+  footer
+    --copy-font-size var(--default-copy-font-size)
+    --copy-line-height var(--default-copy-line-height)
+  &.db
+    padding 1rem 0
+
 .menu-container
   display flex
   flex-direction row
@@ -47,6 +67,17 @@ label.more
   flex-shrink var(--block-flex-shrink)
   flex-basis var(--block-flex-basis)
   max-width var(--block-max-width)
+
+dashkite-pricing-table
+  width 100%
+  main > .collection > section
+    width auto
+
+footer
+  border-top none
+
+img 
+  max-height s("min(100%, %s)", 192px)
 
 // hamburger menu
 @media screen and (max-width: 960px)
@@ -73,7 +104,9 @@ label.more
     &:has(#more:checked) ~ main, &:has(#more:checked) ~ footer
       display none
 
-  
+  body > main > main
+    padding 3rem 3rem
+
   .header.app
     &.common
       border-bottom none
