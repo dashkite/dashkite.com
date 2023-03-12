@@ -1,4 +1,4 @@
-a[rel="me"]
+a[name="dashkite-mastodon-rel"]
   display none
 
 .image
@@ -28,6 +28,15 @@ a[rel="me"]
 
 body > main > main
   padding 3rem 8rem
+
+blockquote
+  background-color #ebeef1
+  padding 1rem
+  border-radius 0.5rem
+
+ul
+  margin-left 1.1rem
+  padding-left 1rem
 
 #more
   display none
@@ -83,6 +92,7 @@ img
 @media screen and (max-width: 960px)
   body > header
     .header.app
+      --header-flex-direction column
       .block
         --block-justify-content flex-start
         --block-child-justify-content flex-start
