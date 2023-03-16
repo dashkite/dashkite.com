@@ -8,6 +8,7 @@ html(class= "purple borderless-header")
     include templates/head
 
   body
+    a(rel="me" href="https://mastodon.social/@dashkite" name="dashkite-mastodon-rel")
     header
       include templates/header
     
@@ -23,6 +24,10 @@ html(class= "purple borderless-header")
             .main
               :markdown
                 DashKite is developing a revolutionary **generative programming** platform for building **consent-driven applications** without writing code.
+            footer
+              .block( class = "button round highlight")
+                section
+                  a(href="/products/db") Try our first product &#8594;
           .svg
             include media/images/yuppyCoding.svg
         .block(class = "collection vertical center widest")
@@ -50,6 +55,5 @@ html(class= "purple borderless-header")
                   .main 
                     p DashKite's products put security and consent first, ensuring your project is ready for the future of the Web.
     footer
-      a(rel="me" href="https://mastodon.social/@dashkite" name="dashkite-mastodon-rel")
       include templates/footer
 

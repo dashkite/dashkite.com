@@ -38,6 +38,12 @@ ul
   margin-left 1.1rem
   padding-left 1rem
 
+.contact
+  display flex
+  svg
+    max-width 320px
+    max-height 320px
+
 #more
   display none
 
@@ -47,7 +53,17 @@ label.more
   svg.svg-inline--fa
     height 1em
     display inline
-    font-size s("calc(1.33333333 * var(--copy-font-size, 1rem))")
+    font-size s("calc(1 * var(--copy-font-size, 1rem))")
+
+.section .main
+  .svg
+    width 100%
+    justify-content center
+    margin-top 1rem
+    border-top 1px solid rgba(0,0,0,0.15)
+    border-bottom 1px solid rgba(0,0,0,0.15)
+    svg
+      max-width 320px
 
 .banner-split
   &.vertical
@@ -61,11 +77,10 @@ label.more
     --copy-font-size var(--large-copy-font-size)
     --copy-line-height var(--large-copy-line-height)
     --copy-max-width 50ch
+    margin-top -1rem
   footer
     --copy-font-size var(--default-copy-font-size)
     --copy-line-height var(--default-copy-line-height)
-  &.db
-    padding 1rem 0
 
 .menu-container
   display flex
@@ -84,12 +99,23 @@ dashkite-pricing-table
 
 footer
   border-top none
+  & > .block
+    &:first-child
+      justify-content flex-start
+    &:last-child
+      justify-content flex-end
 
 img 
   max-height s("min(100%, %s)", 192px)
 
+body:has(.page:not(:empty))
+  main > main
+    padding-top 2rem
+
 // hamburger menu
 @media screen and (max-width: 960px)
+  body
+    --heading-min-width 0
   body > header
     .header.app
       --header-flex-direction column
@@ -115,8 +141,19 @@ img
       display none
 
   body > main > main
-    padding 3rem 3rem
+    padding 3rem unquote("min(2rem, 5vw)")
 
+  main
+    .banner-split
+      .main
+        --copy-font-size var(--default-copy-font-size)
+        --copy-line-height var(--default-copy-line-height)
+
+    .section.large
+      .main
+        --copy-font-size var(--default-copy-font-size)
+        --copy-line-height var(--default-copy-line-height)
+  
   .header.app
     &.common
       border-bottom none

@@ -1,0 +1,34 @@
+doctype html
+
+html(class= "purple borderless-header")
+  head
+    - var title = "DashKite: Contact Us"
+    - var description = "Get in touch."
+    - var url = "https://dashkite.com/contact"
+    include ../templates/head
+
+  body
+    header
+      include ../templates/header
+    main
+      main
+        .block.section.widest.neutral
+          section 
+            header 
+              h1 Contact Us
+            .main Get in touch with us via email, Twitter, Mastodon, or Discord!
+            footer 
+              section.socials
+                a( href = "mailto:support@dashkite.com" )
+                  i.far.fa-envelope.fa-1x
+                a( href = "https://twitter.com/dashkite" )
+                  i.fab.fa-twitter.fa-1x
+                a( href = "https://mastodon.social/@dashkite" )
+                  i.fab.fa-mastodon.fa-1x
+                a(href="https://discord.gg/pJSbG58eFg")
+                  i.fab.fa-discord.fa-1x
+        .svg.contact
+          include ../media/images/email-dark.svg
+
+    footer
+      include ../templates/footer
