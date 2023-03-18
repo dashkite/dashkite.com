@@ -12,6 +12,11 @@ html(class= "purple borderless-header")
       include ../templates/header
     main
       main
-        dashkite-pricing-table( data-product = "db", data-trial, data-title = "Pricing", data-boost )
+        .block(class = "collection widest neutral")
+          section
+            header 
+              h1 Pricing
+            .main
+              dashkite-pricing-table( data-product = "db", data-trial )
     footer
       include ../templates/footer
