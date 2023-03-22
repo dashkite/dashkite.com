@@ -13,11 +13,13 @@ block image
   +image( "/media/logo.png" )
 
 block main
-  main
-    :markdown
-      # The Fine Print
-
-      - [Privacy Policy](/legal/privacy-policy)
-      - [Content Policy](/legal/content-policy)
-      - [Terms Of Use](/legal/terms-of-use)
-      - [API Terms Of Use](/legal/api-terms-of-use)
+  .block.section.widest.neutral
+    section 
+      header 
+        h1 Legal Information
+      .main
+        :markdown
+          - [Privacy Policy](/legal/privacy-policy)
+          - [Content Policy](/legal/content-policy)
+          - [Terms Of Use](/legal/terms-of-use)
+          - [API Terms Of Use](/legal/api-terms-of-use)
