@@ -1,0 +1,18 @@
+extends ../../templates/default
+
+block title
+  +title( "API Terms Of Use" )
+
+block description
+  +description( "DashKite API Terms of Use" )
+
+block url
+  +url( "https://dashkite.com/legal/api-terms-of-use" )
+
+block image
+  +image( "/media/logo.png" )
+
+block main
+  main
+    include:markdown content.md
+

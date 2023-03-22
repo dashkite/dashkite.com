@@ -1,0 +1,18 @@
+extends ../../templates/default
+
+block title
+  +title( "Content Policy" )
+
+block description
+  +description( "DashKite Content Policy" )
+
+block url
+  +url( "https://dashkite.com/legal/content-policy" )
+
+block image
+  +image( "/media/logo.png" )
+
+block main
+  main
+    include:markdown content.md
+

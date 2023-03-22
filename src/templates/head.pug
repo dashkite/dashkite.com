@@ -11,7 +11,9 @@ block head
   link( key = "ico" rel = "icon" href = "/favicon.ico" sizes="any" )
   link( key = "icon" rel = "icon" href = "/icon.svg" type="image/svg+xml" )
   link( key = "apple-touch" rel="apple-touch-icon", href="/apple-touch-icon.png")
-  +title( title )
+
+  block title
+    +title( title )
 
   meta(
     key = "og:site-name"
@@ -34,7 +36,6 @@ block head
     data-auto-add-css="false"
     async=true
   )
-
 
   link( rel = "preload" as="style" href = "https://workspaces.dashkite.com/css/css.css" )
   link( key = "css" rel = "stylesheet" href = "https://workspaces.dashkite.com/css/css.css" )
