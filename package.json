@@ -20,7 +20,8 @@
     "@dashkite/amen-console": "^0.0.2",
     "@dashkite/genie": "^0.5.11",
     "@dashkite/genie-presets": "link:../genie-presets",
-    "@dashkite/sky-presets": "link:../sky-presets"
+    "@dashkite/sky-presets": "link:../sky-presets",
+    "js-yaml": "^4.1.0"
   },
   "dependencies": {
     "@dashkite/workspace-components": "link:../workspace-components"

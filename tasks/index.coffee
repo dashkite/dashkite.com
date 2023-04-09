@@ -5,12 +5,101 @@ import sky from "@dashkite/sky-presets"
 preset t
 sky t
 
-# turn this on to build while watching
-autobuild = false
-t.define "autobuild", -> autobuild = true
-t.after "watch", "autobuild"
-t.define "autopublish", ->
-  t.run "sky:s3:publish:dashkite.com" if autobuild
-t.after "build", "autopublish"
-t.define "publish", [ "build" ], ->
-  t.run "sky:s3:publish:dashkite.com"
+import FS from "node:fs/promises"
+import Path from "node:path"
+import YAML from "js-yaml"
+
+Files =
+
+  list: ( root ) ->
+    queue = [ root ]
+    while queue.length > 0
+      current = queue.pop()  
+      for file in ( await FS.readdir current ) when !( file.startsWith "." )
+        if ( await FS.stat ( path = Path.join current, file ) ).isDirectory()
+          queue.push path
+          yield 
+            type: "directory"
+            path: Path.relative root, path
+        else
+          yield 
+            type: "file"
+            path: Path.relative root, path
+            content: await FS.readFile path, "utf8"
+
+Key =
+
+  parse: ( component ) ->
+    if ( match = component.match /^((\d+)\:)?([\w\-]+)(\.([\w\-]+))?$/ )?
+      [ , , index, name, , type ] = match
+      index = parseInt index if index?
+      { index, name, type }
+    else {}
+  
+  make: ( path ) ->
+    do ->
+      for component in path.split "/"
+        ( Key.parse component ).name
+    .join "/"
+
+
+Resource = 
+
+  dictionary: {}
+
+  expand: ( reference ) ->
+    resource = @dictionary[ reference ]
+    if resource.content? && Array.isArray resource.content
+      resource.content =
+        for reference in resource.content
+          @expand reference
+    resource
+
+  render: ( path ) ->
+
+    if ( resource = @dictionary[ path ] )?
+      if resource.type == "page"
+        if ( template = @dictionary[ resource.data.template ])?
+          if template.type == "template"
+            resource.slots = { template.slots..., resource.slots... }
+        slots = {}
+        for name, reference of resource.slots
+          slots[ name ] = @expand reference
+        resource.slots = slots
+        resource
+
+  make: ( file ) ->
+    key = Key.make file.path
+    parent = Path.dirname key
+    description = Key.parse Path.basename file.path
+    content = data = undefined
+    if file.path.endsWith ".yaml"
+      data = YAML.load file.content
+    else
+      content = file.content
+    { key, parent, content, data, description... }
+
+t.define "build", ->
+
+  resources = Resource.dictionary
+
+  for await file from await Files.list "src"
+    resource = Resource.make file
+    resources[ resource.key ] = resource
+
+  for resource in Object.values resources
+    if ( parent = resources[ resource.parent ] )?
+      if resource.index?
+        parent.content ?= []
+        parent.content[ resource.index - 1 ] = resource.key
+      else if resource.type == "slot"
+        parent.slots ?= {}
+        parent.slots[ resource.name ] = resource.key
+      else if resource.data?
+        parent.data = resource.data
+        delete resources[ resource.key ]
+      else if resource.content?
+        parent.content = resource.content
+        delete resources[ resource.key ]
+
+  console.log Resource.render "home"

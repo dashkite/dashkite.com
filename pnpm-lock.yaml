@@ -7,6 +7,7 @@ specifiers:
   '@dashkite/genie-presets': link:../genie-presets
   '@dashkite/sky-presets': link:../sky-presets
   '@dashkite/workspace-components': link:../workspace-components
+  js-yaml: ^4.1.0
 
 dependencies:
   '@dashkite/workspace-components': link:../workspace-components
@@ -17,6 +18,7 @@ devDependencies:
   '@dashkite/genie': 0.5.11
   '@dashkite/genie-presets': link:../genie-presets
   '@dashkite/sky-presets': link:../sky-presets
+  js-yaml: 4.1.0
 
 packages:
 

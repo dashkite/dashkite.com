@@ -1,0 +1,4 @@
+text: Try our first product &#8594;
+target: /products/db
+hints:
+  style: button

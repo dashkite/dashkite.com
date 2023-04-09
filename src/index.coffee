@@ -1,1 +1,0 @@
-import "@dashkite/workspace-components/pricing-table"
