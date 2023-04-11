@@ -5,11 +5,15 @@ specifiers:
   '@dashkite/amen-console': ^0.0.2
   '@dashkite/genie': ^0.5.11
   '@dashkite/genie-presets': link:../genie-presets
+  '@dashkite/html-render': link:../html-render
   '@dashkite/sky-presets': link:../sky-presets
   '@dashkite/workspace-components': link:../workspace-components
   js-yaml: ^4.1.0
+  markdown-wasm: ^1.2.0
+  marked: ^4.3.0
 
 dependencies:
+  '@dashkite/html-render': link:../html-render
   '@dashkite/workspace-components': link:../workspace-components
 
 devDependencies:
@@ -19,6 +23,8 @@ devDependencies:
   '@dashkite/genie-presets': link:../genie-presets
   '@dashkite/sky-presets': link:../sky-presets
   js-yaml: 4.1.0
+  markdown-wasm: 1.2.0
+  marked: 4.3.0
 
 packages:
 
@@ -1463,6 +1469,16 @@ packages:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
     dependencies:
       yallist: 3.1.1
+    dev: true
+
+  /markdown-wasm/1.2.0:
+    resolution: {integrity: sha512-S12OTkyXCkOgI1n1rZY9cg4bK/PGu80Emjpvwp8BEjwCxhPV3yddF0U6+QhCitdBsI1tzWcoeahmW7k0Pq81OA==}
+    dev: true
+
+  /marked/4.3.0:
+    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
+    engines: {node: '>= 12'}
+    hasBin: true
     dev: true
 
   /minimatch/3.1.2:

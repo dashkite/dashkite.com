@@ -21,9 +21,12 @@
     "@dashkite/genie": "^0.5.11",
     "@dashkite/genie-presets": "link:../genie-presets",
     "@dashkite/sky-presets": "link:../sky-presets",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "markdown-wasm": "^1.2.0",
+    "marked": "^4.3.0"
   },
   "dependencies": {
+    "@dashkite/html-render": "link:../html-render",
     "@dashkite/workspace-components": "link:../workspace-components"
   }
 }

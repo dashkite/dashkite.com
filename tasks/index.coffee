@@ -8,6 +8,12 @@ sky t
 import FS from "node:fs/promises"
 import Path from "node:path"
 import YAML from "js-yaml"
+import * as Render from "./render"
+import * as Markdown from "markdown-wasm"
+
+markdown = undefined
+
+isString = ( value ) -> value.substring?
 
 Files =
 
@@ -32,9 +38,9 @@ Key =
   parse: ( component ) ->
     if ( match = component.match /^((\d+)\:)?([\w\-]+)(\.([\w\-]+))?$/ )?
       [ , , index, name, , type ] = match
-      index = parseInt index if index?
-      { index, name, type }
-    else {}
+      { name, type, index: ( parseInt index if index? )}
+    else
+      throw new Error "malformed path component [ #{ component} ]"
   
   make: ( path ) ->
     do ->
@@ -47,11 +53,11 @@ Resource =
 
   dictionary: {}
 
-  expand: ( reference ) ->
+  expand: ( reference, level = 1 ) ->
     resource = @dictionary[ reference ]
     if resource.content? && Array.isArray resource.content
       resource.content =
-        for reference in resource.content
+        for reference in resource.content when isString reference
           @expand reference
     resource
 
@@ -66,7 +72,7 @@ Resource =
         for name, reference of resource.slots
           slots[ name ] = @expand reference
         resource.slots = slots
-        resource
+        Render.page resource
 
   make: ( file ) ->
     key = Key.make file.path
@@ -75,11 +81,15 @@ Resource =
     content = data = undefined
     if file.path.endsWith ".yaml"
       data = YAML.load file.content
-    else
+    else if file.path.endsWith ".md"
+      content = markdown.parse file.content
+    else if file.content?
       content = file.content
     { key, parent, content, data, description... }
 
 t.define "build", ->
+
+  markdown = await Markdown.ready
 
   resources = Resource.dictionary
 
@@ -87,6 +97,7 @@ t.define "build", ->
     resource = Resource.make file
     resources[ resource.key ] = resource
 
+  performance.mark "compose:start"
   for resource in Object.values resources
     if ( parent = resources[ resource.parent ] )?
       if resource.index?
@@ -99,7 +110,19 @@ t.define "build", ->
         parent.data = resource.data
         delete resources[ resource.key ]
       else if resource.content?
-        parent.content = resource.content
+        parent.content = media: resource
         delete resources[ resource.key ]
+  performance.mark "compose:finish"
 
-  console.log Resource.render "home"
+  performance.mark "render:start"
+  html = Resource.render "home"
+  performance.mark "render:finish"
+
+  performance.measure "compose", "compose:start", "compose:finish"
+  performance.measure "render", "render:start", "render:finish"
+
+  entries = performance.getEntriesByType "measure"
+  for entry in entries
+    console.log "benchmark: #{entry.name}", entry.duration, "ms"
+
+  await FS.writeFile "build/index.html", html
