@@ -20,13 +20,12 @@
     "@dashkite/amen-console": "^0.0.2",
     "@dashkite/genie": "^0.5.11",
     "@dashkite/genie-presets": "link:../genie-presets",
-    "@dashkite/sky-presets": "link:../sky-presets",
-    "js-yaml": "^4.1.0",
-    "markdown-wasm": "^1.2.0",
-    "marked": "^4.3.0"
+    "@dashkite/sky-presets": "link:../sky-presets"
   },
   "dependencies": {
-    "@dashkite/html-render": "link:../html-render",
+    "@dashkite/joy": "^0.3.16",
+    "@dashkite/sites-fs": "link:../sites-fs",
+    "@dashkite/sites-render": "link:../sites-render",
     "@dashkite/workspace-components": "link:../workspace-components"
   }
 }
