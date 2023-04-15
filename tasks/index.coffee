@@ -13,11 +13,12 @@ import * as Fn from "@dashkite/joy/function"
 
 write = ( build ) ->
   ( html ) ->
+    await FS.mkdir build, recursive: true
     FS.writeFile ( Path.join build, "index.html" ), html
 
-t.define "build", Fn.flow [
+t.define "build", [ "clean" ], Fn.flow [
   build "src"
-  render
+  render "home"
   write "build" 
 ]
 
