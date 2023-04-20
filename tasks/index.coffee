@@ -5,12 +5,15 @@ import sky from "@dashkite/sky-presets"
 preset t
 sky t
 
-# turn this on to build while watching
-autobuild = false
-t.define "autobuild", -> autobuild = true
-t.after "watch", "autobuild"
-t.define "autopublish", ->
-  t.run "sky:s3:publish:dashkite.com" if autobuild
-t.after "build", "autopublish"
+mode = process.env.mode ? "development"
+
+t.define "deploy", [ "build", "sky:s3:deploy" ], ->
+  t.run "sky:edge:publish"
+
 t.define "publish", [ "build" ], ->
-  t.run "sky:s3:publish:dashkite.com"
+  t.run "sky:s3:publish"
+
+t.define "undeploy", ->
+  if mode != "production"
+    t.run "sky:s3:undeploy"
+    t.run "sky:edge:delete"

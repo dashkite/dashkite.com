@@ -15,8 +15,8 @@ presets:
         - preset: render
           glob:
             - src/**/*.pug
-            - "!src/templates"
-            - "!src/pricing/index.pug"
+            - '!src/templates'
+            - '!src/pricing/index.pug'
         - preset: render
           document: true
           glob:
@@ -27,27 +27,26 @@ presets:
         - preset: css
           glob:
             - src/**/*.styl
-
   media:
     target: build/browser
-
 sky:
-  namespace: web
+  namespace: dashkite
   edge:
-    name: edge
+    name: edge-landing
     certificate:
       verification: dashkite.com
-    cache: dynamic
+    cache: static
     origins:
-      - domain: dashkite.com.s3-website-us-east-1.amazonaws.com
+      - domain: s3-website>dashkite//com
     aliases:
-      - dashkite.com
-      - www.dashkite.com
-  buckets:
-    - name: dashkite.com
+      - domain>dashkite//com
+      - domain>dashkite/www/com
+  s3:
+    - uri: domain>dashkite//com
       website:
         index: index.html
         error: error.html
       publish:
         root: build/browser/src
-        glob: "**/*"
+        glob: '**/*'
+      domains: {}
