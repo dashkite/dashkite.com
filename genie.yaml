@@ -49,4 +49,6 @@ sky:
       publish:
         root: build/browser/src
         glob: '**/*'
-      domains: {}
+      domains:
+        dashkite--production: dashkite.com
+        dashkite--staging: staging.dashkite.com
