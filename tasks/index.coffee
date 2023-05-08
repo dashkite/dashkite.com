@@ -10,6 +10,7 @@ import Path from "node:path"
 import { build } from "@dashkite/sites-fs"
 import { render } from "@dashkite/sites-render"
 import * as Fn from "@dashkite/joy/function"
+import * as M from "@dashkite/masonry"
 
 write = ( build ) ->
   ( html ) ->
@@ -22,3 +23,16 @@ t.define "build", [ "clean" ], Fn.flow [
   write "build" 
 ]
 
+# dependencies = [
+#   "sites-fs"
+#   "sites-render"
+#   "sites-render-css"
+#   "sites-render-html"
+#   "universal-css"
+#   "quark"
+# ]
+
+# t.define "watch", [ "build" ], Fn.pipe do ->
+#   for dependency in dependencies
+#     console.log "watching", dependency
+#     M.watch "../#{dependency}/src", M.exec "genie", [ "build" ]
