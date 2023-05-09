@@ -23,16 +23,17 @@ t.define "build", [ "clean" ], Fn.flow [
   write "build" 
 ]
 
-# dependencies = [
-#   "sites-fs"
-#   "sites-render"
-#   "sites-render-css"
-#   "sites-render-html"
-#   "universal-css"
-#   "quark"
-# ]
+dependencies = [
+  "sites-fs"
+  "sites-render"
+  "sites-render-css"
+  "sites-render-html"
+  "universal-css"
+  "quark"
+]
 
-# t.define "watch", [ "build" ], Fn.pipe do ->
-#   for dependency in dependencies
-#     console.log "watching", dependency
-#     M.watch "../#{dependency}/src", M.exec "genie", [ "build" ]
+t.define "watch:dependencies", Fn.pipe do ->
+  for dependency in dependencies
+    M.watch "../#{dependency}/src", M.exec "genie", [ "build" ]
+
+t.after "watch", "watch:dependencies"
