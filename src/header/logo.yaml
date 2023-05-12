@@ -1,0 +1,4 @@
+type: image
+name: logo
+content:
+  path: header/logo.svg

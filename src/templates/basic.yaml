@@ -1,0 +1,6 @@
+type: template
+slots:
+  header:
+    - header/logo
+    - header/nav
+  footer: []

@@ -1,3 +1,5 @@
+type: navigation
+name: site
 items:
   - title: Products
     target: /products
@@ -7,4 +9,3 @@ items:
     target: /pricing
   - title: About
     target: /about
-

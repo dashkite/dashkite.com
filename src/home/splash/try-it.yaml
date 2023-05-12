@@ -1,0 +1,6 @@
+type: link
+name: try-it
+text: Try It For Free
+target: /products/db
+hints:
+  style: button

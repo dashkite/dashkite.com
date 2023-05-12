@@ -18,7 +18,9 @@ write = ( build ) ->
     FS.writeFile ( Path.join build, "index.html" ), html
 
 t.define "build", [ "clean" ], Fn.flow [
-  build "src"
+  build 
+    glob: "**/*.yaml"
+    source: "src"
   render "home"
   write "build" 
 ]
