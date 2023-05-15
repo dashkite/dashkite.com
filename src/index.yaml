@@ -1,6 +1,5 @@
 type: page
 title: Welcome
-template: templates/basic
 slots:
   main:
     - home/splash

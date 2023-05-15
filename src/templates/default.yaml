@@ -1,4 +1,5 @@
 type: template
+color: "#7c23b7"
 slots:
   header:
     - header/logo

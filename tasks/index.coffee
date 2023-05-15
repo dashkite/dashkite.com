@@ -13,19 +13,22 @@ import * as Fn from "@dashkite/joy/function"
 import * as M from "@dashkite/masonry"
 
 write = ( build ) ->
-  ( html ) ->
-    await FS.mkdir build, recursive: true
-    FS.writeFile ( Path.join build, "index.html" ), html
+  ( pages ) ->
+    for page in pages
+      path = Path.join build, "#{ page.key }.html"
+      await FS.mkdir ( Path.dirname path ), recursive: true
+      FS.writeFile path, page.html
 
 t.define "build", [ "clean" ], Fn.flow [
   build 
     glob: "**/*.yaml"
     source: "src"
-  render "home"
+  render
   write "build" 
 ]
 
 dependencies = [
+  "sites-resource"
   "sites-fs"
   "sites-render"
   "sites-render-css"
