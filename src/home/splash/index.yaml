@@ -1,4 +1,9 @@
-type: block
+type: layout
+hints:
+  width: widest
+  size: larger
+  alignment: center
 content:
   - home/splash/next-generation
+  - home/splash/coding
   - home/splash/try-it

@@ -1,4 +1,7 @@
-type: block
+type: layout
+hints:
+  width: widest
+  proximity: roomy
 content:
   - home/benefits/no-limits
   - home/benefits/build-for-the-future

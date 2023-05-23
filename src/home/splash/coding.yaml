@@ -1,0 +1,5 @@
+type: image
+hints:
+  width: narrow
+content:
+  path: home/splash/coding.svg
