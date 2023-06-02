@@ -2,3 +2,5 @@ type: text
 title: Next Generation No Code
 content:
   path: home/splash/next-generation.md
+hints:
+  width: wide

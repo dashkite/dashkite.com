@@ -3,6 +3,7 @@ hints:
   width: widest
   size: larger
   alignment: center
+  proximity: roomy
 content:
   - home/splash/next-generation
   - home/splash/coding
