@@ -1,0 +1,7 @@
+type: layout
+hints:
+  size: larger
+content:
+  - products/db/summary
+  - products/db/coding
+  - products/db/get-started

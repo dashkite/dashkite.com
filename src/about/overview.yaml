@@ -1,0 +1,7 @@
+type: text
+subtype: article
+title: About Us
+hints:
+  justify: center
+content:
+  path: about/overview.md

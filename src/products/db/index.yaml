@@ -1,0 +1,7 @@
+type: page
+title: DashKite DB
+slots:
+  main:
+    - products/db/breadcrumb
+    - products/db/splash
+    - products/db/benefits

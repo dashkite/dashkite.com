@@ -1,0 +1,55 @@
+Our research into [consent-driven
+applications](#what-are-consent-driven-applications) brought us together,
+ultimately resulting in the vision we have today. 
+
+We started out building experimental social platforms (Civic and Smalltown), but
+came to understand, through our work with news organizations and systemically
+excluded founders, that a better solution—and one more aligned with the
+architecture of the Web—was to empower people to build their own applications.
+That realization has led us to a [generative programming
+model](#what-is-generative-programming), where people can leverage a powerful
+runtime to build consent-driven applications without writing code.
+
+[Learn more about our team.](/team) [Sign up for our
+newsletter.](https://newsletter.dashkite.com)
+              
+### What is generative programming?
+
+Generative programming takes a high-level representation of an application or
+more generally, a software system, and transforms it into working, executable
+code, through the use of generative AI. In contrast to visual programming, which
+directly maps visual representations such as flow charts or detailed wireframes
+into source code, generative programming dramatically reduces the intrinsic
+complexity of building software. Visual programming tools often simplify
+deployment but not the actual development. No Code tools may thus be divided
+into generative and visual categories.
+
+> **Aside:** Generative AI is commonly used to refer to unsupervised machine
+learning systems. However, generative programming may incorporate other forms of
+AI, particularly inference. Generative programming in this context should also
+not be confused with the use of the phrase in [object-oriented
+programming](https://en.wikipedia.org/wiki/Automatic_programming#Generative_programming),
+which has similar connotations but does not place as much emphasis on AI and
+typically [has a lower-level focus](https://dl.acm.org/doi/pdf/10.1145/3564719).
+
+### What are consent-driven applications?
+
+We tend to say _consent-driven_, but we should probably say _consent-based_
+because the basic idea is that consent needs to be built into an application,
+rather than a choice left up to the application developer. Ideally,
+consent-based architecture is a form of [Ulysses
+Pact](https://en.wikipedia.org/wiki/Ulysses_pact) that ensures that consumer
+rights cannot be violated, either intentionally or accidentally. More
+specifically, our goal is to build applications where consumers control access
+to their data, including knowledge about their activities, and are protected
+from identity theft, abuse, and harassment. Architectural patterns that
+characterize consent-based applications include:
+
+- Client-side encryption
+- Decentralized identity management
+- Consensus-based trust
+- Capability-based authorization
+
+Consent-based architectural patterns are typically well-known but underutilized.
+They are not, by themselves, novel. Our innovation lays in our synthesis of them
+in the context of consent, and as an architectural foundation for No Code.

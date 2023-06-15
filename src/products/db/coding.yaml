@@ -1,0 +1,5 @@
+type: image
+hints:
+  width: narrow
+content:
+  path: products/db/coding.svg
