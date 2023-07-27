@@ -1,0 +1,6 @@
+type: page
+title: Welcome
+slots:
+  main:
+    - home/splash
+    - home/benefits

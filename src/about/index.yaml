@@ -1,0 +1,5 @@
+type: page
+title: About Us
+slots:
+  main:
+    - about/overview

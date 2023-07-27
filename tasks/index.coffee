@@ -6,6 +6,7 @@ import Path from "node:path"
 import { build } from "@dashkite/sites-fs"
 import { render } from "@dashkite/sites-render"
 import * as Fn from "@dashkite/joy/function"
+import * as M from "@dashkite/masonry"
 
 preset t
 sky t
@@ -13,16 +14,21 @@ sky t
 mode = process.env.mode ? "development"
 
 write = ( build ) ->
-  ( html ) ->
-    await FS.mkdir build, recursive: true
-    FS.writeFile ( Path.join build, "index.html" ), html
+  ( pages ) ->
+    for page in pages
+      path = Path.join build, "#{ page.key }.html"
+      await FS.mkdir ( Path.dirname path ), recursive: true
+      FS.writeFile path, page.html
 
 t.define "build", [ "clean" ], Fn.flow [
-  build "src"
-  render "home"
+  build 
+    glob: "**/*.yaml"
+    source: "src"
+  render
   write "build" 
 ]
 
+<<<<<<< HEAD
 t.define "deploy", [ "build", "sky:s3:deploy" ], ->
   t.run "sky:edge:publish"
 
@@ -33,3 +39,20 @@ t.define "undeploy", ->
   if mode != "production"
     t.run "sky:s3:undeploy"
     t.run "sky:edge:delete"
+=======
+dependencies = [
+  "sites-resource"
+  "sites-fs"
+  "sites-render"
+  "sites-render-css"
+  "sites-render-html"
+  "universal-css"
+  "quark"
+]
+
+t.define "watch:dependencies", Fn.pipe do ->
+  for dependency in dependencies
+    M.watch "../#{dependency}/src", M.exec "genie", [ "build" ]
+
+t.after "watch", "watch:dependencies"
+>>>>>>> 136414282babcd2ba71e7884838a31870d2a4088

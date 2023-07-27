@@ -1,0 +1,9 @@
+type: page
+title: DashKite DB
+hints:
+  proximity: roomy
+slots:
+  main:
+    - products/db/breadcrumb
+    - products/db/splash
+    - products/db/benefits

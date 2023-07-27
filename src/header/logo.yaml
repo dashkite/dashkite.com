@@ -1,0 +1,6 @@
+type: image
+name: logo
+hints:
+  width: narrower
+content:
+  path: header/logo.svg
