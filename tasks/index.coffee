@@ -42,3 +42,4 @@ t.define "watch:dependencies", Fn.pipe do ->
     M.watch "../#{dependency}/src", M.exec "genie", [ "build" ]
 
 t.after "watch", "watch:dependencies"
+
