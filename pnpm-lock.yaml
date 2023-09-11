@@ -21,13 +21,16 @@ dependencies:
 devDependencies:
   '@dashkite/amen':
     specifier: ^0.2.0
-    version: 0.2.0
+    version: 0.2.2
   '@dashkite/amen-console':
     specifier: ^0.0.2
     version: 0.0.2
   '@dashkite/genie':
     specifier: link:../genie
     version: link:../genie
+  '@dashkite/genie-coffee':
+    specifier: link:../genie-coffee
+    version: link:../genie-coffee
   '@dashkite/sky-presets':
     specifier: link:../sky-presets
     version: link:../sky-presets
@@ -40,8 +43,8 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@dashkite/amen@0.2.0:
-    resolution: {integrity: sha512-64cI0qvcLXFhfuvNGI/ebUgbs7Rx+45K1EjqsdLVYjEALeAPGqViujiSWVky9KHw1F93FVpJx1/B6mlZJLf2Tg==}
+  /@dashkite/amen@0.2.2:
+    resolution: {integrity: sha512-bJBbRiIcQaKBT2A+EOltZaZMqGCptPw7rfSnTsu1AiicYWrXwe41zwo2W0a079OpJTLsH9v2vnU20xMCP9mQqA==}
     dev: true
 
   /@dashkite/joy@0.3.16:
