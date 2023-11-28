@@ -20,10 +20,10 @@
     "@dashkite/amen-console": "^0.0.2",
     "@dashkite/genie": "link:../genie",
     "@dashkite/genie-coffee": "link:../genie-coffee",
-    "@dashkite/genie-modules": "link:../genie-modules",
-    "@dashkite/sky-presets": "link:../sky-presets"
+    "@dashkite/genie-modules": "link:../genie-modules"
   },
   "dependencies": {
+    "@dashkite/genie-presets": "link:../genie-presets",
     "@dashkite/joy": "^0.3.16",
     "@dashkite/sites-fs": "link:../sites-fs",
     "@dashkite/sites-render": "link:../sites-render",
