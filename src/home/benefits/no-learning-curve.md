@@ -1,1 +1,0 @@
-You don't need to take a class to use our products. We work tirelessly to make them as intuitive as possible, empowering you to get more done with less.

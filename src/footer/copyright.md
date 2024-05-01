@@ -1,1 +1,0 @@
-Copyright &copy;2018-2023 DashKite Inc. All Rights Reserved Worldwide.

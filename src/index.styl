@@ -1,0 +1,71 @@
+@require "./styles/reset.styl"
+
+dark-theme()
+  --primary-foreground #fafafa
+  --primary-background #171717
+  --primary-accent lighten(#c69bf5, 50%)
+  --primary-highlight #c69bf5
+
+light-theme()
+  --primary-foreground #171717
+  --primary-background #fafafa
+  --primary-accent #c69bf5
+  --primary-highlight darken(#c69bf5, 50%)
+
+
+html
+  light-theme()
+  @media (prefers-color-scheme: dark)
+    dark-theme()
+
+  color var(--primary-foreground)
+  background var(--primary-background)
+  font-family \
+    ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,\
+    Consolas, 'DejaVu Sans Mono', monospace
+
+body
+  width 100vw
+  height 100dvh
+  display grid
+  grid-template-rows auto 1fr auto
+  justify-content center
+  justify-items center
+
+body > header
+
+  width inherit
+  padding 1rem
+  border-bottom 1px solid var(--primary-accent)
+
+  .logo
+    svg
+      height 2rem
+
+body > main
+
+  display flex
+  flex-flow column
+  justify-content center
+  width inherit
+  max-width max-content
+  padding 1rem
+
+
+  h1
+    // is this a general rule?
+    text-transform capitalize
+    font-size 5rem
+    color var(--primary-highlight)
+
+body > footer
+
+  width inherit
+  padding 1rem
+  display flex
+  justify-content center
+  border-top 1px solid var(--primary-accent)
+
+  p
+    font-size 10px
+    line-height 12px

@@ -3,19 +3,19 @@
   xmlns="http://www.w3.org/2000/svg" 
   viewBox="0 0 290 80"
   height="48px">
-<style>
-  .text {
-    fill: #7c23b7;
-  }
+  <style>
+    .text {
+      fill: var(--primary-highlight);
+    }
 
-  .kite.bg {
-    fill: #c5c6c8;
-  }
+    .kite.bg {
+      fill: var(--primary-accent);
+    }
 
-  .kite.fg {
-    fill: #7c23b7;
-  }  
-</style>
+    .kite.fg {
+      fill: var(--primary-highlight);
+    }  
+  </style>
 
   <path class="text"
   d="M261.93,448.27v-3.85a10.88,10.88,0,0,1-8.71,4.49c-6.74,0-11.5-5.13-11.5-13.52,0-8.23,4.71-13.58,11.5-13.58a10.79,10.79,0,0,1,8.71,4.54V412.62h4v35.65Zm0-7V429.56a9.73,9.73,0,0,0-7.75-4.17c-5.19,0-8.29,4.28-8.29,10s3.1,9.94,8.29,9.94A9.63,9.63,0,0,0,261.93,441.27Z"

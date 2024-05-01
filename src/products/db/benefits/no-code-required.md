@@ -1,1 +1,0 @@
-DB supports a simple HTTP interface, so you don’t need to write any code to use it. Just share a link to get started.

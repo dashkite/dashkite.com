@@ -1,1 +1,0 @@
-DashKite supports your No Code project every step of the way. From doodling and tinkering to your millionth user.

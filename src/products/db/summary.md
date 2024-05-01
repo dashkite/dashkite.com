@@ -1,1 +1,0 @@
-Need something more powerful than a spreadsheet but without the headaches of a traditional database?

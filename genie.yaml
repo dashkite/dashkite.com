@@ -1,54 +1,36 @@
-presets:
-  coffeescript:
-    targets:
-      browser:
-        - preset: browser
-          glob:
-            - src/**/*.coffee
-  verify: null
-  update: null
-  release: null
-  esm: null
-  pug:
-    targets:
-      browser:
-        - preset: render
-          glob:
-            - src/**/*.pug
-            - '!src/templates'
-            - '!src/pricing/index.pug'
-        - preset: render
-          document: true
-          glob:
-            - src/pricing/index.pug
-  stylus:
-    targets:
-      browser:
-        - preset: css
-          glob:
-            - src/**/*.styl
-  media:
-    target: build/browser
+pug:
+  targets:
+    browser:
+      - preset: html
+        glob:
+          - src/**/*.pug
+          - "!src/templates"
+
+stylus:
+  targets:
+    browser:
+      - preset: css
+        glob:
+          - src/**/*.styl
+          - "!src/styles"
+
+media:
+  targets:
+    browser:
+      - glob:
+          - src/media/**/*
+
+publish:
+  bucket: drn:domain/www/dashkite/com
+
 sky:
-  namespace: dashkite
-  edge:
-    name: edge-landing
-    certificate:
-      verification: dashkite.com
-    cache: static
-    origins:
-      - domain: s3-website>dashkite//com
-    aliases:
-      - domain>dashkite//com
-      - domain>dashkite/www/com
-  s3:
-    - uri: domain>dashkite//com
+  s3: 
+
+    - domain: drn:domain/www/dashkite/com
+      cors: true
       website:
         index: index.html
-        error: error.html
-      publish:
-        root: build/browser/src
-        glob: '**/*'
-      domains:
-        dashkite--production: dashkite.com
-        dashkite--staging: staging.dashkite.com
+        error: index.html
+
+    - domain: drn:domain/dashkite/com
+      redirect: drn:domain/www/dashkite/com

@@ -1,7 +1,0 @@
-type: navigation
-subtype: breadcrumb
-items:
-  - title: Products
-    target: /products
-  - title: DB
-    icon: database

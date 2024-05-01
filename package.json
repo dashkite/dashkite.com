@@ -18,9 +18,16 @@
   "devDependencies": {
     "@dashkite/amen": "^0.2.0",
     "@dashkite/amen-console": "^0.0.2",
+    "@dashkite/drn-sky": "link:../drn-sky",
     "@dashkite/genie": "link:../genie",
     "@dashkite/genie-clean": "link:../genie-clean",
-    "@dashkite/genie-coffee": "link:../genie-coffee"
+    "@dashkite/genie-coffee": "link:../genie-coffee",
+    "@dashkite/genie-drn": "link:../genie-drn",
+    "@dashkite/genie-media": "link:../genie-media",
+    "@dashkite/genie-publish": "link:../genie-publish",
+    "@dashkite/genie-pug": "link:../genie-pug",
+    "@dashkite/genie-sky": "link:../genie-sky",
+    "@dashkite/genie-stylus": "link:../genie-stylus"
   },
   "dependencies": {
     "@dashkite/joy": "^0.3.16",

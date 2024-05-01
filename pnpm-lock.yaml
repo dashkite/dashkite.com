@@ -25,6 +25,9 @@ devDependencies:
   '@dashkite/amen-console':
     specifier: ^0.0.2
     version: 0.0.2
+  '@dashkite/drn-sky':
+    specifier: link:../drn-sky
+    version: link:../drn-sky
   '@dashkite/genie':
     specifier: link:../genie
     version: link:../genie
@@ -34,6 +37,24 @@ devDependencies:
   '@dashkite/genie-coffee':
     specifier: link:../genie-coffee
     version: link:../genie-coffee
+  '@dashkite/genie-drn':
+    specifier: link:../genie-drn
+    version: link:../genie-drn
+  '@dashkite/genie-media':
+    specifier: link:../genie-media
+    version: link:../genie-media
+  '@dashkite/genie-publish':
+    specifier: link:../genie-publish
+    version: link:../genie-publish
+  '@dashkite/genie-pug':
+    specifier: link:../genie-pug
+    version: link:../genie-pug
+  '@dashkite/genie-sky':
+    specifier: link:../genie-sky
+    version: link:../genie-sky
+  '@dashkite/genie-stylus':
+    specifier: link:../genie-stylus
+    version: link:../genie-stylus
 
 packages:
 

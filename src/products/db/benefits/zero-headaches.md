@@ -1,1 +1,0 @@
-DB is serverless, so there is nothing to install or configure. You don’t need to manage servers, capacity, or replication.

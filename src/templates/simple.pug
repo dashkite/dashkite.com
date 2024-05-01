@@ -1,0 +1,39 @@
+include mixins
+
+head
+
+  block head
+
+    +stylesheet( "/index.css" )
+
+    link( key = "ico" rel ="icon" href ="/media/images/favicon.ico" sizes="any" )
+    link( key = "icon" rel ="icon" href ="/media/images/icon.svg" type="image/svg+xml" )
+    link( key = "apple-touch" rel="apple-touch-icon" href="/media/images/apple-touch-icon.png")
+
+    meta( key = "charset" charset = "utf-8" )
+
+    meta(
+      key = "viewport"
+      name = "viewport"
+      content = "width=device-width, initial-scale=1.0"
+    )
+    
+    meta(
+      key = "og:site-name"
+      property = "og:site_name"
+      content = "DashKite Studio"
+    )
+
+body
+
+  header
+    block header
+      .logo
+        a( href = "/" )
+          include ../media/images/logo.svg
+
+  main
+    block main
+
+  footer
+    block footer

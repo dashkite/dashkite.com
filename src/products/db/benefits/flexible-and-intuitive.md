@@ -1,1 +1,0 @@
-DB is a key-value database, so you don't need to worry about rigid database schemas or complex SQL commands. Just get, put, and delete your data.
